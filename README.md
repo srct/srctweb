@@ -21,9 +21,13 @@ Setup
 
 To get started, you'll need the following installed:
 * [Git](http://git-scm.com/book/en/Getting-Started-Installing-Git)
-* Python
+* [Python 2.7.3](http://www.python.org/download/)
+* [Pip](http://www.pip-installer.org/en/latest/install.html)
+* [virtualenv](http://www.virtualenv.org/en/latest/index.html#installation)
 
-Open a terminal window and type in the following commands. (If you're on Windows, use [Cygwin](http://www.cygwin.com/). This will create a local, workable copy of the project.
+Open a terminal window and type in the following commands. (If you're on Windows, use [Cygwin](http://www.cygwin.com/). This will create a local, workable copy of the project.)
+
+(set up pip and virtualenv)
 
 ``bash``
 ``git clone git@git.gmu.edu:srct/srctweb.git``
