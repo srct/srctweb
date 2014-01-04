@@ -1,7 +1,7 @@
-PROJECT NAME
+SRCTweb
 ===
 
-Project Description
+Our own little site on the world wide web
 
 On Contributing
 ---
