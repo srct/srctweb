@@ -1,3 +1,3 @@
 #!flask/bin/python
-from app import app
-app.run(debug = True)
+from website import website
+website.run(debug = True)
