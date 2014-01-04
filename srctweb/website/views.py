@@ -8,31 +8,37 @@ def index():
     
     )
 
+@website.route('/calendar')
 def calendar():
     return render_template("calendar.html",
     
     )
 
+@website.route('/contact')
 def contact():
     return render_template("contact.html",
     
     )
 
+@website.route('/documents')
 def documents():
     return render_template("documents.html",
     
     )
 
+@website.route('/meetings')
 def meetings():
     return render_template("meetings.html",
     
     )
 
+@website.route('/people')
 def people():
     return render_template("people.html",
     
     )
 
+@website.route('/projects')
 def projects():
     return render_template("projects.html",
 
