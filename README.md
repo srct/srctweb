@@ -40,7 +40,6 @@ To-do
 ---
 
 Note-- this should also be on the wiki
-* A footer
 * Links *everywhere*
 * Consistent color scheming-- bring in some greens and golds
 * The meeting page needs to have forms for the secretary to take notes, and pagination
@@ -51,6 +50,7 @@ Note-- this should also be on the wiki
 * Some sort of a calendar plugin for the calendar page
 * Add stuff to the events page-- same idea as meeting page, forms, pagination, and RSS
 * Have js follow the librejs tagging rules
+* Requires being able to log in in order for the secretary to take notes, etc
 
 About GMU SRCT
 ---
