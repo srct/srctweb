@@ -5,17 +5,20 @@
     <link rel="icon" href="/static/img/favicon.ico">
     <meta charset="utf-8">
     <meta name="description" content="Mason SRCT is a student organization at George Mason University that establishes and maintains systems which provide specific services for Mason's community.">
-  <title>
-    {% block title %}
-    {% endblock %}
+    <title>
+      {% block title %}
+      {% endblock %}
     </title>
   </head>
   <body>
     {% include 'layouts/navbar.html' %}
 
-    {% block content %}
-    {% endblock %}
-    <script src="/static/js/jquery-2.0.3.min.js">
-    <script src="/static/js/bootstrap.min.js">
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
+
   </body>
+  <script src="/static/js/jquery-2.0.3.min.js"></script>
+  <script src="/static/js/bootstrap.min.js"></script>
 </html>
