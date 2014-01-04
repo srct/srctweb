@@ -1,8 +1,68 @@
-{% extends "base.html" %}
+{% extends "layouts/base.html" %}
 {% block title %}
- SRCT | People 
+SRCT | People
 {% endblock %}
 
 {% block content %}
-  <h1>People</h1>
+
+<legend>Officers</legend>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Position</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Michel Rouly</td>
+      <td>President</td>
+      <td>jrouly</td>
+    </tr>
+    <tr>
+      <td>Daniel Bond</td>
+      <td>Vice President</td>
+      <td>dbond2</td>
+    </tr>
+    <tr>
+      <td>Chris Reffett</td>
+      <td>SysAdmin</td>
+      <td>creffett</td>
+    </tr>
+    <tr>
+      <td>Kara Mahoney</td>
+      <td>Secretary</td>
+      <td>kmahone5</td>
+    </tr>
+    <tr>
+      <td>Renfred Harper</td>
+      <td>Treasurer</td>
+      <td>rharper2</td>
+    </tr>
+    <tr>
+      <td>Kinga Dobolyi</td>
+      <td>Faculty Advisor</td>
+      <td>kdobolyi</td>
+    </tr>
+  </tbody>
+</table>
+
+<legend>Developers</legend>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Project</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Student</td>
+      <td>example</td>
+      <td>project</td>
+    </tr>
+  <tbody>
+</table>
 {% endblock %}
