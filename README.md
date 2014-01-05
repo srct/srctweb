@@ -41,7 +41,7 @@ To-do
 
 Note-- this should also be on the wiki
 * Links *everywhere*
-* Consistent color scheming-- bring in some greens and golds
+* Consistent color scheming-- what on earth did Michel do to table formatting (and labels)
 * The meeting page needs to have forms for the secretary to take notes, and pagination
 * RSS feed for the meeting page
 * Set up the documents with actual files
@@ -49,7 +49,6 @@ Note-- this should also be on the wiki
 * Figure out intellectual property with GMU
 * Some sort of a calendar plugin for the calendar page
 * Add stuff to the events page-- same idea as meeting page, forms, pagination, and RSS
-* Have js follow the librejs tagging rules
 * Requires being able to log in in order for the secretary to take notes, etc
 
 About GMU SRCT
