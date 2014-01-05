@@ -42,8 +42,10 @@ To-do
 Note-- this should also be on the wiki
 * Links *everywhere*
 * Consistent color scheming-- what on earth did Michel do to table formatting (and labels)
+* More CSS-- the navbar dropdown hovering over the links is a ghastly white O_O
 * Links don't work on navbar coming back from documents
 * The meeting page needs to have forms for the secretary to take notes, and pagination
+* Navbar dropdown needs to be on rollover and actually link to the documents page when clicked
 * RSS feed for the meeting page
 * Set up the documents with actual files
 * Write Usage Policy
