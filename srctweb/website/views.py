@@ -50,3 +50,48 @@ def projects():
     return render_template("projects.html",
 
     )
+
+### DOCUMENTS ###
+
+@website.route('/constitution')
+def constitution():
+    return render_template("documents/constitution.html",
+    
+    )
+
+@website.route('/intellectual_property')
+def intellectualProperty():
+    return render_template("documents/intellectual_property.html",
+    
+    )
+
+@website.route('/logos')
+def logos():
+    return render_template("documents/logos.html",
+    
+    )
+
+
+@website.route('/privacy_policy')
+def privacyPolicy():
+    return render_template("documents/privacy_policy.html",
+    
+    )
+
+@website.route('/software_freedom')
+def softwareFreedom():
+    return render_template("documents/software_freedom.html",
+    
+    )
+
+@website.route('/terms_of_service')
+def termsOfService():
+    return render_template("documents/terms_of_service.html",
+    
+    )
+
+@website.route('/usage_policy')
+def usagePolicy():
+    return render_template("documents/usage_policy.html",
+
+    )
