@@ -1,10 +1,35 @@
 <html lang="en">
   <head>
+    <meta charset="utf-8">
     <link href="/static/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="/static/css/bootstrap-theme.min.css" rel="stylesheet">
-	    <link href="/static/css/style.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
     <link rel="icon" href="/static/img/favicon.ico">
-    <meta charset="utf-8">
+    <script>
+        /*    
+        @licstart  The following is the entire license notice for the 
+        JavaScript code in this page.
+
+        Copyright (C) 2014 Mason SRCT
+
+        The JavaScript code in this page is free software: you can
+        redistribute it and/or modify it under the terms of the GNU
+        General Public License (GNU GPL) as published by the Free Software
+        Foundation, either version 3 of the License, or (at your option)
+        any later version.  The code is distributed WITHOUT ANY WARRANTY;
+        without even the implied warranty of MERCHANTABILITY or FITNESS
+        FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+        As additional permission under GNU GPL version 3 section 7, you
+        may distribute non-source (e.g., minimized or compacted) forms of
+        that code without the copy of the GNU GPL normally required by
+        section 4, provided you include this license notice and a URL
+        through which recipients can access the Corresponding Source.   
+
+        @licend  The above is the entire license notice
+        for the JavaScript code in this page.
+        */
+    </script>
     <meta name="description" content="Mason SRCT is a student organization at George Mason University that establishes and maintains systems which provide specific services for Mason's community.">
     <title> {% block title %} {% endblock %} </title>
   </head>
@@ -17,13 +42,14 @@
         {% block content %}
         {% endblock %}
       </div>
+
     </div>
 
     <div id="footer">
       {% include 'layouts/footer.html' %}
     </div>
 
+    <script src="/static/js/jquery-2.0.3.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
   </body>
-  <script src="/static/js/jquery-2.0.3.min.js"></script>
-  <script src="/static/js/bootstrap.min.js"></script>
 </html>
