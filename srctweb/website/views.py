@@ -53,44 +53,44 @@ def projects():
 
 ### DOCUMENTS ###
 
-@website.route('/constitution')
+@website.route('/documents/constitution')
 def constitution():
     return render_template("documents/constitution.html",
     
     )
 
-@website.route('/intellectual_property')
+@website.route('/documents/intellectual_property')
 def intellectualProperty():
     return render_template("documents/intellectual_property.html",
     
     )
 
-@website.route('/logos')
+@website.route('/documents/logos')
 def logos():
     return render_template("documents/logos.html",
     
     )
 
 
-@website.route('/privacy_policy')
+@website.route('/documents/privacy_policy')
 def privacyPolicy():
     return render_template("documents/privacy_policy.html",
     
     )
 
-@website.route('/software_freedom')
+@website.route('/documents/software_freedom')
 def softwareFreedom():
     return render_template("documents/software_freedom.html",
     
     )
 
-@website.route('/terms_of_service')
+@website.route('/documents/terms_of_service')
 def termsOfService():
     return render_template("documents/terms_of_service.html",
     
     )
 
-@website.route('/usage_policy')
+@website.route('/documents/usage_policy')
 def usagePolicy():
     return render_template("documents/usage_policy.html",
 

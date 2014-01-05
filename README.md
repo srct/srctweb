@@ -42,6 +42,7 @@ To-do
 Note-- this should also be on the wiki
 * Links *everywhere*
 * Consistent color scheming-- what on earth did Michel do to table formatting (and labels)
+* Links don't work on navbar coming back from documents
 * The meeting page needs to have forms for the secretary to take notes, and pagination
 * RSS feed for the meeting page
 * Set up the documents with actual files
