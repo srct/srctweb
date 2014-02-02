@@ -2,7 +2,6 @@ from flask import render_template
 from website import website
 
 @website.route('/')
-@website.route('/index')
 def index():
     return render_template("index.html",
     
@@ -25,7 +24,6 @@ def documents():
     return render_template("documents.html",
     
     )
-
 
 @website.route('/events')
 def events():
