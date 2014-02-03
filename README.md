@@ -40,7 +40,7 @@ To-do
 ---
 
 Note-- this should also be on the wiki
-* Links *everywhere*
+* Links from people page to srct constitution sections
 * Consistent color scheming-- what on earth did Michel do to table formatting (and labels)
 * More CSS-- the navbar dropdown hovering over the links is a ghastly white O_O
 * The meeting page needs to have forms for the secretary to take notes, and pagination
@@ -48,7 +48,6 @@ Note-- this should also be on the wiki
 * Set up the documents with actual files
 * Write Usage Policy
 * Figure out intellectual property with GMU
-* Some sort of a calendar plugin for the calendar page
 * Add stuff to the events page-- same idea as meeting page, forms, pagination, and RSS
 * Requires being able to log in in order for the secretary to take notes, etc
 * footer is not responsive
