@@ -40,19 +40,19 @@ To-do
 ---
 
 Note-- this should also be on the wiki
-* Links from people page to srct constitution sections
 * 'a name' links are hidden by the toolbar-- hello css
 * Consistent color scheming-- specifically with table formatting (and labels)
 * More CSS-- the navbar dropdown hovering over the links is a ghastly white O_O
 * The meeting page needs to have forms for the secretary to take notes, and pagination
 * RSS feed for the meeting notespage
 * Set up the documents with ability to download pdfs and latex files
-* Write Usage Policy
+* Write Terms of Service (different from usage policy?)
 * Figure out intellectual property with GMU
+* Write privacy policy
 * **note: events and meeting notes might be on the wiki page... undecided**
 * Add stuff to the events page-- same idea as meeting page, forms, pagination, and RSS
 * Requires being able to log in in order for the secretary to take notes, etc
-* footer is not responsive
+* links to the logos, logo in corner of page? :-P
 
 About GMU SRCT
 ---
