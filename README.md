@@ -42,13 +42,11 @@ To-do
 Note-- this should also be on the wiki
 * Logo in navbar
 * Set up the documents with ability to download pdfs and latex files
-* Write Terms of Service (different from usage policy?)
 * Figure out intellectual property with GMU
 * Write privacy policy
-* links to the logo image permalink
+* logo image download permalinks
 * Pages 404 with appended trailing slash
 * Squirrel 404 page!
-* More 'about page' type info on the front page
 
 EVENTS AND MEETING NOTES
 * **note: events and meeting notes might be on the wiki page... undecided**
