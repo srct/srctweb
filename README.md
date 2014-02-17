@@ -46,6 +46,9 @@ Note-- this should also be on the wiki
 * Figure out intellectual property with GMU
 * Write privacy policy
 * links to the logo image permalink
+* Pages 404 with appended trailing slash
+* Squirrel 404 page!
+* More 'about page' type info on the front page
 
 EVENTS AND MEETING NOTES
 * **note: events and meeting notes might be on the wiki page... undecided**
