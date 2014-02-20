@@ -12,24 +12,24 @@
 
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav">
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/people">People</a></li>
-	<li><a href="/events">Events</a></li>
-        <li><a href="/meetings">Meetings</a></li>
-	<li><a href="/calendar">Calendar</a>
+        <li><a href="{{ url_for('projects')}}">Projects</a></li>
+        <li><a href="{{ url_for('people')}}">People</a></li>
+	<li><a href="{{ url_for('events')}}">Events</a></li>
+        <li><a href="{{ url_for('meetings')}}">Meetings</a></li>
+	<li><a href="{{ url_for('calendar')}}">Calendar</a>
         <li class="dropdown">
         <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Documents <b class="caret"></b></a>
           <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="/documents/constitution">Constitution</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="/documents/usage_policy">Usage Policy</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="/documents/terms_of_service">Terms of Service</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="/documents/privacy_policy">Privacy Policy</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="/documents/intellectual_property">Intellectual Property</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="/documents/software_freedom">Software Freedom</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="/documents/logos">Logos</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="{{ url_for('constitution')}}">Constitution</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="{{ url_for('usagePolicy')}}">Usage Policy</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="{{ url_for('termsOfService')}}">Terms of Service</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="{{ url_for('privacyPolicy')}}">Privacy Policy</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="{{ url_for('intellectualProperty')}}">Intellectual Property</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="{{ url_for('softwareFreedom')}}">Software Freedom</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="{{ url_for('logos')}}">Logos</a></li>
           </ul>
         </li>
-	<li><a href="/contact">Contact</a>
+	<li><a href="{{ url_for('contact')}}">Contact</a>
       </ul>
     </div><!--/.nav-collapse -->
   </div>
