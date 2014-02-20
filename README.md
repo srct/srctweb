@@ -44,9 +44,9 @@ Note-- this should also be on the wiki
 * Set up the documents with ability to download pdfs and latex files
 * Figure out intellectual property with GMU
 * Write privacy policy
-* logo image download permalinks
-* Pages 404 with appended trailing slash
+* Logo image download permalinks
 * Squirrel 404 page!
+* Use real links, not the direct file locations (yes, I know that's going to be really annoying to fix-- sorry)
 
 EVENTS AND MEETING NOTES
 * **note: events and meeting notes might be on the wiki page... undecided**
