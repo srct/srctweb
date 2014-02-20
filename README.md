@@ -43,10 +43,10 @@ Note-- this should also be on the wiki
 * Logo in navbar
 * Set up the documents with ability to download pdfs and latex files
 * Figure out intellectual property with GMU
-* Write privacy policy
+* finish writing privacy policy
 * Logo image download permalinks
-* Squirrel 404 page!
 * Use real links, not the direct file locations (yes, I know that's going to be really annoying to fix-- sorry)
+* add piwik opt out link
 
 EVENTS AND MEETING NOTES
 * **note: events and meeting notes might be on the wiki page... undecided**
