@@ -4,19 +4,53 @@
 SRCT
 {% endblock %}
 
-{% block jumbotron %}
-<div class="jumbotron jumbostyle">
-  <div class="container">
-  <div class="text-center transparency">
-    <h1><strong>SRCT</strong></h1>
-    <p><h3>Student-Run Computing and Technology</h3></p>
-  </div>
-  </div><!--container-->
-</div>
-
-{% endblock %}
-
 {% block content %}
+
+<div id = "SRCTCarousel" class="carousel slide">
+  
+  <ol class="carousel-indicators">
+    <li data-target = "#SRCTCarousel" data-slide-to = "0" class = "active"></li>
+    <li data-target = "#SRCTCarousel" data-slide-to = "1"></li>
+    <li data-target = "#SRCTCarousel" data-slide-to = "2"></li>
+  </ol>
+  
+  <div class = "carousel-inner">
+
+    <div class = "item active">
+      <img src = "/static/img/renfredhaxxor.jpg" alt = "Renfred Haxxor" class = "img-responsive">
+      <div class = "carousel-caption">
+        <h2>Renfred Haxxoring</h2>
+        <p>We the people of the United States in order to for a more perfect Union, establish justice, ensure domestic tranquility, provide for the common defense, promote the general welfare and secure the blessings of liberty to ourselves and our posterity do ordain and establish this constitution of the United States of America.</p>
+      </div>
+    </div>
+
+    <div class = "item">
+      <img src = "/static/img/renfredhaxxor.jpg" alt = "Renfred Haxxor" class = "img-responsive">
+      <div class = "carousel-caption">
+        <h2>Renfred Still Haxxoring</h2>
+        <p>They had begun to consider the Government of the United States as a mere appendage to their own affairs. We know now that Government by organized money is just as dangerous as Government by organized mob.</p>
+      </div>
+    </div>
+
+    <div class = "item">
+      <img src = "/static/img/renfredhaxxor.jpg" alt = "Renfred Haxxor" class = "img-responsive">
+      <div class = "carousel-caption">
+        <h2>Renfred Further Haxxoring</h2>
+        <p>Four Score and Seven Years Ago our fathers brought forth on this continent a new nation, conceived in liberty, and dedicated to the proposition that all men are created equal.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <a class = "carousel-control left" href = "#SRCTCarousel" data-slide = "prev">
+    <span class = "icon-prev"></span>
+  </a>
+
+  <a class = "carousel-control right" href = "#SRCTCarousel" data-slide = "next">
+    <span class = "icon-next"></span>
+  </a>
+
+</div>
     
 <legend><strong>Misson</strong></legend>
 <p><strong>S</strong>tudent-<strong>R</strong>un <strong>C</strong>omputing and
