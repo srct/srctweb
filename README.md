@@ -42,11 +42,14 @@ To-do
 Note-- this should also be on the wiki
 * Logo in navbar
 * Set up the documents with ability to download pdfs and latex files
-* Figure out intellectual property with GMU
-* finish writing privacy policy
 * Logo image download permalinks
 * Use real links, not the direct file locations (yes, I know that's going to be really annoying to fix-- sorry)
 * add piwik opt out link
+* set some stuff up, e.g. with the people page, so adding new individuals doesn't involve touching the template
+
+Further Requirements
+* Figure out intellectual property with GMU
+* finish writing privacy policy
 
 EVENTS AND MEETING NOTES
 * **note: events and meeting notes might be on the wiki page... undecided**
