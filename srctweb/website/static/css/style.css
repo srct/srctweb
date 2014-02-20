@@ -41,6 +41,10 @@ a[name] {
   border-radius: 5px;
 }
 
+.srctlogo {
+  width: 10px;
+}
+
 .smidge {
   padding-bottom: 10px;
 }

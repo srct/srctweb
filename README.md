@@ -40,7 +40,7 @@ To-do
 ---
 
 Note-- this should also be on the wiki
-* Logo in navbar
+* white transparent logo in navbar
 * Set up the documents with ability to download pdfs and latex files
 * Logo image download permalinks
 * add piwik opt out link
