@@ -48,7 +48,7 @@ SRCT | Docs | Privacy Policy
 	Should any portion of this privacy policy be deemed unenforceable, all its other terms will nevertheless remain in full force and effect.
 	Many of our projects require GMU user account authentication, and therefore by design not aimed at minors under the age of thirteen. For the others, please contact us if you believe someone twelve or younger is using our site without parental consent.
         We're from Fairfax, Virginia, United States and are subject to law within its jurisdiction.
-        We may revise this policy; when we make, at our discretion, assignficant change, we will display a prominent link to the change on the front page of our site. Please <a href="/contact">contact us</a> with any questions, comments, or concerns.</p>
+        We may revise this policy; when we make, at our discretion, assignficant change, we will display a prominent link to the change on the front page of our site. Please <a href="{{ url_for('contact') }}">contact us</a> with any questions, comments, or concerns.</p>
       </div>
     </div>
 </div>
@@ -58,13 +58,13 @@ SRCT | Docs | Privacy Policy
     <h4 id="nav-pills"><strong>Documents</strong></h4>
     <div class="bs-example">
       <ul class="nav nav-pills">
-        <li><a href="/documents/constitution">Constitution</a></li>
-        <li><a href="/documents/usage_policy">Usage Policy</a></li>
-        <li><a href="/documents/terms_of_service">Terms of Service</a></li>
-        <li class="active"><a href="/documents/privacy_policy">Privacy Policy</a></li>
-        <li><a href="/documents/intellectual_property">Intellectual Property</a></li>
-        <li><a href="/documents/software_freedom">Software Freedom</a></li>
-        <li><a href="/documents/logos">Logos</a></li>
+        <li><a href="{{ url_for('constitution') }}">Constitution</a></li>
+        <li><a href="{{ url_for('usagePolicy') }}">Usage Policy</a></li>
+        <li><a href="{{ url_for('termsOfService') }}">Terms of Service</a></li>
+        <li class="active"><a href="{{ url_for('privacyPolicy') }}">Privacy Policy</a></li>
+        <li><a href="{{ url_for('intellectualProperty') }}">Intellectual Property</a></li>
+        <li><a href="{{ url_for('softwareFreedom') }}">Software Freedom</a></li>
+        <li><a href="{{ url_for('logos') }}">Logos</a></li>
       </ul>
     </div>
 

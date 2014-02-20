@@ -19,7 +19,7 @@ SRCT | Docs | Terms of Service
   free time. Sometimes a project may require additional terms, and those
   terms will be listed on the project's site. Those terms become part of
   your agreement with us when you use those projects. If you have any
-  questions, please <a href="/contact">contact us</a> before accessing our
+  questions, please <a href="{{ url_for 'termsOfService' }}">contact us</a> before accessing our
   services. :-) Use of our projects constitutes your agreement to these
   terms, and your acknowledgement that you are legally able to form a
   binding contract.</p>
@@ -34,7 +34,7 @@ SRCT | Docs | Terms of Service
 	<p>Many of our services have
 	<a href="https://en.wikipedia.org/wiki/Application_programming_interface">
 	APIs</a>, and you can get backend access to our projects by coming to
-	<a href="/calendar">meetings</a> for questions or help, so please
+	<a href="{{ url_for('calendar') }}">meetings</a> for questions or help, so please
 	don't try to access, disrupt, or otherwise interfere with our
 	projects in a way we don't intend. It takes a lot of work to keep
 	our projects running as it is. Because we are hosted on GMU machines,
@@ -75,7 +75,7 @@ SRCT | Docs | Terms of Service
 	<p><strong>Privacy Policy</strong></p>
 	<p>We may send service announcements and other information to users.
 	You will be able to opt out of these emails. Please see our
-	<a href="/documents/privacy_policy">privacy policy</a> for more
+	<a href="{{ url_for('privacyPolicy') }}">privacy policy</a> for more
 	about how we use and keep confidential your personal information.</p>
 	<p><strong>User Rights</strong></p>
 	<p>Use of our projects does not confer SRCT membership.</p>
@@ -176,13 +176,13 @@ SRCT | Docs | Terms of Service
     <h4 id="nav-pills"><strong>Documents</strong></h4>
     <div class="bs-example">
       <ul class="nav nav-pills">
-        <li><a href="/documents/constitution">Constitution</a></li>
-        <li><a href="/documents/usage_policy">Usage Policy</a></li>
-        <li class="active"><a href="/documents/terms_of_service">Terms of Service</a></li>
-        <li><a href="/documents/privacy_policy">Privacy Policy</a></li>
-        <li><a href="/documents/intellectual_property">Intellectual Property</a></li>
-        <li><a href="/documents/software_freedom">Software Freedom</a></li>
-        <li><a href="/documents/logos">Logos</a></li>
+		<li><a href="{{ url_for('constitution') }}">Constitution</a></li>
+        <li><a href="{{ url_for('usagePolicy') }}">Usage Policy</a></li>
+        <li class="active"><a href="{{ url_for('termsOfService') }}">Terms of Service</a></li>
+        <li><a href="{{ url_for('privacyPolicy') }}">Privacy Policy</a></li>
+        <li><a href="{{ url_for('intellectualProperty') }}">Intellectual Property</a></li>
+        <li><a href="{{ url_for('softwareFreedom') }}">Software Freedom</a></li>
+        <li><a href="{{ url_for('logos') }}">Logos</a></li>  
       </ul>
     </div>
 

@@ -65,13 +65,13 @@ SRCT | Docs | Software Freedom
     <h4 id="nav-pills"><strong>Documents</strong></h4>
     <div class="bs-example">
       <ul class="nav nav-pills">
-        <li><a href="/documents/constitution">Constitution</a></li>
-        <li><a href="/documents/usage_policy">Usage Policy</a></li>
-        <li><a href="/documents/terms_of_service">Terms of Service</a></li>
-        <li><a href="/documents/privacy_policy">Privacy Policy</a></li>
-        <li><a href="/documents/intellectual_property">Intellectual Property</a></li>
-        <li class="active"><a href="/documents/software_freedom">Software Freedom</a></li>
-        <li><a href="/documents/logos">Logos</a></li>
+		<li><a href="{{ url_for('constitution') }}">Constitution</a></li>
+        <li><a href="{{ url_for('usagePolicy') }}">Usage Policy</a></li>
+        <li><a href="{{ url_for('termsOfService') }}">Terms of Service</a></li>
+        <li><a href="{{ url_for('privacyPolicy') }}">Privacy Policy</a></li>
+        <li><a href="{{ url_for('intellectualProperty') }}">Intellectual Property</a></li>
+        <li class="active"><a href="{{ url_for('softwareFreedom') }}">Software Freedom</a></li>
+        <li><a href="{{ url_for('logos') }}">Logos</a></li>
       </ul>
     </div>
 
