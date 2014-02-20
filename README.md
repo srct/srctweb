@@ -40,15 +40,18 @@ To-do
 ---
 
 Note-- this should also be on the wiki
+
+**Must Be Done Before Beta Release**
 * white transparent logo in navbar
-* Set up the documents with ability to download pdfs and latex files
 * Logo image download permalinks
-* add piwik opt out link
+
+**Also Needs to Be Done**
+* fix the css so there's the nicer titles on all the pages
 * set some stuff up, e.g. with the people page, so adding new individuals doesn't involve touching the template
 * higher quality photo for the front page, carosel through pictures
-
-Further Requirements
 * Figure out intellectual property with GMU
+* add piwik opt out link
+* Set up the documents with ability to download pdfs and latex files
 * finish writing privacy policy
 
 EVENTS AND MEETING NOTES
