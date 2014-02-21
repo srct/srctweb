@@ -42,6 +42,7 @@ To-do
 Note-- this should also be on the wiki
 
 **Must Be Done Before Beta Release**
+BETA DONE:: DROP MIC
 only review by peers
 
 **Also Needs to Be Done**
