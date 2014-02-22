@@ -48,3 +48,10 @@ a[name] {
 .smidge {
   padding-bottom: 10px;
 }
+
+.people-left {
+  padding-left:0;
+}
+.people-right {
+  padding-right:0;
+}
