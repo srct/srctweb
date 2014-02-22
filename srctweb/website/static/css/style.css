@@ -48,10 +48,37 @@ a[name] {
 .smidge {
   padding-bottom: 10px;
 }
-
 .people-left {
   padding-left:0;
+  padding-right:0;
 }
 .people-right {
   padding-right:0;
+  padding-left:0;
+}
+@media(min-width:992px){
+  .people-left {
+    padding-right:15px;
+  }
+  .people-right {
+    padding-left:15px;
+  }
+}
+/**
+* A cool little hack I found to try to allow a responsive Google Cal:
+* http://themeloom.com/2013/02/tips-embed-google-maps-and-calendars-in-a-responsive-wordpress-theme/
+**/
+.googlecal-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+.googlecal-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
