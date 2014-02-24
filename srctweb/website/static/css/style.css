@@ -82,3 +82,32 @@ a[name] {
     width: 100%;
     height: 100%;
 }
+
+/** Projects Page **/
+.project-entry {
+  margin-bottom:10px;
+}
+.project-icon {
+  margin: 0 auto;
+  display: block;
+  height: 200px
+}
+.project-role {
+  width: 150px;
+  display: inline-block;
+  color: #3c4042;
+  font-weight: bold;
+  display: inline-block;
+  text-align: left;
+  background: transparent;
+  font-size: 0.9em;
+}
+.project-text {
+  margin-top:10px;
+  padding-bottom:15px;
+}
+#banner {
+  background: pink;
+  width: 100%;
+  margin-bottom: 15px
+}

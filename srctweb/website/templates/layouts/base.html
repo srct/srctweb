@@ -39,14 +39,27 @@
     <div id="wrap">
     {% include 'layouts/navbar.html' %}
 
+    {% if renderHead %}
+    <div id="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 page-header">
+            <h1><strong> {% block pagetitle %} {% endblock %}</strong></h1>
+            <p class="lead"> {% block description %} {% endblock %} </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    
      {% block jumbotron %}
      {% endblock %}
 
-      <div class="container">
+    <div class="container">
         {% block content %}
         {% endblock %}
-      </div>
 
+    </div>
     </div>
 
     <div id="footer">
