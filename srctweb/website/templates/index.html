@@ -4,57 +4,46 @@
 SRCT
 {% endblock %}
 
-{% block content %}
-
-<div id = "SRCTCarousel" class="carousel slide">
-  
+{% block jumbotron %}
+<div id="SRCTCarousel" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
-    <li data-target = "#SRCTCarousel" data-slide-to = "0" class = "active"></li>
-    <li data-target = "#SRCTCarousel" data-slide-to = "1"></li>
-    <li data-target = "#SRCTCarousel" data-slide-to = "2"></li>
+    <li data-target="#SRCTCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#SRCTCarousel" data-slide-to="1"></li>
+    <li data-target="#SRCTCarousel" data-slide-to="2"></li>
   </ol>
-  
-  <div class = "carousel-inner">
+  <div class="carousel-inner">
 
-    <div class = "item active">
-      <img src = "/static/img/renfredhaxxor_large.png" alt = "Renfred Haxxor" class = "img-responsive visible-lg">
-      <img src = "/static/img/renfredhaxxor_medium.png" alt = "Renfred Haxxor" class = "img-responsive visible-md visible-sm visible-xs">
-      <div class = "carousel-caption">
-        <h2>Renfred Haxxoring</h2>
-        <p class="visible-lg visible-md">Renfred hacking away at SRCT's most popular project: WhatsOpen.</p>
+    <div class="item active">
+      <img src="/static/img/renfredhaxxor_large.png" alt="First slide">
+      <div class="carousel-caption transparency">
+        <h1>Student-Run Computing and Technology</h1>
       </div>
     </div>
 
-    <div class = "item">
-      <img src = "/static/img/2013firstmeet_large.png" alt = "First Meeting 2013-2014" class = "img-responsive visible-lg">
-      <img src = "/static/img/2013firstmeet_medium.png" alt = "First Meeting 2013-2014" class = "img-responsive visible-md visible-sm visible-xs">
-      <div class = "carousel-caption">
-        <h2>First Meeting 2013-2014</h2>
-        <p class="visible-lg visible-md">The first meeting of the school year.</p>
+    <div class="item">
+      <img src="/static/img/2013firstmeet_large.png" alt="Second slide">
+      <div class="carousel-caption transparency">
+        <h1>Student-Run Computing and Technology</h1>
       </div>
     </div>
 
-    <div class = "item">
-      <img src = "/static/img/bradhaxxor_large.png" alt = "Renfred Haxxor" class = "img-responsive visible-lg">
-      <img src = "/static/img/bradhaxxor_medium.png" alt = "Renfred Haxxor" class = "img-responsive visible-md visible-sm visible-xs">
-      <div class = "carousel-caption">
-        <h2>Server Troubleshooting</h2>
-        <p class="visible-lg visible-md">Brad troubleshooting the server donated by the University.</p>
+    <div class="item">
+      <img src="/static/img/bradhaxxor_large.png" alt="Third slide">
+      <div class="carousel-caption transparency">
+        <h1>Student-Run Computing and Technology</h1>
       </div>
     </div>
-
   </div>
 
-  <a class = "carousel-control left" href = "#SRCTCarousel" data-slide = "prev">
-    <span class = "icon-prev"></span>
-  </a>
-
-  <a class = "carousel-control right" href = "#SRCTCarousel" data-slide = "next">
-    <span class = "icon-next"></span>
-  </a>
-
+  <a class="left carousel-control" href="#SRCTCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+  <a class="right carousel-control" href="#SRCTCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 </div>
-    
+
+{% endblock %}
+
+
+{% block content %}
+
 <legend><strong>Misson</strong></legend>
 <p><strong>S</strong>tudent-<strong>R</strong>un <strong>C</strong>omputing and
 <strong>T</strong>echnology (SRCT, pronounced "<em>circuit</em>") is a student
