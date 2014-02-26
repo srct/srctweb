@@ -53,15 +53,9 @@ only review by peers
 * add piwik opt out link
 * Set up the documents with ability to download pdfs and latex files
 * finish writing privacy policy
+* the meetings page links to the wiki (is this good usability? does anyone go on the page to find old meeting notes? We should weigh deleting it
+* Events links to hackmason
 
-EVENTS AND MEETING NOTES
-* **note: events and meeting notes might be on the wiki page... undecided**
-* The meeting page needs to have forms for the secretary to take notes, and pagination
-* RSS feed for the meeting notespage
-* Add stuff to the events page-- same idea as meeting page, forms, pagination, and RSS
-* Requires being able to log in in order for the secretary to take notes, etc
-
-About GMU SRCT
 ---
 
 **S**tudent - **R**un **C**omputing and **T**echnology (*SRCT*, pronounced "circuit") is a student organization at George Mason University which enhances student computing at Mason. SRCT establishes and maintains systems which provide specific services for Mason's community.
