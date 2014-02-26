@@ -2,19 +2,19 @@
   <div class="row">
   <small>
     <div class="col-lg-12 text-center">
-      A <a href="http://srct.gmu.edu/projects">project</a> of
+      A <a href="{{ url_for('projects') }}">project</a> of
       <a href="https://www.gmu.edu">Mason</a>
-      <a href="/">SRCT</a>. Read
-      <a href="http://wiki.srct.gmu.edu/wiki/index.php/SRCTweb">documentation</a>
-      and <a href="https://www.gnu.org/licenses/gpl-3.0.html">contribute</a>
-      to <a href="http://git.gmu.edu/srct/srctweb">our code</a>.
-      Our <a href="{{ url_for('usagePolicy')}}">Usage Policy</a>,
-      <a href="{{ url_for('termsOfService')}}">Terms of Service</a>,
-      <a href="{{ url_for('privacyPolicy')}}">Privacy Policy</a>, and
-      <a href="{{ url_for('constitution')}}">Constitution</a>.
-      <a href="{{ url_for('contact')}}">Contact</a> Us.
+      <a href="/">SRCT</a>,
       <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">
-      CC-BY-SA</a> 2014 Mason SRCT.
+      CC-BY-SA</a> 2014.
+      <a href="{{ url_for('contact') }}">Contact</a> Us.
+      Our <a href="{{ url_for('constitution') }}">Constitution</a>
+      and <a href="{{ url_for('termsOfService') }}">Terms</a> &
+      <a href="{{ url_for('privacyPolicy') }}">Privacy</a>.
+      Read <a href="http://wiki.srct.gmu.edu/wiki/index.php/SRCTweb">docs</a>
+      and <a href="https://www.gnu.org/licenses/gpl-3.0.html">contribute</a>
+      to <a href="{{ url_for('softwareFreedom') }}">our</a>
+      <a href="http://git.gmu.edu/srct/srctweb">code</a>.
     </div>
   </small>
 </div>
