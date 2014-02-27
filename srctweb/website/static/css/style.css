@@ -22,8 +22,11 @@ a[name] {
   height: 40px;
   background-color: #f5f5f5;
 }
+.jumbostyle{
+  height:50px;
+}
 .carousel {
-  height: 450px;
+  height: 400px;
   margin-bottom: 30px;
 }
 .carousel-caption {
@@ -31,7 +34,7 @@ a[name] {
   margin-bottom: 30px;
 }
 .carousel .item {
-  height: 450px;
+  height: 400px;
 }
 .carousel-inner > .item > img {
   width: 100%;
