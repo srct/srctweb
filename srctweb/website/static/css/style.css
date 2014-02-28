@@ -22,29 +22,17 @@ a[name] {
   height: 40px;
   background-color: #f5f5f5;
 }
-.carousel-background2 {
-  background: url('/static/img/2013firstmeet_large.png') no-repeat;
-  display: block;
-  width: 100%;
-  background-position: center;
+.jumbostyle {
+  background: url(/static/img/renfredhaxxor.png) no-repeat;
   background-size: cover;
+  background-position: 20%;
+  box-shadow: inset 0px 0px 20px #333;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
-.carousel {
-  height: 400px;
-  margin-bottom: 30px;
-}
-.carousel-caption {
-  z-index: 1;
-  margin-bottom: 30px;
-}
-.carousel .item {
-  height: 400px;
-}
-/* .carousel-inner > .item > img {
-  width: 100%;
-}*/
 .transparency {
   background-color: rgba(256,256,256,0.6);
+  padding: 5px 0px 5px 0px;
   border-radius: 5px;
 }
 .srctlogo {
