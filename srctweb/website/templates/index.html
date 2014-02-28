@@ -6,14 +6,22 @@ SRCT
 
 {% block jumbotron %}
 
-<div class="jumbotron jumbostyle">
-  <div class="container">
-    <div class="text-center transparency">
-      <h1><strong>SRCT</strong></h1>
-      <p><h2>Student-Run Computing and Technology</h2></p>
+<!-- <ul id="jumboparallax">
+
+  <li class="layer" data-depth="0.50"> -->
+    <div class="jumbotron jumbostyle">
+
+      <!-- <li class="layer" data-depth="0.00"> -->
+        <div class="text-center transparency">
+          <h1><strong>SRCT</strong></h1>
+          <p><h2>Student-Run Computing and Technology</h2></p>
+        </div>
+      <!-- </li> -->
+
     </div>
-  </div><!--container-->
-</div>
+<!--  </li>
+
+</ul> -->
 
 {% endblock %}
 
@@ -52,5 +60,10 @@ get in touch are on our <a href="{{ url_for('contact') }}">contact page</a>.</p>
 out our <a href="{{ url_for('calendar') }}">calendar</a>, or visit our
 <a href="https://www.facebook.com/MasonSRCT">Facebook</a> or
 <a href="https://www.twitter.com/MasonSRCT">Twitter</a> pages.</p>
+
+<!-- <script src="/static/js/parallax.min.js"></script>
+
+var scene = document.getElementById('jumboparallax');
+var parallax = new Parallax(jumboparallax); -->
 
 {% endblock %}

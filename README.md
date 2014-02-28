@@ -48,7 +48,7 @@ only review by peers
 **Also Needs to Be Done**
 * fix the css so there's the nicer titles on all the pages
 * set some stuff up, e.g. with the people page, so adding new individuals doesn't involve touching the template
-* Fix carousel through pictures on front page
+* Figure out parallaxjs (use jquery) for front page
 * Figure out intellectual property with GMU
 * add piwik opt out link
 * Set up the documents with ability to download pdfs and latex files
