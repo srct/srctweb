@@ -23,7 +23,8 @@ a[name] {
   background-color: #f5f5f5;
 }
 .carousel-background2 {
-  background: url(/static/img/2013firstmeet_large.png) no-repeat;
+  background: url('/static/img/2013firstmeet_large.png') no-repeat;
+  display: block;
   width: 100%;
   background-position: center;
   background-size: cover;
