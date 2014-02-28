@@ -22,8 +22,11 @@ a[name] {
   height: 40px;
   background-color: #f5f5f5;
 }
-.jumbostyle{
-  height:50px;
+.carousel-background2 {
+  background: url(/static/img/2013firstmeet_large.png) no-repeat;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
 }
 .carousel {
   height: 400px;
@@ -36,9 +39,9 @@ a[name] {
 .carousel .item {
   height: 400px;
 }
-.carousel-inner > .item > img {
+/* .carousel-inner > .item > img {
   width: 100%;
-}
+}*/
 .transparency {
   background-color: rgba(256,256,256,0.6);
   border-radius: 5px;

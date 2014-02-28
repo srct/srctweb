@@ -6,43 +6,54 @@ SRCT
 
 {% block jumbotron %}
 
-<div class="jumbotron jumbostyle">
+<div class="row">
   <div class="text-center">
     <h1>Student-Run Computing and Technology</h1>
   </div>
 </div>
 
 <div id="SRCTCarousel" class="carousel slide" data-ride="carousel">
+
   <ol class="carousel-indicators">
     <li data-target="#SRCTCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#SRCTCarousel" data-slide-to="1"></li>
     <li data-target="#SRCTCarousel" data-slide-to="2"></li>
   </ol>
+  
   <div class="carousel-inner">
 
     <div class="item active">
       <img src="/static/img/renfredhaxxor_large.png" alt="First slide">
-      <div class="carousel-caption">
-        <h1>Learn more about development.</h1>
-	<p>Sweet, development!</p>
+      <div class="container">
+        <div class="carousel-caption hidden-xs">
+          <h1>learn more about development.</h1>
+          <p>sweet, development!</p>
+        </div>
       </div>
     </div>
 
     <div class="item">
-      <img src="/static/img/2013firstmeet_large.png" alt="Second slide">
-      <div class="carousel-caption">
-        <h1>Meet tons of great people.</h1>
-	<p>Because we're cool.</p>
+      <!-- <img src="/static/img/2013firstmeet_large.png" alt="Second slide"> -->
+      <div class="carousel-background2">
+      <div class="container">
+        <div class="carousel-caption hidden-xs">
+          <h1>Meet tons of great people.</h1>
+          <p>Because we're cool.</p>
+        </div>
+      </div>
       </div>
     </div>
 
     <div class="item">
       <img src="/static/img/bradhaxxor_large.png" alt="Third slide">
-      <div class="carousel-caption">
-        <h1>Even work on hardware.</h1>
-	<p>Yeah, hardware's pretty cool.</p>
+      <div class="container">
+        <div class="carousel-caption hidden-xs">
+          <h1>Even work on hardware.</h1>
+          <p>Yeah, hardware's pretty cool.</p>
+        </div>
       </div>
     </div>
+
   </div>
 
   <a class="left carousel-control" href="#SRCTCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
