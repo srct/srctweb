@@ -53,7 +53,6 @@ only review by peers
 * add piwik opt out link
 * Set up the documents with ability to download pdfs and latex files
 * finish writing privacy policy
-* the meetings page links to the wiki (is this good usability? does anyone go on the page to find old meeting notes? We should weigh deleting it
 * Events links to hackmason
 
 ---
