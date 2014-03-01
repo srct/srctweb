@@ -56,19 +56,17 @@ Privacy Policy
   
   <div class="col-sm-2 hidden-xs">
 
-    <h4 id="nav-pills"><strong>Documents</strong></h4>
-    <div class="bs-example">
-      <ul class="nav nav-pills">
-        <li><a href="{{ url_for('constitution') }}">Constitution</a></li>
-        <li><a href="{{ url_for('usagePolicy') }}">Usage Policy</a></li>
-        <li><a href="{{ url_for('termsOfService') }}">Terms of Service</a></li>
-        <li class="active"><a href="{{ url_for('privacyPolicy') }}">Privacy Policy</a></li>
-        <li><a href="{{ url_for('intellectualProperty') }}">Intellectual Property</a></li>
-        <li><a href="{{ url_for('softwareFreedom') }}">Software Freedom</a></li>
-        <li><a href="{{ url_for('logos') }}">Logos</a></li>
-      </ul>
-    </div>
-
+    <h4><strong>Documents</strong></h4>
+      <div class="list-group">
+        <a href="{{ url_for('constitution') }}" class="list-group-item">Constitution</a>
+        <a href="{{ url_for('usagePolicy') }}" class="list-group-item">Usage Policy</a>
+        <a href="{{ url_for('termsOfService') }}" class="list-group-item">Terms of Service</a>
+        <a href="{{ url_for('privacyPolicy') }}" class="list-group-item active">Privacy Policy</a>
+        <a href="{{ url_for('intellectualProperty') }}" class="list-group-item">Intellectual Property</a>
+        <a href="{{ url_for('softwareFreedom') }}" class="list-group-item">Software Freedom</a>
+        <a href="{{ url_for('logos') }}" class="list-group-item">Logos</a>
+      </div>
+  
   </div>
 
 </div>

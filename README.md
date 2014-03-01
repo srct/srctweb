@@ -46,22 +46,14 @@ BETA DONE:: DROP MIC
 only review by peers
 
 **Also Needs to Be Done**
-* fix the css so there's the nicer titles on all the pages
 * set some stuff up, e.g. with the people page, so adding new individuals doesn't involve touching the template
-* Fix carousel through pictures on front page
+* Figure out parallaxjs (use jquery) for front page
 * Figure out intellectual property with GMU
 * add piwik opt out link
 * Set up the documents with ability to download pdfs and latex files
 * finish writing privacy policy
+* affix js for documents navigation
 
-EVENTS AND MEETING NOTES
-* **note: events and meeting notes might be on the wiki page... undecided**
-* The meeting page needs to have forms for the secretary to take notes, and pagination
-* RSS feed for the meeting notespage
-* Add stuff to the events page-- same idea as meeting page, forms, pagination, and RSS
-* Requires being able to log in in order for the secretary to take notes, etc
-
-About GMU SRCT
 ---
 
 **S**tudent - **R**un **C**omputing and **T**echnology (*SRCT*, pronounced "circuit") is a student organization at George Mason University which enhances student computing at Mason. SRCT establishes and maintains systems which provide specific services for Mason's community.

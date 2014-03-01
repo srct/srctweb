@@ -25,18 +25,6 @@ def documents():
         renderHead = True,
     )
 
-@website.route('/events/')
-def events():
-    return render_template("events.html",
-        renderHead = True,
-    )
-
-@website.route('/meetings/')
-def meetings():
-    return render_template("meetings.html",
-        renderHead = True,
-    )
-
 @website.route('/people/')
 def people():
     return render_template("people.html",
