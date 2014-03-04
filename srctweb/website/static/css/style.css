@@ -83,9 +83,9 @@ a[name] {
 .project-icon {
   text-align:center;
   display: block;
-  font-size:150px;
+  font-size:130px;
   margin:0 auto;
-  height: 150px
+  padding-bottom: 10px;
 }
 .project-role {
   width: 150px;
