@@ -81,8 +81,10 @@ a[name] {
   margin-bottom:10px;
 }
 .project-icon {
-  margin: 0 auto;
+  text-align:center;
   display: block;
+  font-size:150px;
+  margin:0 auto;
   height: 150px
 }
 .project-role {
