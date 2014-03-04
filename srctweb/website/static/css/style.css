@@ -81,9 +81,11 @@ a[name] {
   margin-bottom:10px;
 }
 .project-icon {
-  margin: 0 auto;
+  text-align:center;
   display: block;
-  height: 200px
+  height: 200px;
+  font-size:200px;
+  margin:0 auto;
 }
 .project-role {
   width: 150px;
