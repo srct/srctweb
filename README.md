@@ -34,7 +34,7 @@ Open a terminal window and type in the following commands. (If you're on Windows
 ``cd srctweb/``
 ``pip install -r requirements.txt``
 ``cd srctweb/``
-``python run.py``
+``python srctweb.py``
 
 To-do
 ---
