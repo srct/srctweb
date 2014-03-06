@@ -52,7 +52,7 @@ only review by peers
 * add piwik opt out link
 * Set up the documents with ability to download pdfs and latex files
 * finish writing privacy policy
-* affix js for documents navigation
+* affix js for documents navigation-- example http://www.bootstrapzero.com/bootstrap-template/affix-sidebar
 
 ---
 
