@@ -34,7 +34,13 @@ def people():
 @website.route('/projects/')
 def projects():
     return render_template("projects.html",
-       renderHead = True,
+        renderHead = True,
+    )
+
+@website.route('/opt-out/')
+def optOut():
+    return render_template("privacy_opt_out.html",
+    
     )
 
 ### DOCUMENTS ###
