@@ -46,15 +46,12 @@ BETA DONE:: DROP MIC
 only review by peers
 
 **Also Needs to Be Done**
-* fix the css so there's the nicer titles on all the pages
 * set some stuff up, e.g. with the people page, so adding new individuals doesn't involve touching the template
-* Fix carousel through pictures on front page
+* Figure out parallaxjs (use jquery) for front page
 * Figure out intellectual property with GMU
 * add piwik opt out link
-* Set up the documents with ability to download pdfs and latex files
 * finish writing privacy policy
-* the meetings page links to the wiki (is this good usability? does anyone go on the page to find old meeting notes? We should weigh deleting it
-* Events links to hackmason
+* affix js for documents navigation-- example http://www.bootstrapzero.com/bootstrap-template/affix-sidebar
 
 ---
 

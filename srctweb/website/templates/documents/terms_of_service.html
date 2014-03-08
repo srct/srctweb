@@ -3,15 +3,14 @@
 SRCT | Docs | Terms of Service
 {% endblock %}
 
-{% block content %}
-<div class="page-header" id="banner">
-  <div class="row">
-    <div class="col-md-10 text-center">
-      <h1><strong>Terms of Service</strong></h1>
-    </div>
-  </div>
-</div>
+{% block pagetitle %}
+Terms of Service
+{% endblock %}
+{% block description %}
 
+{% endblock %}
+
+{% block content %}
 <div class="row">
   <div class="col-sm-10">
 
@@ -92,7 +91,7 @@ SRCT | Docs | Terms of Service
 	will refer copyright matters to relevant Mason copyright and honor
 	code offices.</p>
 	<p>Otherwise, all content, be it publicly or private posted, is the
-	sole responsibilty of the person from whom it originated. We do
+	sole responsibilty of the person from whom it originated. We do not
 	guarantee the accuracy or reliabilty of any information posted by
 	people such as yourself. You retain the rights to your content as long
 	as George Mason University allows you to log in through their
@@ -174,19 +173,17 @@ SRCT | Docs | Terms of Service
   
   <div class="col-sm-2 hidden-xs">
 
-    <h4 id="nav-pills"><strong>Documents</strong></h4>
-    <div class="bs-example">
-      <ul class="nav nav-pills">
-		<li><a href="{{ url_for('constitution') }}">Constitution</a></li>
-        <li><a href="{{ url_for('usagePolicy') }}">Usage Policy</a></li>
-        <li class="active"><a href="{{ url_for('termsOfService') }}">Terms of Service</a></li>
-        <li><a href="{{ url_for('privacyPolicy') }}">Privacy Policy</a></li>
-        <li><a href="{{ url_for('intellectualProperty') }}">Intellectual Property</a></li>
-        <li><a href="{{ url_for('softwareFreedom') }}">Software Freedom</a></li>
-        <li><a href="{{ url_for('logos') }}">Logos</a></li>  
-      </ul>
-    </div>
-
+    <h4><strong>Documents</strong></h4>
+      <div class="list-group">
+        <a href="{{ url_for('constitution') }}" class="list-group-item">Constitution</a>
+        <a href="{{ url_for('usagePolicy') }}" class="list-group-item">Usage Policy</a>
+        <a href="{{ url_for('termsOfService') }}" class="list-group-item active">Terms of Service</a>
+        <a href="{{ url_for('privacyPolicy') }}" class="list-group-item">Privacy Policy</a>
+        <a href="{{ url_for('intellectualProperty') }}" class="list-group-item">Intellectual Property</a>
+        <a href="{{ url_for('softwareFreedom') }}" class="list-group-item">Software Freedom</a>
+        <a href="{{ url_for('logos') }}" class="list-group-item">Logos</a>
+      </div>
+  
   </div>
 
 </div>

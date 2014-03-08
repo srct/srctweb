@@ -5,46 +5,36 @@ SRCT
 {% endblock %}
 
 {% block jumbotron %}
-<div id="SRCTCarousel" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#SRCTCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#SRCTCarousel" data-slide-to="1"></li>
-    <li data-target="#SRCTCarousel" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
 
-    <div class="item active">
-      <img src="/static/img/renfredhaxxor_large.png" alt="First slide">
-      <div class="carousel-caption transparency">
-        <h1>Student-Run Computing and Technology</h1>
+<!-- <ul id="jumboparallax">
+
+  <li class="layer" data-depth="0.50"> -->
+    <div class="jumbotron jumbostyle">
+
+      <!-- <li class="layer" data-depth="0.00"> -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-offset-1 col-md-10">
+            <div class="text-center transparency">
+              <h1><strong>SRCT</strong></h1>
+              <p><h2>Student-Run Computing and Technology</h2></p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+      <!-- </li> -->
 
-    <div class="item">
-      <img src="/static/img/2013firstmeet_large.png" alt="Second slide">
-      <div class="carousel-caption transparency">
-        <h1>Student-Run Computing and Technology</h1>
-      </div>
     </div>
+<!--  </li>
 
-    <div class="item">
-      <img src="/static/img/bradhaxxor_large.png" alt="Third slide">
-      <div class="carousel-caption transparency">
-        <h1>Student-Run Computing and Technology</h1>
-      </div>
-    </div>
-  </div>
-
-  <a class="left carousel-control" href="#SRCTCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-  <a class="right carousel-control" href="#SRCTCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-</div>
+</ul> -->
 
 {% endblock %}
 
 
 {% block content %}
 
-<legend><strong>Misson</strong></legend>
+<legend><i class="fa fa-bullhorn fa-fw"></i>&nbsp;<strong>Mission</strong></legend>
 <p><strong>S</strong>tudent-<strong>R</strong>un <strong>C</strong>omputing and
 <strong>T</strong>echnology (SRCT, pronounced "<em>circuit</em>") is a student
 organization at <a href="https://www.gmu.edu/">George Mason University</a> which
@@ -54,27 +44,33 @@ that provide specific services for Mason's community.</p>
 share their knowledge, and build really neat projects for the benefit of everyone
 at Mason. See some of the ways we've improved life on campus on the <a href="{{ url_for('projects') }}">projects page</a>.</p>
 
-<legend><strong>Getting Involved</strong></legend>
+<legend><i class="fa fa-laptop fa-fw"></i>&nbsp;<strong>Getting Involved</strong></legend>
 <p>To learn more about SRCT, check out our
 <a href="{{ url_for('projects') }}">projects</a>, active, under development, or proposed, or talk to one of the
 <a href="{{ url_for('people') }}">members</a>! Technical documentation is
 available on our <a href="http://wiki.srct.gmu.edu">wiki</a>, and all of our
 code is visible on the <a href="http://git.gmu.edu/public">public page</a> of
 our student git repository.</p>
-<p>You can come to any of our planned <a href="{{ url_for('events') }}">events</a>. We hold
+<p>You can come to any of our planned <a href="//hackmason.org">events</a>. We hold
 numerous events each semester, from traveling to hackathons and conferences to
 doing local outreach, holding large programming events, and hosting speakers.</p>
 <p>We're on <a href="https://www.facebook.com/MasonSRCT">Facebook</a> and
 <a href="https://www.twitter.com/MasonSRCT">Twitter</a>, have
-<a href="http://lists.srct.gmu.edu/mailman/listinfo">active mailing lists</a>
+<a href="http://lists.srct.gmu.edu/mailman/listinfo">active mailing lists</a>,
 and an <a href="https://en.wikipedia.org/wiki/Internet_Relay_Chat">IRC</a>
 channel on <a href="https://www.freenode.net/">freenode</a>, #srct. More ways to
 get in touch are on our <a href="{{ url_for('contact') }}">contact page</a>.</p>
 
-<legend><strong>Next Meeting</strong></legend>
-<p>Our next meeting is scheduled for <em>TBA</em>. For more information, check
+<legend><i class="fa fa-gavel fa-fw"></i>&nbsp;<strong>Next Meeting</strong></legend>
+<p>Our next meeting is scheduled for <strong><em>March 15</em></strong>, at 2pm. For more information, check
 out our <a href="{{ url_for('calendar') }}">calendar</a>, or visit our
 <a href="https://www.facebook.com/MasonSRCT">Facebook</a> or
 <a href="https://www.twitter.com/MasonSRCT">Twitter</a> pages.</p>
+
+</div>
+<!-- <script src="/static/js/parallax.min.js"></script>
+
+var scene = document.getElementById('jumboparallax');
+var parallax = new Parallax(jumboparallax); -->
 
 {% endblock %}

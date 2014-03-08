@@ -3,226 +3,268 @@
  SRCT | Projects 
 {% endblock %}
 
+{% block pagetitle %}
+Projects
+{% endblock %}
+{% block description %}
+Projects created and maintained by SRCT's members.
+{% endblock %}
+
 {% block content %}
-<div class="page-header" id="banner">
-  <div class="row">
-    <div class="col-lg-12 text-center">
-      <h1><strong>Projects</strong></h1>
-    </div>
+
+<h4>Make sure to check on <a href="http://wiki.srct.gmu.edu">our wiki</a> for the most up-to date information about SRCT's projects!</h4>
+
+<legend>Deployed</legend>
+
+
+<div class="row">
+  <div class="col-lg-6 project-entry">
+    
+    <i class="fa fa-code-fork project-icon"></i>
+
+    <legend><strong><a href="http://wiki.srct.gmu.edu/wiki/index.php/Git">Git</a></strong>
+    | <a href="http://git.gmu.edu">git.gmu.edu</a></legend>
+
+    <strong class="project-role">Project Manager:</strong>
+      Chris Reffett<br>
+    <strong class="project-role">Developer:</strong>
+      Chris Reffett<br>
+    <strong class="project-role">Repository:</strong>
+      <a href="http://github.com/gitlabhq">github.com/gitlabhq</a>
+
+    <p class="project-text">
+    GitLab is a central host for Git repositories. It's like GitHub, but
+    operated by Mason for Mason. Any student or member of the community may
+    log into it with their Mason NetID. Users may upload code either for
+    private work or public viewing, and may allow others to contribute to their
+    projects.</p>
+  </div>
+  <div class="col-lg-6 project-entry">
+  
+    <i class="fa fa-link project-icon"></i>
+
+    <legend><strong><a href="http://wiki.srct.gmu.edu/wiki/index.php/Go">Go</a></strong>
+    | <a href="http://go.gmu.edu">go.gmu.edu</a></legend>
+
+    <strong class="project-role">Project Manager:</strong>
+      Michel Rouly<br>
+    <strong class="project-role">Developer:</strong>
+      Michel Rouly<br>
+    <strong class="project-role">Repository:</strong>
+      <a href="http://git.gmu.edu/srct/go">git.gmu.edu/srct/go</a><br>
+
+    <p class="project-text">
+      Providing URL shortening would enhance branding when used by
+      organizations in ULife and elsewhere. For example, all shortened links to a
+      gmu.edu website would appear as go.gmu.edu/nHU8oPm instead of bit.ly/nHU8oPm.
+    </p>
   </div>
 </div>
 
 <div class="row">
-  <h2>Deployed</h2>
-</div>
+  <div class="col-lg-6 project-entry">
+    
+    <i class="fa fa-clock-o project-icon"></i>
 
-<div class="row">
-  <legend><strong><a href="http://wiki.srct.gmu.edu/wiki/index.php/Git">Git</a></strong>
-    | <a href="http://git.gmu.edu">git.gmu.edu</a></legend>
-    <div class="col-lg-4 text-center">
-      <span class="label label-default"><strong>Project Manager</strong></span> Chris Reffett
-    </div>
-    <div class="col-lg-4 text-center">
-      <span class="label label-default"><strong>Developers</strong></span> Chris Reffett
-    </div>
-    <div class="col-lg-4 text-center">
-      <span class="label label-default"><strong>Repository</strong></span>
-      <a href="http://github.com/gitlabhq">github.com/gitlabhq</a>
-    </div>
-  <p>GitLab is a central host for Git repositories. It's like GitHub, but
-  operated by Mason for Mason. Any student or member of the community may
-  log into it with their Mason NetID. Users may upload code either for
-  private work or public viewing, and may allow others to contribute to their
-  projects.</p>
-</div>
+    <legend><strong><a href="http://wiki.srct.gmu.edu/wiki/index.php/Whatsopen">Whatsopen</a></strong> 
+    | <a href="http://whatsopen.gmu.edu">whatsopen.gmu.edu</a></legend>
 
-<div class="row">
-  <legend><strong><a href="http://wiki.srct.gmu.edu/wiki/index.php/Whatsopen">Whatsopen</a></strong> 
-  | <a href="http://whatsopen.gmu.edu">whatsopen.gmu.edu</a></legend>
-    <div class="col-lg-4 text-center">
-      <span class="label label-default"><strong>Project Manager</strong></span> Renfred Harper
-    </div>
-    <div class="col-lg-4 text-center">
-      <span class="label label-default"><strong>Developers</strong></span> Renfred Harper, Tyler Hallada, Daniel Bond
-    </div>
-    <div class="col-lg-4 text-center">
-      <span class="label label-default"><strong>Repository</strong></span>
+    <strong class="project-role">Project Manager:</strong>
+      Renfred Harper<br>
+    <strong class="project-role">Developer:</strong>
+      Renfred Harper<br>
+    <strong class="project-role"></strong>
+      Tyler Hallada<br>
+    <strong class="project-role"></strong>
+      Daniel Bond<br>
+    <strong class="project-role">Repository:</strong>
       <a href="http://git.gmu.edu/srct/whatsopen">git.gmu.edu/srct/whatsopen</a>
-    </div>
-  <!-- STOPGAP MEASURE
-       (no pun intended)
-       CHANGE LATER -->
-  <br><br>
-  <p> Provide a list of all currently open dining options in/around campus,
-  kept updated with holidays, etc. Expanding to cover more than dining locations.</p>
+
+    <p class="project-text">
+    Provides a list of all currently open dining options in/around campus,
+    kept updated with holidays, etc. Expanding to cover more than dining locations.</p>
+  </div>
+</div>
+
+<legend>Active</legend>
+
+<div class="row">
+  <div class="col-lg-6 project-entry">
+    
+    <i class="fa fa-road project-icon"></i>
+
+    <legend><strong><a href="http://wiki.srct.gmu.edu/wiki/index.php/Advisor">Advisor</a></strong>
+    | <a href="http://advisor.srct.gmu.edu">advisor.srct.gmu.edu</a></legend>
+
+    <strong class="project-role">Project Manager:</strong>
+      Daniel Bond<br>
+    <strong class="project-role">Developer:</strong>
+      Daniel Bond<br>
+    <strong class="project-role">Repository:</strong>
+      <a href="http://git.gmu.edu/srct/advisor">git.gmu.edu/srct/advisor</a><br>
+
+    <p class="project-text">
+      Advisor is an automatic academic advising system. The goal is to allow
+      students to enter their academic history in a standard form and receive an
+      interactive list of coursework they are required to complete for graduation,
+      as well as possible electives and prerequisite trees. This would not serve
+      as a replacement for in-person academic advisor meetings.
+    </p>
+  </div>
+  <div class="col-lg-6 project-entry">
+    
+    <i class="fa fa-book project-icon"></i>
+
+    <legend><strong><a href="http://wiki.srct.gmu.edu/wiki/index.php/Bookshare">Bookshare</a></strong>
+    | <a href="http://bookshare.srct.gmu.edu">bookshare.srct.gmu.edu</a></legend>
+
+    <strong class="project-role">Project Manager:</strong>
+      Eric Cawi<br>
+    <strong class="project-role">Developer:</strong>
+      Michel Rouly<br>
+    <strong class="project-role"></strong>
+      Eric Cawi<br>
+    <strong class="project-role"></strong>
+      Jonathan Horton<br>
+    <strong class="project-role">Repository:</strong>
+      <a href="http://git.gmu.edu/srct/bookshare">git.gmu.edu/srct/bookshare</a><br>
+
+    <p class="project-text">
+     Bookshare is a platform for textbook transactions, with books searchable
+      by Name, Author, ISBN, and Class.
+    </p>
+  </div>
 </div>
 
 <div class="row">
-  <legend><strong><a href="http://wiki.srct.gmu.edu/wiki/index.php/Go">Go</a></strong>
-  | <a href="http://go.gmu.edu">go.gmu.edu</a></legend>
-    <div class="col-lg-4 text-center">
-      <span class="label label-default"><strong>Project Manager:</strong></span> Michel Rouly
-    </div>
-    <div class="col-lg-4 text-center">
-      <span class="label label-default"><strong>Developers:</strong></span> Michel Rouly
-    </div>
-    <div class="col-lg-4 text-center">
-      <span class="label label-default"><strong>Repository</strong></span>
-      <a href="http://git.gmu.edu/srct/go">git.gmu.edu/srct/go</a>
-    </div>
-  <p>Providing URL shortening would enhance branding when used by
-  organizations in ULife and elsewhere. For example, all shortened links to a
-  gmu.edu website would appear as go.gmu.edu/nHU8oPm instead of bit.ly/nHU8oPm.</p>
-</div>
+  <div class="col-lg-6 project-entry">
+    
+    <i class="fa fa-key project-icon"></i>
 
-<div class="row">
-  <h2>Active</h2>
-</div>
+    <legend><strong><a href="http://wiki.srct.gmu.edu/wiki/HackMason/">PGP</a></strong>
+    | pgp.gmu.edu</legend>
 
-<div class="row">
-  <legend><strong><a href="http://wiki.srct.gmu.edu/wiki/index.php/Bookshare">Bookshare</a></strong>
-  | <a href="http://bookshare.srct.gmu.edu">bookshare.srct.gmu.edu</a></legend>
-    <div class="col-lg-4 text-center">
-      <span class="label label-default"><strong>Project Manager</strong></span> Eric Cawi
-    </div>
-    <div class="col-lg-4 text-center">
-      <span class="label label-default"><strong>Developers</strong></span> Michel Rouly, Eric Cawi, Jonathan Horton
-    </div>
-    <div class="col-lg-4 text-center">
-      <span class="label label-default"><strong>Repository</strong></span>
-      <a href="http://git.gmu.edu/srct/bookshare">git.gmu.edu/srct/bookshare</a>
-    </div>
-  <p>Bookshare is a platform for textbook transactions, with books searchable
-  by Name, Author, ISBN, and Class.</p>
-</div>
+    <strong class="project-role">Project Manager:</strong>
+      Kunal Sarkhel<br>
+    <strong class="project-role">Developer:</strong>
+      Kunal Sarkhel<br>
+    <strong class="project-role">Repository:</strong>
+      Coming soon!<br>
 
-<div class="row">
-  <legend><strong><a href="http://wiki.srct.gmu.edu/wiki/index.php/Advisor">Advisor</a></strong>
-  | <a href="http://advisor.srct.gmu.edu">advisor.srct.gmu.edu</a></legend>
-    <div class="col-lg-4 text-center">
-      <span class="label label-default"><strong>Project Manager</strong></span> Daniel Bond
-    </div>
-    <div class="col-lg-4 text-center">
-      <span class="label label-default"><strong>Developers</strong></span> Daniel Bond
-    </div>
-    <div class="col-lg-4 text-center">
-      <span class="label label-default"><strong>Repository</strong></span>
-      <a href="http://git.gmu.edu/srct/advisor">git.gmu.edu/srct/advisor</a>
-    </div>
-  <p> Advisor is an automatic academic advising system. The goal is to allow
-  students to enter their academic history in a standard form and receive an
-  interactive list of coursework they are required to complete for graduation,
-  as well as possible electives and prerequisite trees. This would not serve
-  as a replacement for in-person academic advisor meetings.</p>
-</div>
+    <p class="project-text">
+      Student organization would manage a GMU public key server. This would
+      start as a proof of concept, but would allow for future exploration to
+      deploy a public key infrastructure for encrypted email or digital signatures
+      for general institutional purposes.
+    </p>
+  </div>
+  <div class="col-lg-6 project-entry">
+    
+    <i class="fa fa-globe project-icon"></i>
 
-<div class="row">
-  <legend><strong><a href="http://wiki.srct.gmu.edu/wiki/index.php/SRCTweb">SRCTweb</a></strong>
-  | <a href="/">srct.gmu.edu</a></legend>
-    <div class="col-lg-4 text-center">
-      <span class="label label-default"><strong>Project Manager</strong></span> Daniel Bond
-    </div>
-    <div class="col-lg-4 text-center">
-      <span class="label label-default"><strong>Developers</strong></span> Daniel Bond
-    </div>
-    <div class="col-lg-4 text-center">
-      <span class="label label-default"><strong>Repository</strong></span>
-      <a href="http://git.gmu.edu/srct/SRCTweb">git.gmu.edu/srct/SRCTweb</a>
-    </div>
-  <p>Improve this site.</p>
-</div>
+    <legend><strong><a href="http://wiki.srct.gmu.edu/wiki/index.php/SRCTweb">SRCTweb</a></strong>
+    | <a href="/">srct.gmu.edu</a></legend>
 
-<div class="row">
-  <legend><strong><a href="http://wiki.srct.gmu.edu/wiki/index.php/Toolbox">Toolbox</a></strong>
-  | toolbox.srct.gmu.edu</legend>
-    <div class="col-lg-4 text-center">
-      <span class="label label-default"><strong>Project Managers</strong></span> Ross Bragg and Kunal Sarkhel
-    </div>
-    <div class="col-lg-4 text-center">
-      <span class="label label-default"><strong>Developers</strong></span> Ross Bragg and Kunal Sarkhel
-    </div>
-    <div class="col-lg-4 text-center">
-      <span class="label label-default"><strong>Repository</strong></span> &#8203; 
-    </div>
-  <p>Toolbox will provide several services to GMU SRCT for managing various
-  systems and services.</p>
-</div>
+    <strong class="project-role">Project Manager:</strong>
+      Daniel Bond<br>
+    <strong class="project-role">Developer:</strong>
+      Daniel Bond<br>
+    <strong class="project-role"></strong>
+      Nicholas Anderson<br>
+    <strong class="project-role">Repository:</strong>
+      <a href="http://git.gmu.edu/srct/SRCTweb">git.gmu.edu/srct/SRCTweb</a><br>
 
-<div class="row">
-  <h2>Proposed</h2>
-</div>
-
-<div class="row">
-  <legend><strong><a href="http://wiki.srct.gmu.edu/wiki/index.php/Mirrors">Mirrors</a></strong>
-  | <a href="http://mirrors.gmu.edu">mirrors.gmu.edu</a></legend>
-    <div class="col-lg-4 text-center">
-      <span class="label label-default"><strong>Project Manager</strong></span> Daniel Bond
-    </div>
-    <div class="col-lg-4 text-center">
-      <span class="label label-default"><strong>Developers</strong></span> Daniel Bond
-    </div>
-    <div class="col-lg-4 text-center">
-      <span class="label label-default"><strong>Repository</strong></span> &#8203; 
-    </div>
-  <p>The org would integrate and expand repo.vse.gmu.edu, which currently
-  hosts a local mirror of open source software. Such software mirrors are
-  currently operated by Virginia Tech, MIT, RIT, University of Nebraska,
-  Georgia Tech, Wheaton College, University of Calgary, and other
-  institutions. This would be coordinated with VSE Computing Resources.</p>
-</div>
-
-<div class="row">
-  <legend><strong><a href="http://wiki.srct.gmu.edu/wiki/index.php/Etherpad">Etherpad</a></strong>
-  | pad.srct.gmu.edu</legend>
-  <p>Etherpad is a realtime collaboration tool recently acquired by Google
-  (http://etherpad.org/). The tool is open source, and is used at schools
-  like MIT, MSU, RIT, and UCLA. This tool would allow members of the Mason
-  community to easily edit documents with their peers, similar to Google Docs.</p>
-</div>
-
-<div class="row">
-  <legend><strong><a href="http://wiki.srct.gmu.edu/wiki/index.php/Maps">Maps</a></strong>
-  | maps.srct.gmu.edu</legend>
-    <div class="col-lg-4 text-center">
-      <span class="label label-default"><strong>Project Manager</strong></span> Kara Mahoney and Ross Bragg
-    </div>
-    <div class="col-lg-4 text-center">
-      <span class="label label-default"><strong>Developers</strong></span> Kara Mahoney and Ross Bragg
-    </div>
-    <div class="col-lg-4 text-center">
-      <span class="label label-default"><strong>Repository</strong></span> &#8203; 
-    </div>
-  <p>An online mapping utility for navigation inside buildings on campus. The
-  university has numerous mapping resources available for students to locate
-  buildings, but none for locating specific rooms and classrooms.</p>
-</div>
-
-<div class="row">
-  <legend><strong><a href="http://wiki.srct.gmu.edu/wiki/index.php/People">People</a></strong>
-  | people.gmu.edu</legend>
-  <p>Want to find out about (currency exchanges | Australian wildlife |
-  software usability | The Second Opium War)? People will build on the
-  functionality in peoplefinder.gmu.edu by allowing students to search for
-  professors by background and expertise, collecting their bios and research
-  currently spread across School and College webpages.</p>
-</div>
-
-<div class="row">
-  <legend><strong><a href="http://wiki.srct.gmu.edu/wiki/index.php/PGP">PGP</a></strong>
-  | pgp.gmu.edu</legend>
-    <div class="col-lg-4 text-center">
-      <span class="label label-default"><strong>Project Manager</strong></span> Kunal Sarkhel
-    </div>
-    <div class="col-lg-4 text-center">
-      <span class="label label-default"><strong>Developers</strong></span> Kunal Sarkhel
-    </div>
-    <div class="col-lg-4 text-center">
-      <span class="label label-default"><strong>Repository</strong></span> &#8203; 
-    </div>
-  <p>Student organization would manage a GMU public key server. This would
-  start as a proof of concept, but would allow for future exploration to
-  deploy a public key infrastructure for encrypted email or digital signatures
-  for general institutional purposes.</p>
-</div>
+    <p class="project-text">
+      SRCT's very own homepage! Help edit this site.
+    </p>
+  </div>
   
+</div>
+
+<div class="row">
+  <div class="col-lg-6 project-entry">
+    
+    <i class="fa fa-wrench project-icon"></i>
+
+    <legend><strong><a href="http://wiki.srct.gmu.edu/wiki/index.php/Toolbox">Toolbox</a></strong>
+    | toolbox.srct.gmu.edu</legend>
+
+    <strong class="project-role">Project Manager:</strong>
+      Ross Bragg<br>
+    <strong class="project-role"></strong>
+      Kunal Sarkhel<br>
+    <strong class="project-role">Developer:</strong>
+      Ross Bragg<br>
+    <strong class="project-role"></strong>
+      Kunal Sarkhel<br>
+    <strong class="project-role">Repository:</strong>
+      Coming soon
+    <p class="project-text">
+      Toolbox will provide several services to GMU SRCT for managing various
+      systems and services. 
+    </p>
+  </div>
+</div>
+
+<legend>Proposed</legend>
+
+<div class="row">
+  <div class="col-lg-6 project-entry">
+    
+    <i class="fa fa-file-text-o project-icon"></i>
+
+    <legend><strong><a href="http://wiki.srct.gmu.edu/wiki/index.php/Etherpad">Etherpad</a></strong>
+    | pad.srct.gmu.edu</legend>
+
+<!--     <strong class="project-role">Project Manager:</strong>
+      Daniel Bond<br>
+    <strong class="project-role">Developer:</strong>
+      Daniel Bond<br>
+    <strong class="project-role">Repository:</strong>
+      Coming soon!<br> -->
+
+    <p class="project-text">
+      Etherpad is a realtime collaboration tool recently acquired by Google (http://etherpad.org/). The tool is open source, and is used at schools like MIT, MSU, RIT, and UCLA. This tool would allow members of the Mason community to easily edit documents with their peers, similar to Google Docs.
+    </p>
+  </div>
+  <div class="col-lg-6 project-entry">
+    
+    <i class="fa fa-arrow-circle-down project-icon"></i>
+
+    <legend><strong><a href="http://wiki.srct.gmu.edu/wiki/index.php/Mirrors">Mirrors</a></strong>
+    | <a href="http://mirrors.gmu.edu">mirrors.gmu.edu</a></legend>
+
+    <strong class="project-role">Project Manager:</strong>
+      Daniel Bond<br>
+    <strong class="project-role">Developer:</strong>
+      Daniel Bond<br>
+
+    <p class="project-text">
+      The org would integrate and expand repo.vse.gmu.edu, which currently
+      hosts a local mirror of open source software. Such software mirrors are
+      currently operated by Virginia Tech, MIT, RIT, University of Nebraska,
+      Georgia Tech, Wheaton College, University of Calgary, and other
+      institutions. This would be coordinated with VSE Computing Resources.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-6 project-entry">
+    
+    <i class="fa fa-users project-icon"></i>
+
+    <legend><strong><a href="http://wiki.srct.gmu.edu/wiki/index.php/People">People</a></strong>
+    | people.gmu.edu</legend>
+
+    <p class="project-text">
+      Want to find out about (currency exchanges | Australian wildlife |
+      software usability | The Second Opium War)? People will build on the
+      functionality in peoplefinder.gmu.edu by allowing students to search for
+      professors by background and expertise, collecting their bios and research
+      currently spread across School and College webpages.
+    </p>
+  </div>
+</div>
+
 {% endblock %}

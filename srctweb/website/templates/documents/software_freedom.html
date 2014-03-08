@@ -3,20 +3,20 @@
 SRCT | Docs | Software Freedom  
 {% endblock %}
 
+{% block pagetitle %}
+Software Freedom
+{% endblock %}
+{% block description %}
+Not free as in free beer, but free as in free speech.
+{% endblock %}
+
 {% block content %}
-<div class="page-header" id="banner">
-  <div class="row">
-    <div class="col-md-10 text-center">
-      <h1><strong>Software Freedom</strong></h1>
-    </div>
-  </div>
-</div>
 
 <div class="row">
   <div class="col-sm-10">
     <p>The promotion of free software at GMU is best left to
     <a href="http://gmulug.com/">Mason Linux User Group</a>, but we explain here
-    what free software is and why it's import to SRCT.</p>
+    what free software is and why it's important to SRCT.</p>
 
     <blockquote>
     <p>"Free software" means software that respects users' freedom and community.
@@ -31,11 +31,11 @@ SRCT | Docs | Software Freedom
     </blockquote>
 
     <p>SRCT creates and provides services for the benefit our school. One of those
-    benefits is providing opportunities for everyone to contribute on our projects.
-    Not only does this provide students the chance to learn from experience, from
-    each other, and foster a sense of community, and not only do we believe that
-    our collective knowledge can build and deploy better projects than anyone could
-    individually, but that free computing is an ideal of
+    benefits is providing the opportunity for everyone to contribute to our
+    projects, giving students the chance to learn from experience, from each other,
+    and to foster a sense of community. We believe our collective knowledge can
+    build and deploy better projects than anyone could individually, but we
+    believe that free computing is an ideal of
     <a href="https://www.gnu.org/education/edu-why.html">particular importance</a>
     within an academic environment, where students are taught the virtues of
     intellectual and social freedoms and independence.</p>
@@ -51,32 +51,31 @@ SRCT | Docs | Software Freedom
 
     </blockquote>
     
-    <p>We encourages every student to learn about programming through our
-    services, and believes that knowledge is of utmost importance in a time of
-    rapid, software-based societal changes. This learning, and by extension a full
-    understanding of the technological and cultural shifts we are currently
-    experiencing, is possible only with free software.</p>
+    <p>We encourage every student to learn about programming through our
+    services, and believe that that knowledge is of utmost importance in a time
+    of rapid, software-based societal changes. This learning opportunity, and by
+    extension a full understanding of the technological and cultural shifts we
+    are currently experiencing, is possible only with free software.</p>
 
-    <p>For developers, additional information on SRCT and software freedom, including information on licensing, is available on 
+    <p>Additional information on SRCT and software freedom for developers,
+    including information on licensing, is available on 
     <a href="http://wiki.srct.gmu.edu/wiki/index.php/Software_Freedom">our wiki</a>.
 
   </div>
   
   <div class="col-sm-2 hidden-xs">
 
-    <h4 id="nav-pills"><strong>Documents</strong></h4>
-    <div class="bs-example">
-      <ul class="nav nav-pills">
-		<li><a href="{{ url_for('constitution') }}">Constitution</a></li>
-        <li><a href="{{ url_for('usagePolicy') }}">Usage Policy</a></li>
-        <li><a href="{{ url_for('termsOfService') }}">Terms of Service</a></li>
-        <li><a href="{{ url_for('privacyPolicy') }}">Privacy Policy</a></li>
-        <li><a href="{{ url_for('intellectualProperty') }}">Intellectual Property</a></li>
-        <li class="active"><a href="{{ url_for('softwareFreedom') }}">Software Freedom</a></li>
-        <li><a href="{{ url_for('logos') }}">Logos</a></li>
-      </ul>
-    </div>
-
+    <h4><strong>Documents</strong></h4>
+      <div class="list-group">
+        <a href="{{ url_for('constitution') }}" class="list-group-item">Constitution</a>
+        <a href="{{ url_for('usagePolicy') }}" class="list-group-item">Usage Policy</a>
+        <a href="{{ url_for('termsOfService') }}" class="list-group-item">Terms of Service</a>
+        <a href="{{ url_for('privacyPolicy') }}" class="list-group-item">Privacy Policy</a>
+        <a href="{{ url_for('intellectualProperty') }}" class="list-group-item">Intellectual Property</a>
+        <a href="{{ url_for('softwareFreedom') }}" class="list-group-item active">Software Freedom</a>
+        <a href="{{ url_for('logos') }}" class="list-group-item">Logos</a>
+      </div>
+  
   </div>
 
 </div>
