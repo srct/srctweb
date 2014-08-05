@@ -29,12 +29,14 @@ Open a terminal window and type in the following commands. (If you're on Windows
 
 (set up pip and virtualenv)
 
-``bash``
-``git clone git@git.gmu.edu:srct/srctweb.git``
-``cd srctweb/``
-``pip install -r requirements.txt``
-``cd srctweb/``
-``python srctweb.py``
+```bash
+bash
+git clone git@git.gmu.edu:srct/srctweb.git
+cd srctweb/
+pip install -r requirements.txt
+cd srctweb/
+python srctweb.py
+```
 
 To-do
 ---
