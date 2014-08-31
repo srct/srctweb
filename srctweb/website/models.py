@@ -90,7 +90,7 @@ class Project(db.Model):
         return '<Project: %r>' % (self.name)
 
     # Initialization function.
-    def __init__(self, name, username):
+    def __init__(self, name):
         self.name = name
 
 
@@ -111,7 +111,7 @@ class Event(db.Model):
         return '<Event: %r>' % (self.name)
 
     # Initialization function.
-    def __init__(self, name, username):
+    def __init__(self, name):
         self.name = name
 
 
