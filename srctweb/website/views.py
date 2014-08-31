@@ -1,11 +1,23 @@
 from flask import render_template
 from website import srctweb
+from website.models import Meeting
 
 
 @srctweb.route('/')
 def index():
+
+    # Access most recent meeting.
+    next_meeting = Meeting.query.all().order_by("date_time")[0]
+
+    date = next_meeting.date_time.strftime("%B %d")
+    time = next_meeting.date_time.strftime("%r")
+    location = next_meeting.location
+
     return render_template("index.html",
         renderHead = False,
+        next_meeting_date = date,
+        next_meeting_time = time,
+        next_meeting_location = location,
     )
 
 @srctweb.route('/calendar/')
