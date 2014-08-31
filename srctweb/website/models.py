@@ -48,7 +48,7 @@ class Member(db.Model):
 
     # Textual representation.
     def __repr__(self):
-        dev_status = "Developer" if developer else "Contributor"
+        dev_status = "Developer" if self.developer else "Contributor"
         return '<%r: %r>' % (dev_status, self.username)
 
     # Initialization function.
