@@ -18,11 +18,26 @@ event_staff = db.Table('event_staff',
 )
 
 
-# Executive board table.
-execs = db.Table('executive_board',
-    db.Column('title', db.String(150)),
-    db.Column('member_id', db.ForeignKey('member.id'))
-)
+# Executive membership.
+class Executive(db.Model):
+    __tablename__ = "executives"
+
+    # Map executives directly onto members.
+    member_id = db.Column(db.Integer, db.ForeignKey('member.id'), primary_key = True)
+    member = db.relationship('Member')
+    title = db.Column(db.String(150), unique = True)
+
+    # Initialization function.
+    def __init__(self, username, title):
+        member = Member.query.filter_by(username=username).first()
+        self.member_id = member.id
+        self.member = member
+        self.title = title
+
+    # Textual representation.
+    def __repr__(self):
+        username = self.member.username
+        return '<%r: %r>' % (self.title, username)
 
 
 # Standard SRCT member (developer or contributor).
