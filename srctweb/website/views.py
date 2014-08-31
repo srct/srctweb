@@ -7,7 +7,7 @@ from website.models import Meeting
 def index():
 
     # Access most recent meeting.
-    next_meeting = Meeting.query.all().order_by("date_time")[0]
+    next_meeting = Meeting.query.order_by("date_time")[0]
 
     date = next_meeting.date_time.strftime("%B %d")
     time = next_meeting.date_time.strftime("%r")
