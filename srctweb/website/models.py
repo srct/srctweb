@@ -41,7 +41,8 @@ class Member(db.Model):
 
     # Textual representation.
     def __repr__(self):
-        return '<%r>' % (self.username)
+        dev_status = "Developer" if developer else "Contributor"
+        return '<%r: %r>' % (dev_status, self.username)
 
     # Initialization function.
     def __init__(self, name, username):
@@ -64,7 +65,7 @@ class Project(db.Model):
 
     # Textual representation.
     def __repr__(self):
-        return '<%r>' % (self.name)
+        return '<Project: %r>' % (self.name)
 
     # Initialization function.
     def __init__(self, name, username):
@@ -83,6 +84,28 @@ class Event(db.Model):
             db.ForeignKey('member.id'),
             unique = False)
 
+    # Textual representation.
+    def __repr__(self):
+        return '<Event: %r>' % (self.name)
+
     # Initialization function.
     def __init__(self, name, username):
         self.name = name
+
+
+# Meeting dates.
+class Meeting(db.Model):
+
+    # Meeting metadata.
+    id = db.Column(db.Integer, primary_key = True)
+    date_time = db.Column(db.DateTime, unique = False)
+    location = db.Column(db.String(150), unique = False)
+
+    # Textual representation.
+    def __repr__(self):
+        return '<Meeting: (%r) (%r)>' % (self.date_time, self.location)
+
+    # Initialization function.
+    def __init__(self, name, username):
+        self.name = name
+
