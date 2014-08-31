@@ -1,13 +1,13 @@
 from flask import render_template
 from website import srctweb
-from website.models import Meeting
+from website.models import Meeting, Member
 
 
 @srctweb.route('/')
 def index():
 
     # Access most recent meeting.
-    next_meeting = Meeting.query.order_by("date_time")[0]
+    next_meeting = Meeting.query.order_by("date_time").first()
 
     date = next_meeting.date_time.strftime("%B %d")
     time = next_meeting.date_time.strftime("%r")
