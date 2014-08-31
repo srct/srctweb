@@ -18,6 +18,13 @@ event_staff = db.Table('event_staff',
 )
 
 
+# Executive board database.
+execs = db.Table('executive_board',
+    db.Column('title', db.String(150)),
+    db.Column('member_id', db.ForeignKey('member.id'))
+)
+
+
 # Standard SRCT member (developer or contributor).
 class Member(db.Model):
 
