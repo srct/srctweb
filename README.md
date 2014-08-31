@@ -29,27 +29,26 @@ Open a terminal window and type in the following commands. (If you're on Windows
 
 (set up pip and virtualenv)
 
-``bash``
-``git clone git@git.gmu.edu:srct/srctweb.git``
-``cd srctweb/``
-``pip install -r requirements.txt``
-``cd srctweb/``
-``python run.py``
+```bash
+bash
+git clone git@git.gmu.edu:srct/srctweb.git
+cd srctweb/
+pip install -r requirements.txt
+cd srctweb/
+python srctweb.py
+```
 
 To-do
 ---
 
 Note-- this should also be on the wiki
 
-**Must Be Done Before Beta Release**
-BETA DONE:: DROP MIC
-only review by peers
-
-**Also Needs to Be Done**
-* set some stuff up, e.g. with the people page, so adding new individuals doesn't involve touching the template
-* Figure out parallaxjs (use jquery) for front page
+**1.1 Release**
+* set up database for people, meeting date on index page, projects
+* figure out where to put a link to meeting notes
+* Jeykll for meeting notes, finish hackmason (both not in this repository)
+* Figure out parallaxjs for front page
 * Figure out intellectual property with GMU
-* add piwik opt out link
 * finish writing privacy policy
 * affix js for documents navigation-- example http://www.bootstrapzero.com/bootstrap-template/affix-sidebar
 
