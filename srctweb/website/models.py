@@ -1,3 +1,4 @@
+from website import srctweb
 from website import db
 
 
@@ -18,7 +19,7 @@ event_staff = db.Table('event_staff',
 
 
 # Standard SRCT member (developer or contributor).
-class Member(db.model):
+class Member(db.Model):
 
     # Human metadata.
     id = db.Column(db.Integer, primary_key = True)
@@ -42,9 +43,15 @@ class Member(db.model):
     def __repr__(self):
         return '<%r>' % (self.username)
 
+    # Initialization function.
+    def __init__(self, name, username):
+        self.name = name
+        self.username = username
+        self.developer = False
+
 
 # Standard SRCT project with a name and project manager.
-class Project(db.model):
+class Project(db.Model):
 
     # Project metadata.
     id = db.Column(db.Integer, primary_key = True)
@@ -59,9 +66,13 @@ class Project(db.model):
     def __repr__(self):
         return '<%r>' % (self.name)
 
+    # Initialization function.
+    def __init__(self, name, username):
+        self.name = name
+
 
 # SRCT affiliated events.
-class Event(db.model):
+class Event(db.Model):
 
     # Event metadata.
     id = db.Column(db.Integer, primary_key = True)
@@ -71,3 +82,7 @@ class Event(db.model):
     point_of_contact_id = db.Column(db.Integer,
             db.ForeignKey('member.id'),
             unique = False)
+
+    # Initialization function.
+    def __init__(self, name, username):
+        self.name = name
