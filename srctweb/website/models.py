@@ -1,30 +1,46 @@
 from website import db
 
-# project managers
-class ProjectManager(db.model):
-    id = db.Column(db.Integer, primary_key = True)
-    name = db.Column(db.String(150), unique = False)
-    username = db.Column(db.String(15), unique = True)
-    project = db.Column(db.String(150), unique = False)
 
-    def __repr__(self):
-        return '<User %r>' % (self.name)
+# Dynamic reference table of Developers and their associated projects.
+developers = db.Table('developers',
+    db.Column('project_id', db.Integer, db.ForeignKey('project.id')),
+    db.Column('member_id', db.Integer, db.ForeignKey('member.id'))
+)
 
-# developers
-class Developer(db.model):
-    id = db.Column(db.Integer, primary_key = True)
-    name = db.Column(db.String(150), unique = False)
-    username = db.Column(db.String(15), unique = True)
 
-    def __repr__(self):
-        return '<User %r>' % (self.name)
+# Standard SRCT member (developer or contributor).
+class Member(db.model):
 
-# contributors
-class Contributor(db.model):
+    # Human metadata.
     id = db.Column(db.Integer, primary_key = True)
     name = db.Column(db.String(150), unique = False)
     username = db.Column(db.String(15), unique = True)
 
-    def __repr__(self):
-        return '<User %r>' % (self.name)
+    # Developer status.
+    developer = db.Column(db.Boolean, unique = False)
 
+    # Associated projects using reference table (secondary).
+    projects = db.relationship('Project',
+            secondary = developers,
+            backref = db.backref('developers'))
+
+    # Textual representation.
+    def __repr__(self):
+        return '<%r>' % (self.username)
+
+
+# Standard SRCT project with a name and project manager.
+class Project(db.model):
+
+    # Project metadata.
+    id = db.Column(db.Integer, primary_key = True)
+    name = db.Column(db.String(150), unique = False)
+
+    # ID of the project manager.
+    manager_id = db.Column(db.Integer,
+            db.ForeignKey('member.id'),
+            unique = False)
+
+    # Textual representation.
+    def __repr__(self):
+        return '<%r>' % (self.name)
