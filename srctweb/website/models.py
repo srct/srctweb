@@ -105,14 +105,17 @@ class Meeting(db.Model):
 
     # Meeting metadata.
     id = db.Column(db.Integer, primary_key = True)
-    date_time = db.Column(db.DateTime, unique = False)
+    date = db.Column(db.String(150), unique = False)
+    time = db.Column(db.String(150), unique = False)
     location = db.Column(db.String(150), unique = False)
 
     # Textual representation.
     def __repr__(self):
-        return '<Meeting: (%r) (%r)>' % (self.date_time, self.location)
+        return '<Meeting: (%r) (%r)>' % (self.date, self.location)
 
     # Initialization function.
-    def __init__(self, name, username):
-        self.name = name
+    def __init__(self, date, time, location):
+        self.date = date
+        self.time = time
+        self.location = location
 
