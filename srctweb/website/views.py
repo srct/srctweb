@@ -1,6 +1,6 @@
 from flask import render_template
 from website import srctweb
-from website.models import Meeting, Member
+from website.models import Meeting, Member, Executive, Event, Project
 
 
 @srctweb.route('/')
@@ -9,9 +9,14 @@ def index():
     # Access most recent meeting.
     next_meeting = Meeting.query.order_by("date_time").first()
 
-    date = next_meeting.date_time.strftime("%B %d")
-    time = next_meeting.date_time.strftime("%r")
-    location = next_meeting.location
+    if next_meeting is not None:
+        date = next_meeting.date_time.strftime("%B %d")
+        time = next_meeting.date_time.strftime("%r")
+        location = next_meeting.location
+    else:
+        date = "TBD"
+        time = "TBD"
+        location = "TBD"
 
     return render_template("index.html",
         renderHead = False,
@@ -40,8 +45,13 @@ def documents():
 
 @srctweb.route('/people/')
 def people():
+    executives = Executive.query.all()
+    developers = Member.query.filter_by(developer=True).all()
+
     return render_template("people.html",
         renderHead = True,
+        executives = executives,
+        developers = developers
     )
 
 @srctweb.route('/projects/')
@@ -51,8 +61,16 @@ def projects():
     )
 
 @srctweb.route('/events/')
-def events():
-    return render_template("events.html",
+@srctweb.route('/events/<abbrev>')
+def events(abbrev=None):
+
+    if abbrev is None:
+        page = "events.html"
+    else:
+        event = Event.query.filter_by(abbrev=abbrev).first_or_404()
+        page = event.page
+
+    return render_template(page,
         renderHead = True,
     )
 
