@@ -51,6 +51,7 @@ Note-- this should also be on the wiki
 * Figure out intellectual property with GMU
 * finish writing privacy policy
 * affix js for documents navigation-- example http://www.bootstrapzero.com/bootstrap-template/affix-sidebar
+* automate project page generation
 
 ---
 
