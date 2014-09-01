@@ -56,10 +56,18 @@ class Member(db.Model):
             secondary = developers,
             backref = db.backref('developers'))
 
+    # Projects this member manages.
+    manages = db.relationship('Project',
+            backref='manager', lazy='dynamic')
+
     # Associated events using reference table (secondary).
     events = db.relationship('Event',
             secondary = event_staff,
             backref = db.backref('staff'))
+
+    # Events this member is POC for.
+    pocs = db.relationship('Event',
+            backref='point_of_contact', lazy='dynamic')
 
     # Textual representation.
     def __repr__(self):
@@ -79,6 +87,10 @@ class Project(db.Model):
     # Project metadata.
     id = db.Column(db.Integer, primary_key = True)
     name = db.Column(db.String(150), unique = False)
+
+    url = db.Column(db.String(150), unique = False)
+    repo = db.Column(db.String(150), unique = False)
+    desc = db.Column(db.String(500), unique = False)
 
     # ID of the project manager.
     manager_id = db.Column(db.Integer,
@@ -100,6 +112,8 @@ class Event(db.Model):
     # Event metadata.
     id = db.Column(db.Integer, primary_key = True)
     name = db.Column(db.String(150), unique = False)
+    abbrev = db.Column(db.String(20), unique = True)
+    page = db.Column(db.String(20), unique = False)
 
     # ID of the event point of contact.
     point_of_contact_id = db.Column(db.Integer,
@@ -111,8 +125,14 @@ class Event(db.Model):
         return '<Event: %r>' % (self.name)
 
     # Initialization function.
-    def __init__(self, name):
+    def __init__(self, name, abbrev=None, page=None):
         self.name = name
+        if abbrev is None:
+            abbrev = name
+        self.abbrev = abbrev
+        if page is None:
+            page = abbrev + ".html"
+        self.page = page
 
 
 # Meeting dates.
