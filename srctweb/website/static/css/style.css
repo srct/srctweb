@@ -87,6 +87,14 @@ a[name] {
   margin:0 auto;
   padding-bottom: 10px;
 }
+/* can't you extend CSS classes? */
+.project-icon-stacked {
+  text-align:center;
+  display: block;
+  font-size:65px;
+  margin:0 auto;
+  padding-bottom: 10px;
+}
 .project-role {
   width: 150px;
   display: inline-block;
