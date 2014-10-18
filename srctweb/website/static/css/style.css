@@ -88,6 +88,14 @@ a[name] {
   padding-bottom: 10px;
 }
 /* can't you extend CSS classes? */
+.project-link {
+  padding-top:50px !important;
+  margin-top:-50px;
+  display:block;
+}
+.project-link:hover, .project-link:active, .project-link:focus {
+  text-decoration: none;
+}
 .project-icon-stacked {
   font-size:65px;
 }
