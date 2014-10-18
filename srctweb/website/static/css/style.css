@@ -93,6 +93,7 @@ a[name] {
   padding-top:50px !important;
   margin-top:-50px;
   display:block;
+  color:#000;
 }
 .project-link:hover, .project-link:active, .project-link:focus {
   text-decoration: none;
