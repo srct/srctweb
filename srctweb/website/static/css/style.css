@@ -95,6 +95,7 @@ a[name] {
 }
 .project-link:hover, .project-link:active, .project-link:focus {
   text-decoration: none;
+  outline:0;
 }
 .project-icon-stacked {
   font-size:65px;
