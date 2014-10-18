@@ -89,6 +89,7 @@ a[name] {
 }
 /* can't you extend CSS classes? */
 .project-link {
+  /* Padding and margin business because of the static header */
   padding-top:50px !important;
   margin-top:-50px;
   display:block;
