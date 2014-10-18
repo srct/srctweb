@@ -41,6 +41,7 @@ a[name] {
 .smidge {
   padding-bottom: 10px;
 }
+/** People Page **/
 .people-left {
   padding-left:0;
   padding-right:0;
@@ -48,6 +49,27 @@ a[name] {
 .people-right {
   padding-right:0;
   padding-left:0;
+}
+.gravatar {
+  width:80px;
+  height:80px;
+}
+.devs tr > td:first-of-type, .devs2 tr > td:first-of-type {
+  width:50%;
+}
+#executive td {
+  vertical-align: middle;
+}
+@media(max-width:992px) {
+  #executive td:first-of-type, #executive th:first-of-type {
+    display:none;
+  }
+  .devs2 thead {
+    display: none;
+  }
+  .devs {
+    margin-bottom:0;
+  }
 }
 @media(min-width:992px){
   .people-left {
@@ -57,6 +79,7 @@ a[name] {
     padding-left:15px;
   }
 }
+/** Calendar Page **/
 /**
 * A cool little hack I found to try to allow a responsive Google Cal:
 * http://themeloom.com/2013/02/tips-embed-google-maps-and-calendars-in-a-responsive-wordpress-theme/

@@ -6,14 +6,14 @@ SRCT | People
 People
 {% endblock %}
 {% block description %}
-The people who make up this community of developers!
+The awesome people who make up this community of developers!
 {% endblock %}
 {% block content %}
 <legend><strong>
   <a href="http://wiki.srct.gmu.edu/wiki/index.php/Executive_Board">Executive Board</a>
 </strong></legend>
 
-<table class="table table-hover">
+<table class="table table-hover" id="executive">
   <thead>
     <tr>
       <th></th>
@@ -24,7 +24,7 @@ The people who make up this community of developers!
   </thead>
   <tbody>
     <tr>
-      <td><img class="img-circle img-responsive center center-block" src="{{ 'jrouly@gmu.edu' | gravatar }}" alt = "gravatar image"</td>
+      <td><img class="img-circle gravatar img-responsive center center-block" src="{{ 'jrouly@gmu.edu' | gravatar }}" alt = "gravatar image"</td>
       <td><h5>Michel Rouly</h5></td>
       <td>
         <a href="http://wiki.srct.gmu.edu/wiki/index.php/President"><h5>President</h5></a>
@@ -32,7 +32,7 @@ The people who make up this community of developers!
       <td><h5><em>jrouly</em></h5></td>
     </tr>
     <tr>
-      <td><img class="img-circle img-responsive center center-block" src="{{ 'creffett@gmu.edu' | gravatar }}" alt = "gravatar image"</td>
+      <td><img class="img-circle gravatar img-responsive center center-block" src="{{ 'creffett@gmu.edu' | gravatar }}" alt = "gravatar image"</td>
       <td><h5>Chris Reffett</h5></td>
       <td>
         <a href="http://wiki.srct.gmu.edu/wiki/index.php/Systems_Administrator"><h5>Systems Admininstrator</h5></a>
@@ -40,7 +40,7 @@ The people who make up this community of developers!
       <td><h5><em>creffett</em></h5></td>
     </tr>
     <tr>
-      <td><img class="img-circle img-responsive center center-block" src="{{ 'kmahone5@gmu.edu' | gravatar }}" alt = "gravatar image"</td>
+      <td><img class="img-circle gravatar img-responsive center center-block" src="{{ 'kmahone5@gmu.edu' | gravatar }}" alt = "gravatar image"</td>
       <td><h5>Kara Mahoney</h5></td>
       <td>
         <a href="http://wiki.srct.gmu.edu/wiki/index.php/Vice_President"><h5>Vice President</h5></a>
@@ -48,7 +48,7 @@ The people who make up this community of developers!
       <td><h5><em>kmahone5</em></h5></td>
     </tr>
     <tr>
-      <td><img class="img-circle img-responsive center center-block" src="{{ 'bwaters3@gmu.edu' | gravatar }}" alt = "gravatar image"</td>
+      <td><img class="img-circle gravatar img-responsive center center-block" src="{{ 'bwaters3@gmu.edu' | gravatar }}" alt = "gravatar image"</td>
       <td><h5>Benjamin Waters</h5></td>
       <td>
         <a href="http://wiki.srct.gmu.edu/wiki/index.php/Secretary"><h5>Secretary</h5></a>
@@ -56,7 +56,7 @@ The people who make up this community of developers!
       <td><h5><em>bwaters3</em></h5></td>
     </tr>
     <tr>
-      <td><img class="img-circle img-responsive center center-block" src="{{ 'rharper2@gmu.edu' | gravatar }}" alt = "gravatar image"</td>
+      <td><img class="img-circle gravatar img-responsive center center-block" src="{{ 'rharper2@gmu.edu' | gravatar }}" alt = "gravatar image"</td>
       <td><h5>Renfred Harper</h5></td>
       <td>
         <a href="http://wiki.srct.gmu.edu/wiki/index.php/Treasurer"><h5>Treasurer</h5></a>
@@ -64,7 +64,7 @@ The people who make up this community of developers!
       <td><h5><em>rharper2</em></h5></td>
     </tr>
     <tr>
-      <td><img class="img-circle img-responsive center center-block" src="{{ 'kdobolyi@gmu.edu' | gravatar }}" alt = "gravatar image"</td>
+      <td><img class="img-circle gravatar img-responsive center center-block" src="{{ 'kdobolyi@gmu.edu' | gravatar }}" alt = "gravatar image"</td>
       <td><h5>Kinga Dobolyi</h5></td>
       <td>
         <a href="http://wiki.srct.gmu.edu/wiki/index.php/Faculty_Advisor"><h5>Faculty Advisor</h5></a>
@@ -78,7 +78,7 @@ The people who make up this community of developers!
   <a href="http://wiki.srct.gmu.edu/wiki/index.php/Developers">Developers</a>
 </strong></legend>
 <div class="col-md-6 people-left">
-<table class="table table-hover">
+<table class="devs table table-hover">
   <thead>
     <tr>
       <th><h4>Name</h4></th>
@@ -135,7 +135,7 @@ The people who make up this community of developers!
 </div>
 
 <div class="col-md-6 people-left">
-<table class="table table-hover">
+<table class="devs2 table table-hover">
   <thead>
     <tr>
       <th><h4>Name</h4></th>
@@ -187,7 +187,7 @@ The people who make up this community of developers!
       <td>Akshay Karthik</td>
       <td><em>akarthik</em></td>
     </tr>
-  <tbody>
+  </tbody>
 </table>
 </div>
 {% endblock %}
