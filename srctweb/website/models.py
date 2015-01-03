@@ -47,6 +47,7 @@ class Member(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(150), unique=False)
     username = db.Column(db.String(15), unique=True)
+    active = db.Column(db.Boolean, default=True)
 
     # Developer status.
     developer = db.Column(db.Boolean, unique=False)
@@ -70,6 +71,19 @@ class Member(db.Model):
     pocs = db.relationship('Event',
             backref='point_of_contact',
             lazy='dynamic')
+
+    def is_active(self):
+        return self.active
+
+    def is_anonymous(self):
+        return False  # no Anons in here
+
+    def is_authenticated(self):
+        """All users are authed through ldap so return true"""
+        return True
+
+    def get_id(self):
+        return self.id
 
     # Textual representation.
     def __repr__(self):

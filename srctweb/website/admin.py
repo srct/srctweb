@@ -1,17 +1,21 @@
 from website import srctweb, db
-from website import models
+from website.models import Member, Executive, Project, Meeting 
 from flask import request, render_template, redirect
 # flask-login
-from flask.ext.login import LoginManager, login_user
+from flask.ext.login import LoginManager, login_user, current_user
 login_manager = LoginManager()
 login_manager.init_app(srctweb)
 
+
+@login_manager.user_loader
+def load_user(userid):
+    return Member.query.get(userid)
 
 from flask_ldap_login import LDAPLoginForm, LDAPLoginManager
 import ldap
 LDAP = {
     'URI': 'ldaps://directory.gmu.edu:636',
-    'BIND_DN': 'ou=people,o=gmu.edu',
+    'BIND_DN': 'uid=%(username)s,ou=people,o=gmu.edu',
     'BIND_AUTH': 'uid=%(username)s,ou=people,o=gmu.edu',
     'KEY_MAP': {
         "first_name": "givenName",
@@ -30,15 +34,29 @@ ldap_manager = LDAPLoginManager(srctweb)
 
 @srctweb.route('/admin/login', methods=['GET', 'POST'])
 def ldap_login():
-    form = LDAPLoginForm(request.form)
-    import pdb; pdb.set_trace();
-    if form.validate_on_submit():
-        login_user(form.user, remember=True)
-        print "Valid"
-        return redirect('/admin')
-    else:
-        print "Invalid"
-    return render_template('login.html', form=form)
+    if request.method == "GET":
+        return render_template('login.html')
+    
+    if not ('username' in request.form and 'password' in request.form):
+        return render_template('login.html')
+
+    username = request.form['username']
+    password = request.form['password']
+    user_dict = ldap_manager.ldap_login(username, password)
+
+    if not user_dict:
+        return render_template('login.html')
+    
+    user = Member.query.filter(Member.username == username).first()
+    # make a new Member!
+    if not user:
+        user = Member(name=user_dict['first_name'] + ' ' + user_dict['last_name'],
+                       username=username,
+                       developer=False)
+        db.session.add(user)
+        db.session.commit()
+    login_user(user, remember=True)
+    return redirect('/admin')
 
 
 # flask-admin
@@ -48,9 +66,10 @@ admin = FlaskAdmin(srctweb)
 
 class SRCTModelView(ModelView):
     def is_accessible(self):
-        return
+        return current_user.is_authenticated() and current_user.developer
 
-admin.add_view(ModelView(models.Member, db.session))
-admin.add_view(ModelView(models.Executive, db.session))
-admin.add_view(ModelView(models.Project, db.session))
-admin.add_view(ModelView(models.Meeting, db.session))
+admin.add_view(SRCTModelView(Member, db.session))
+admin.add_view(SRCTModelView(Executive, db.session))
+admin.add_view(SRCTModelView(Project, db.session))
+admin.add_view(SRCTModelView(Meeting, db.session))
+
