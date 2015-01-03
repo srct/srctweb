@@ -49,15 +49,16 @@ def people():
     developers = Member.query.filter_by(developer=True).all()
 
     return render_template("people.html",
-        renderHead = True,
-        executives = executives,
-        developers = developers
+        renderHead=True,
+        executives=executives,
+        developers=developers
     )
 
 @srctweb.route('/projects/')
 def projects():
     return render_template("projects.html",
-        renderHead = True,
+        renderHead=True,
+        projects=Project.query.all()
     )
 
 @srctweb.route('/events/')
@@ -85,47 +86,48 @@ def optOut():
 @srctweb.route('/documents/constitution/')
 def constitution():
     return render_template("documents/constitution.html",
-        renderHead = True,
+        renderHead=True,
     )
 
 @srctweb.route('/documents/intellectual_property/')
 def intellectualProperty():
     return render_template("documents/intellectual_property.html",
-        renderHead = True,
+        renderHead=True,
     )
 
 @srctweb.route('/documents/logos/')
 def logos():
     return render_template("documents/logos.html",
-        renderHead = True,
+        renderHead=True,
     )
 
 
 @srctweb.route('/documents/privacy_policy/')
 def privacyPolicy():
     return render_template("documents/privacy_policy.html",
-        renderHead = True,
+        renderHead=True,
     )
 
 @srctweb.route('/documents/software_freedom/')
 def softwareFreedom():
     return render_template("documents/software_freedom.html",
-        renderHead = True,
+        renderHead=True,
     )
 
 @srctweb.route('/documents/terms_of_service/')
 def termsOfService():
     return render_template("documents/terms_of_service.html",
-        renderHead = True,
+        renderHead=True,
     )
 
 @srctweb.route('/documents/usage_policy/')
 def usagePolicy():
     return render_template("documents/usage_policy.html",
-        renderHead = True,
+        renderHead=True,
     )
 
 # 404 error
 @srctweb.errorhandler(404)
 def page_not_found(error):
     return render_template("404.html"), 404
+
