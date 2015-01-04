@@ -25,6 +25,9 @@ RUN apt-get install -y tar git curl nano wget dialog net-tools build-essential
 # Install Python and Basic Python Tools
 RUN apt-get install -y python python-dev python-distribute python-pip
 
+# Install prereqs for ldap
+RUN apt-get install -y libldap2-dev libsasl2-dev
+
 # Clone down SRCT-Web
 RUN git clone https://github.com/srct/srctweb.git srctweb
 
