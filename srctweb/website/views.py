@@ -7,6 +7,12 @@ def index():
         renderHead = False,
     )
 
+@website.route('/getstarted/')
+def getstarted():
+    return render_template("getstarted.html",
+        renderHead = False,
+    )
+
 @website.route('/calendar/')
 def calendar():
     return render_template("calendar.html",
