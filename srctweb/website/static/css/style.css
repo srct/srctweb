@@ -111,6 +111,17 @@ a[name] {
   padding-bottom: 10px;
 }
 /* can't you extend CSS classes? */
+.project-link {
+  /* Padding and margin business because of the static header */
+  padding-top:50px !important;
+  margin-top:-50px;
+  display:block;
+  color:#000;
+}
+.project-link:hover, .project-link:active, .project-link:focus {
+  text-decoration: none;
+  outline:0;
+}
 .project-icon-stacked {
   font-size:65px;
 }

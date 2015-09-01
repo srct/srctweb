@@ -62,16 +62,49 @@ channel on <a href="https://www.freenode.net/">freenode</a>, #srct. More ways to
 get in touch are on our <a href="{{ url_for('contact') }}">contact page</a>.</p>
 
 <legend><i class="fa fa-gavel fa-fw"></i>&nbsp;<strong>Next Meeting</strong></legend>
-<p>Our next meeting is scheduled for <strong><em>October
-18th</em></strong>, at 2pm, <em>JC 239A</em>. For more information, check
-out our <a href="{{ url_for('calendar') }}">calendar</a>, or visit our
+<p id="meetingDate">Please wait while we fetch the upcoming meeting information...</p>
+<!--<a href="{{ url_for('calendar') }}">calendar</a> or visit our
 <a href="https://www.facebook.com/MasonSRCT">Facebook</a> or
-<a href="https://www.twitter.com/MasonSRCT">Twitter</a> pages.</p>
+<a href="https://www.twitter.com/MasonSRCT">Twitter</a> pages.</p>-->
 
 </div>
+{% endblock %}
+
+{% block scripts %}
 <!-- <script src="/static/js/parallax.min.js"></script>
 
 var scene = document.getElementById('jumboparallax');
 var parallax = new Parallax(jumboparallax); -->
 
+<script>
+$(function() {
+  // Public API Key for Google Calendar access (Key from nander13's gmail account)
+  var apiKey = "AIzaSyDgaXDxmMEdtbIaq3TXmf4jxXZLG8CeoMs";
+
+  // Instead of loading the _entire_ Google API library, let's just make a GET request
+  $.getJSON("https://www.googleapis.com/calendar/v3/calendars/kaiuicpoki9p3u92eklent0eec%40group.calendar.google.com/events",
+  {
+    // Expand one recurring event to multiple events
+    "singleEvents":"true",
+    "orderBy":"startTime",
+    // Starting now until we hit the first event.
+    "timeMin":new Date().toISOString(),
+    "showDeleted":"false",
+    "maxResults":"1",
+    // Change this if the title of the weekly meeting on the calendar changes!
+    "q":"SRCT+Weekly+Meeting",
+    "key":apiKey
+  },
+  function(data) {
+    //console.log(data.items[0])
+    var d = new Date(data.items[0].start.dateTime),
+        monthName = d.toLocaleString("en-us", {month: "long"}),
+        dateOptions = { weekday: 'long', month: 'long', day: 'numeric' },
+        timeOptions = { hour: 'numeric', minute: 'numeric'},
+        dateString = d.toLocaleString("en-us", dateOptions),
+        timeString = d.toLocaleString("en-us", timeOptions);
+    $("#meetingDate").text("Join us for our next meeting in "+data.items[0].location+" at "+timeString+" on "+dateString +".")
+  });
+});
+</script>
 {% endblock %}
