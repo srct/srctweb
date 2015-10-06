@@ -54,4 +54,9 @@ Note-- this should also be on the wiki
 
 ---
 
+TODO Re: OpenHatch:
+
+* Make mobile friendly at least kinda
+* Improve top left title. Is hacked together with a visibility: hidden div and uses way more space than it needs
+
 **S**tudent - **R**un **C**omputing and **T**echnology (*SRCT*, pronounced "circuit") is a student organization at George Mason University which enhances student computing at Mason. SRCT establishes and maintains systems which provide specific services for Mason's community.
