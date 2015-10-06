@@ -42,7 +42,16 @@ def optOut():
     return render_template("privacy_opt_out.html",
     
     )
-
+@website.route('/events/')
+def events():
+    return render_template("events.html",
+        renderHead = True,
+    )
+@website.route('/events/openhatch15/')
+def openhatch15():
+    return render_template("events/openhatch15.html",
+        renderHead = False,
+    )
 ### DOCUMENTS ###
 
 @website.route('/documents/constitution/')
