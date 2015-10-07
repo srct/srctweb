@@ -1,130 +1,186 @@
-<html>
-    <head>
-    <link rel="icon" href="https://srct.gmu.edu/static/img/favicon.ico">
-    <link href="https://srct.gmu.edu/static/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="https://srct.gmu.edu/static/css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="https://srct.gmu.edu/static/fonts/font-awesome.min.css" rel="stylesheet">
-    <link href="https://srct.gmu.edu/static/css/style.css" rel="stylesheet">
-    <script src="https://srct.gmu.edu/static/js/jquery-2.0.3.min.js"></script>
-    <link href="/static/css/openhatch.css" rel="stylesheet" type="text/css">
-	<!-- Credit 
-http://www.minimit.com/articles/lets-animate/parallax-backgrounds-with-centered-content 
-for parallex voodoo, which I no longer really want
-    <link href="minimit.css" rel="stylesheet" type="text/css">
- -->
-    </head>
-<body style="">
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+{% extends "layouts/base.html" %}
+{% block title %}
+SRCT | Events | Openhatch at Mason 2015
+{% endblock %}
+
+{% block content %}
+
+<div class="jumbotron">
   <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" 
-data-target=".navbar-ex1-collapse">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      </button>
-
-      <a class="navbar-brand" href="/"><img 
-src="https://srct.gmu.edu/static/img/SRCT_square_white.png" width="19" 
-height="19" alt=""> <strong>Mason SRCT</strong></a>
+    <div class="row">
+      <div class="col-md-8">
+        <img src="http://princeton.openhatch.org/imgs/openhatch-logo.png" class="img-responsive center-block" alt="Openhatch at Mason">
+      </div>
+      <div class="col-md-4">
+        <strong><p align="right">October 24th, 2015</p></strong>
+        <p align="right">9:30am-7:00pm</p>
+        <p align="right">Planetary Hall</p>
+        <p align="right">Doors Open at 9:00am</p>
+      </div>
     </div>
-
-    <div class="collapse navbar-collapse navbar-ex1-collapse">
-      <ul class="nav navbar-nav">
-        <li><a href="https://srct.gmu.edu/projects/">Projects</a></li>
-	<li><a href="http://hackmason.org ">Events</a></li>
-	<li><a href="https://srct.gmu.edu/calendar/">Calendar</a>
-	</li><li><a href="http://blog.srct.gmu.edu">Blog</a>
-        </li><li><a href="https://srct.gmu.edu/people/">People</a></li>
-        <li class="dropdown">
-        <a id="drop1" href="#" role="button" class="dropdown-toggle" 
-data-toggle="dropdown">Documents <b class="caret"></b></a>
-          <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="https://srct.gmu.edu//documents/constitution/">Constitution</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="https://srct.gmu.edu//documents/usage_policy/">Usage Policy</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="https://srct.gmu.edu//documents/terms_of_service/">Terms of Service</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="https://srct.gmu.edu//documents/privacy_policy/">Privacy Policy</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="https://srct.gmu.edu//documents/intellectual_property/">Intellectual Property</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="https://srct.gmu.edu//documents/software_freedom/">Software Freedom</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="https://srct.gmu.edu//documents/logos/">Logos</a></li>
-          </ul>
-        </li>
-	<li><a href="/contact/">Contact</a>
-      </li></ul>
-    </div><!--/.nav-collapse -->
   </div>
-</nav>
-<div>
-    <div class="title"><div style="visibility: hidden">I was born in the darkness</div>
-	<div class="titlecont">
-		<img src="http://princeton.openhatch.org/imgs/openhatch-logo.png" width=30% >
-        <div class="maintitle">
-			<b>OpenHatch at Mason 2015</b>
-		</div>
-        <p>October 24th, 2015</p>
-        </div>
-		
-    </div>
-    <div class="descrip">
-        What is OpenHatch?
-			<div class="descripcontent">
-				Basically? An all-day open source contribution workshop. Run by <a style="color: white" href="http://srct.gmu.edu">SRCT</a> at George Mason University.
-			</div>
-    </div><a href="https://docs.google.com/forms/d/1esR8VYpxzaMKYUZ7OfTUdVzAYfbMA29xpAfLp5zAXXM/viewform?c=0&w=1">
-	<div class="signup">
-		<h3 style="color: lime; font-weight: bold;">Sign up to Participate</h3>
-	</div></a>
-	<div class="descrip">
-	What workshops?
-	<!--	<div class="descripcontent">
-		From <a style="color: gray" href="https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Curriculum">OpenHatch's Wiki Curriculum</a> (which we'll be following), see below<br>
-		</div>  Content is distracting, but credit to OpenHatch 
---> 
-		<br>
-		<div class="table-responsive">
-			<table class="table">		
-			<thead>
-				<tr><th>Activity</th><th>Description</th></tr>
-			</thead>
-				<tr><td>Computer Setup</td><td>IRC (a chatting protocol) setup, command line navigation, git (used to maintain and control versions of code) install, text editor practice</td></tr>
-				<tr><td>Open Source Communication Tools</td><td>Gain familiarization with tools like mailing lists, issue trackers, version control, IRC, etc</td></tr>
-				<tr><td>Learning Git</td><td>Learn to effectively use Git, a version control tool used in a large deal of software development companies projects for collaboration.</td></tr>
-				<tr><td>Career Panel</td><td>Learn from experts in the field. </td></tr>
-				<tr><td>History and Ethics of Free Software</td><td>Learn about the past of the Free and Open Source Software movement</td></tr>
-				<tr><td>Contributions Workshop -Workshop</td><td>Make actual contributions to FOSS projects</td></tr>
-				<tr><td>Contributions Workshop - Wrapup</td><td>Students report on their progress, future events in the area for open source programming, FOSS opportunities, exit survey</td></tr>
-			</table>
-
-		
-		</div>
-	</div>
-<!--	  <a href="#signup"><button type="button" class="btn btn-primary 
-btn-lg">When/Where/Sign Up</button></a>
--->
 </div>
-<div id="signup">
-	<div class="descrip">
-		Meals
-			<div class="descripcontent">
-				Questions or allergies? Contact SRCT Exec
-			</div>
-	</div>
-	<div class="table-responsive">
-			<table class="table">	
-			<thead>
-				<tr><th>Meal</th><th>Food</th></tr>
-			</thead>
-				<tr><td>Breakfast</td><td>Fruit, Pastries, Donuts, and Coffee</td></tr>
-				<tr><td>Lunch</td><td>Mini Subs (Veggie, Turkey, and Roast Beef)</td></tr>
-				<tr><td>Snacks, Beverages, & Sides:</td><td> Chips and Cookies; Soda, Lemonade, Coffee, and Water</td></tr>
-				<tr><td>Dinner</td><td>Chicken Soft Tacos or Grilled Vegetables, Hummus, and Pita</td></tr>
+
+<div class="row">
+   <div class="col-md-2">
+     <a href="#Description">
+       <button type="button" class="btn btn-primary btn-block">Description</button>
+     </a>
+   </div>
+   <div class="col-md-2">
+     <a href="#Register">
+       <button type="button" class="btn btn-primary btn-block">Register</button>
+     </a>
+   </div>
+   <div class="col-md-2">
+     <a href="#Schedule">
+       <button type="button" class="btn btn-primary btn-block">Schedule</button>
+     </a>
+   </div>
+   <div class="col-md-2">
+     <a href="#PeopleOrgs">
+       <button type="button" class="btn btn-primary btn-block">People & Orgs</button>
+     </a>
+   </div>
+   <div class="col-md-2">
+     <a href="#Menu">
+       <button type="button" class="btn btn-primary btn-block">Menu</button>
+     </a>
+   </div>
+   <div class="col-md-2">
+     <a href="#Contact">
+       <button type="button" class="btn btn-primary btn-block">Contact</button>
+     </a>
+   </div>
+</div>
+
+<br />
+
+<div class="row">
+  <div class="col-md-12">
+    <legend class="text-center"><a name="Description" href="#Description"><h2>Description</h2></a></legend>
+      <p>
+      Basically? An all-day open source contribution workshop. Run by <a style="color: white" href="http://srct.gmu.edu">SRCT</a> at George Mason University.
+      </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <legend class="text-center"><a name="Register" href="#Register"><h2>Register</h2></a></legend>
+  </div>
+  <div class="col-md-6 text-center">
+    <h3>Participate</h3>
+  </div>
+  <div class="col-md-6 text-center">
+    <h3>Mentor or Volunteer</h3>
+  </div>
+</div>
+
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+      </div>
+      <div class="col-md-4">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <legend class="text-center"><a name="Schedule" href="#Schedule"><h2>Schedule</h2></a></legend>
+What workshops?
+<!--	<div class="descripcontent">
+From <a style="color: gray" href="https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Curriculum">OpenHatch's Wiki Curriculum</a> (which we'll be following), see below<br>
+</div>  Content is distracting, but credit to OpenHatch --> 
+<br>
+<div class="table-responsive">
+<table class="table">		
+<thead>
+<tr><th>Activity</th><th>Description</th></tr>
+</thead>
+<tr><td>Computer Setup</td><td>IRC (a chatting protocol) setup, command line navigation, git (used to maintain and control versions of code) install, text editor practice</td></tr>
+<tr><td>Open Source Communication Tools</td><td>Gain familiarization with tools like mailing lists, issue trackers, version control, IRC, etc</td></tr>
+<tr><td>Learning Git</td><td>Learn to effectively use Git, a version control tool used in a large deal of software development companies projects for collaboration.</td></tr>
+<tr><td>Career Panel</td><td>Learn from experts in the field. </td></tr>
+<tr><td>History and Ethics of Free Software</td><td>Learn about the past of the Free and Open Source Software movement</td></tr>
+<tr><td>Contributions Workshop -Workshop</td><td>Make actual contributions to FOSS projects</td></tr>
+<tr><td>Contributions Workshop - Wrapup</td><td>Students report on their progress, future events in the area for open source programming, FOSS opportunities, exit survey</td></tr>
 </table>
 </div>
+  </div>
 </div>
-<div class="descrip">SRCT Exec<br>
-<div class="descripcontent">
-Email SRCT Executives at 
-<a href="mailto:exec@srct.gmu.edu">exec@srct.gmu.edu</a></div>
-</body>
-</html>
 
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+      </div>
+      <div class="col-md-4">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <legend class="text-center"><a name="PeopleOrgs" href="#PeopleOrgs"><h2>People and Organizations</h2></a></legend>
+    SRCT Exec<br>
+    Email SRCT Executives at 
+    <a href="mailto:exec@srct.gmu.edu">exec@srct.gmu.edu</a>
+  </div>
+</div>
+
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+      </div>
+      <div class="col-md-4">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <legend class="text-center"><a name="Menu" href="#Menu"><h2>Menu</h2></a></legend>
+Meals
+Questions or allergies? Contact SRCT Exec
+    <div class="table-responsive">
+    <table class="table">	
+    <thead>
+    <tr><th>Meal</th><th>Food</th></tr>
+    </thead>
+    <tr><td>Breakfast</td><td>Fruit, Pastries, Donuts, and Coffee</td></tr>
+    <tr><td>Lunch</td><td>Mini Subs (Veggie, Turkey, and Roast Beef)</td></tr>
+    <tr><td>Snacks, Beverages, & Sides:</td><td> Chips and Cookies; Soda, Lemonade, Coffee, and Water</td></tr>
+    <tr><td>Dinner</td><td>Chicken Soft Tacos or Grilled Vegetables, Hummus, and Pita</td></tr>
+    </table>
+    </div>
+
+  </div>
+</div>
+
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+      </div>
+      <div class="col-md-4">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <legend class="text-center"><a name="Contact" href="#Contact"><h2>Contact</h2></a></legend>
+    SRCT Exec<br>
+    Email SRCT Executives at 
+    <a href="mailto:exec@srct.gmu.edu">exec@srct.gmu.edu</a>
+  </div>
+</div>
+{% endblock %}
