@@ -127,3 +127,7 @@ a[name] {
   margin-top:0;
   border-bottom:none;
 }
+
+.slight-bump {
+  font-size:18px;
+}
