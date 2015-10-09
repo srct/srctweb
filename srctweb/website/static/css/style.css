@@ -131,3 +131,34 @@ a[name] {
 .slight-bump {
   font-size:18px;
 }
+
+.jumboworkshop {
+  background: url(/static/img/workshop.jpg) no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.jumbointroduction {
+  background: url(/static/img/introduction.jpg) no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.jumbopresentation {
+  background: url(/static/img/presentation.jpg) no-repeat;
+  background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.jumbocontributions {
+  background: url(/static/img/contributions.jpg) no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
