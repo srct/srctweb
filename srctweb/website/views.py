@@ -40,7 +40,13 @@ def projects():
 @website.route('/opt-out/')
 def optOut():
     return render_template("privacy_opt_out.html",
-    
+
+    )
+
+@website.route('/welcome/')
+def welcome():
+    return render_template("welcome.html",
+        renderHead = True,
     )
 
 ### DOCUMENTS ###
