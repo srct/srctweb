@@ -11,15 +11,17 @@ SRCT
   <li class="layer" data-depth="0.50"> -->
     <div class="jumbotron jumbostyle">
 
-      <!-- <li class="layer" data-depth="0.00"> -->
       <div class="container">
+      <!-- <li class="layer" data-depth="0.00"> -->
         <div class="row">
-          <div class="col-md-offset-1 col-md-10">
-            <div class="text-center transparency">
-              <h1><strong>SRCT</strong></h1>
-              <p><h2>Student-Run Computing and Technology</h2></p>
-            </div>
+
+          <div class="col-lg-offset-3 col-lg-2 col-md-offset-3 col-md-3 col-sm-offset-2 col-sm-3 col-xs-offset-1 col-xs-4">
+            <img src="/static/img/SRCT_sq_white_shadow.svg" class="img-responsive" alt="SRCT" />
           </div>
+          <div class="col-md-5">
+            <p class="xolonium srct-title">Student-Run<br />Computing +<br />Technology</p>
+          </div>
+
         </div>
       </div>
       <!-- </li> -->
@@ -34,38 +36,130 @@ SRCT
 
 {% block content %}
 
-<legend><i class="fa fa-bullhorn fa-fw"></i>&nbsp;<strong>Mission</strong></legend>
-<p><strong>S</strong>tudent-<strong>R</strong>un <strong>C</strong>omputing and
-<strong>T</strong>echnology (SRCT, pronounced "<em>circuit</em>") is a student
-organization at <a href="https://www.gmu.edu/">George Mason University</a> which
-enhances student computing at our school by developing and maintaining systems
-that provide specific services for Mason's community.</p>
-<p>We were founded in 2011 to be a place where students could work together,
-share their knowledge, and build really neat projects for the benefit of everyone
-at Mason. See some of the ways we've improved life on campus on the <a href="{{ url_for('projects') }}">projects page</a>.</p>
+<div class="row smidge">
+  <div class="col-md-12 text-center">
+    <h4>
+      <span class="label label-default">
+        <i class="fa fa-gavel fa-fw"></i>&nbsp;<strong>Next Meeting</strong>
+       </span>&nbsp;&nbsp;
+       <span id="meetingDate">Please wait while we fetch the upcoming meeting information...</span>
+    </h4>
+    <!--<a href="{{ url_for('calendar') }}">calendar</a> or visit our
+    <a href="https://www.facebook.com/MasonSRCT">Facebook</a> or
+    <a href="https://www.twitter.com/MasonSRCT">Twitter</a> pages.</p>-->
+  </div>
+</div>
 
-<legend><i class="fa fa-laptop fa-fw"></i>&nbsp;<strong>Getting Involved</strong></legend>
-<p>To learn more about SRCT, check out our
-<a href="{{ url_for('projects') }}">projects</a>, active, under development, or proposed, or talk to one of the
-<a href="{{ url_for('people') }}">members</a>! Technical documentation is
-available on our <a href="http://wiki.srct.gmu.edu">wiki</a>, and all of our
-code is visible on the <a href="http://git.gmu.edu/public">public page</a> of
-our student git repository.</p>
-<p>You can come to any of our planned <a href="//hackmason.org">events</a>. We hold
-numerous events each semester, from traveling to hackathons and conferences to
-doing local outreach, holding large programming events, and hosting speakers.</p>
-<p>We're on <a href="https://www.facebook.com/MasonSRCT">Facebook</a> and
-<a href="https://www.twitter.com/MasonSRCT">Twitter</a>, have
-<a href="http://lists.srct.gmu.edu/mailman/listinfo">active mailing lists</a>,
-and an active <a href="https://srct.slack.com/">Slack team</a>. More ways to
-get in touch are on our <a href="{{ url_for('contact') }}">contact page</a>.</p>
+<div class="row smidge">
+  <legend><i class="fa fa-bullhorn fa-fw"></i>&nbsp;<strong>Mission</strong></legend>
+  <div class="col-md-12">
+    <p><strong>S</strong>tudent-<strong>R</strong>un <strong>C</strong>omputing and
+    <strong>T</strong>echnology (SRCT, pronounced "<em>circuit</em>") is a student
+    organization at <a href="https://www.gmu.edu/">George Mason University</a> which
+    enhances student computing at our school by developing and maintaining systems
+    that provide specific services for Mason's community.</p>
+    <p>We were founded in 2011 to be a place where students could work together,
+    share their knowledge, and build really neat projects for the benefit of everyone
+    at Mason, as well as run a host of events to help get students involved. </p>
+  </div>
+</div>
 
-<legend><i class="fa fa-gavel fa-fw"></i>&nbsp;<strong>Next Meeting</strong></legend>
-<p id="meetingDate">Please wait while we fetch the upcoming meeting information...</p>
-<!--<a href="{{ url_for('calendar') }}">calendar</a> or visit our
-<a href="https://www.facebook.com/MasonSRCT">Facebook</a> or
-<a href="https://www.twitter.com/MasonSRCT">Twitter</a> pages.</p>-->
+<div class="row smidge">
+  <legend><i class="fa fa-child fa-fw"></i>&nbsp;<strong>Initiatives</strong></legend>
+  <div class="col-md-9 col-sm-8 col-xs-8 smidge">
+    <h4><strong>Projects & Infrastructure</strong></h4>
+      <p>To learn more about SRCT, check out our
+      <a href="{{ url_for('projects') }}">projects</a>, active, under development, or proposed, or talk to one of the
+      <a href="{{ url_for('people') }}">members</a>! Technical documentation is
+      available on our <a href="http://wiki.srct.gmu.edu">wiki</a>, and all of our
+      code is visible on the <a href="http://git.gmu.edu/public">public page</a> of
+      our student git repository.</p>
+      <p>See some of the ways we've improved life on campus on the <a href="{{ url_for('projects') }}">projects page</a>.</p>
+      <p>We're on <a href="https://www.facebook.com/MasonSRCT">Facebook</a> and
+      <a href="https://www.twitter.com/MasonSRCT">Twitter</a>, have
+      <a href="http://lists.srct.gmu.edu/mailman/listinfo">active mailing lists</a>,
+      and an active <a href="https://srct.slack.com/">Slack team</a>. More ways to
+      get in touch are on our <a href="{{ url_for('contact') }}">contact page</a>.</p>
+  </div>
+  <div class="col-md-3 col-sm-4 col-xs-4 smidge">
+    <img src="/static/img/openhatch.jpg" alt="..." class="img-circle img-responsive center-block">
+  </div>
+  
+  <div class="col-md-9 col-sm-8 col-xs-8 smidge">
+    <h4><strong>Events & Workshops</strong></h4>
+      <p>You can come to any of our planned <a href="//hackmason.org">events</a>. We hold
+      numerous events each semester, from traveling to hackathons and conferences to
+      doing local outreach, holding large programming events, and hosting speakers.</p>
+      <p>Letterpress venmo mixtape microdosing raw denim cray. Master cleanse four dollar toast paleo letterpress pork belly. Wayfarers meh pariatur, flannel velit mixtape kogi sunt banjo green juice ullamco four loko. Quinoa incididunt enim, laboris occaecat blog ethical stumptown et do raw denim distillery etsy.</p>
+      <p>See some of the ways we've improved life on campus on the <a href="{{ url_for('projects') }}">projects page</a>.</p>
+  </div>
+  <div class="col-md-3 col-sm-4 col-xs-4 smidge">
+    <img src="/static/img/bitcamp.jpg" alt="..." class="img-circle img-responsive center-block">
+  </div>
+  
+  <div class="col-md-9 col-sm-8 col-xs-8 smidge">
+    <h4><strong>Outreach & Community</strong></h4>
+      <p>We're on <a href="https://www.facebook.com/MasonSRCT">Facebook</a> and
+      <a href="https://www.twitter.com/MasonSRCT">Twitter</a>, have
+      <a href="http://lists.srct.gmu.edu/mailman/listinfo">active mailing lists</a>,
+      and an active <a href="https://srct.slack.com/">Slack team</a>. More ways to
+      get in touch are on our <a href="{{ url_for('contact') }}">contact page</a>.</p>
+      <p>See some of the ways we've improved life on campus on the <a href="{{ url_for('projects') }}">projects page</a>.</p>
+      <p>3 wolf moon sustainable squid meggings, selvage raw denim microdosing health goth beard skateboard cold-pressed pop-up tote bag schlitz. Cred farm-to-table roof party thundercats trust fund irony. Man bun iPhone brooklyn keytar waistcoat, man braid distillery quinoa everyday carry brunch chicharrones deserunt aesthetic.</p>
+  </div>
+  <div class="col-md-3 col-sm-4 col-xs-4 smidge">
+    <img src="/static/img/org-fair.jpg" alt="..." class="img-circle img-responsive center-block">
+  </div>
+</div>
 
+<div class="row">
+  <legend><i class="fa fa-laptop fa-fw"></i>&nbsp;<strong>Getting Involved</strong></legend>
+  <div class="col-md-4">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title text-center"><i class="fa fa-comments-o fa-fw"></i> Get In Touch</h3>
+      </div>
+      <div class="panel-body">
+        <p>To learn more about SRCT, check out our
+        <a href="{{ url_for('projects') }}">projects</a>, active, under development, or proposed, or talk to one of the
+        <a href="{{ url_for('people') }}">members</a>! Technical documentation is
+        available on our <a href="http://wiki.srct.gmu.edu">wiki</a>, and all of our
+        code is visible on the <a href="http://git.gmu.edu/public">public page</a> of
+        our student git repository.</p>
+        <p>Tattooed quinoa echo park fingerstache. Selfies bitters quinoa knausgaard.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title text-center"><i class="fa fa-heart-o fa-fw"></i> Stop On By</h3>
+      </div>
+      <div class="panel-body">
+        <p>You can come to any of our planned <a href="//hackmason.org">events</a>. We hold
+        numerous events each semester, from traveling to hackathons and conferences to
+        doing local outreach, holding large programming events, and hosting speakers.</p>
+        <p>Letterpress venmo mixtape microdosing raw denim cray. Master cleanse four dollar toast paleo letterpress pork belly.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title text-center"><i class="fa fa-files-o fa-fw"></i> Additional Resources</h3>
+      </div>
+      <div class="panel-body">
+        <p>We're on <a href="https://www.facebook.com/MasonSRCT">Facebook</a> and
+        <a href="https://www.twitter.com/MasonSRCT">Twitter</a>, have
+        <a href="http://lists.srct.gmu.edu/mailman/listinfo">active mailing lists</a>,
+        and an active <a href="https://srct.slack.com/">Slack team</a>. More ways to
+        get in touch are on our <a href="{{ url_for('contact') }}">contact page</a>.</p>
+        <p>3 wolf moon sustainable squid meggings, selvage raw denim microdosing health goth beard skateboard cold-pressed pop-up tote bag schlitz. Cred farm-to-table roof party thundercats trust fund irony.</p>
+      </div>
+    </div>
+  </div>
 </div>
 {% endblock %}
 
