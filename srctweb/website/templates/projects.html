@@ -1,6 +1,6 @@
 {% extends "layouts/base.html" %}
 {% block title %}
- SRCT | Projects 
+ SRCT | Projects
 {% endblock %}
 
 {% block pagetitle %}
@@ -13,7 +13,7 @@ Projects created and maintained by SRCT's members.
 {% block content %}
 
 <p class="text-center">
-  <i class="fa fa-exclamation-circle fa-fw fa-lg"></i> 
+  <i class="fa fa-exclamation-circle fa-fw fa-lg"></i>
   We are currently restructuring documentation. Some links to docs, issues,
   Trello, or mailing lists may not yet be added.
 </p>
@@ -23,28 +23,6 @@ Projects created and maintained by SRCT's members.
 Mason community.</font></small></legend>
 
 <div class="row">
-
-  <div class="col-lg-6 project-entry">
-    <a class="project-link" name="bookshare" href="#bookshare"><i class="fa fa-book project-icon"></i></a>
-
-    <legend><strong>Bookshare</strong>
-    | <a href="http://bookshare.srct.gmu.edu">bookshare.srct.gmu.edu</a></legend>
-
-    <a href="#">Docs</a> | <a href="#">Issues</a> |
-    <a href="https://trello.com/b/dSUBVUmj/bookshare">Trello</a> |
-    <a href="#">Email</a>
-    <br><br>
-
-    <strong class="project-role">Project Manager:</strong>
-      Daniel Bond<br>
-    <strong class="project-role">Repository:</strong>
-      <a href="https://git.gmu.edu/srct/bookshare">git.gmu.edu/srct/bookshare</a><br>
-
-    <p class="project-text">
-       Bookshare is a platform for textbook transactions, with books searchable
-       by Name, Author, ISBN, and Class.
-    </p>
-  </div>
 
   <div class="col-lg-6 project-entry">
     <a class="project-link" name="git" href="#git"><i class="fa fa-code-fork project-icon"></i></a>
@@ -71,10 +49,6 @@ Mason community.</font></small></legend>
     </p>
   </div>
 
-</div>
-
-<div class="row">
-
   <div class="col-lg-6 project-entry">
     <a class="project-link" name="go" href="#go"><i class="fa fa-link project-icon"></i></a>
 
@@ -98,32 +72,49 @@ Mason community.</font></small></legend>
     </p>
   </div>
 
-  <div class="col-lg-6 project-entry">       
-    <a class="project-link" name="pgp" href="#pgp"><i class="fa fa-key project-icon"></i></a>
-      
-    <legend><strong>PGP</a></strong>
-    | <a href="http://pgp.srct.gmu.edu">pgp.gmu.edu</a></legend>
-  
-    <a href="#">Docs</a> | <a href="#">Issues</a> |
-    <a href="https://trello.com/b/EqdF3o9p/pgp">Trello</a> |
-    <a href=#">Email</a>
+  </div>
+
+  <div class="row">
+
+      <div class="col-lg-6 project-entry">
+        <a class="project-link" name="Masonstrap" href="#masonstrap"><i class="fa fa-paint-brush project-icon"></i></a>
+
+        <legend><strong>Masonstrap</strong>
+        | go.gmu.edu/srct-design</legend>
+
+        <strong class="project-role">Project Manager:</strong>
+          —<br>
+
+        <p class="project-text">
+          Unified, common design language across all SRCT-developed projects
+          and advertising, with recommendations, templates, and assets, including
+          both LESS and compiled stylesheets.
+        </p>
+      </div>
+
+
+
+  <div class="col-lg-6 project-entry">
+    <a class="project-link" name="roomlist" href="#roomlist"><i class="fa fa-users project-icon"></i></a>
+
+    <legend><strong>RoomList</strong>
+    | <a href="http://roomlist.srct.io">roomlist.srct.io</a> <small>(beta)</small></legend>
+
+    <a href="#">Docs</a> | <a href="#">Issues</a> | <a href="#">Trello</a>
     <br><br>
 
     <strong class="project-role">Project Manager:</strong>
-      Kunal Sarkhel<br>
+      Jason Yeomans<br>
     <strong class="project-role">Repository:</strong>
-      <a href="https://git.gmu.edu/srct/pgp">git.gmu.edu/srct/pgp</a><br>
-
+      <a href="https://git.gmu.edu/srct/roomlist">git.gmu.edu/srct/roomlist</a><br>
     <p class="project-text">
-      A Mason public key server. Allows for future exploration to deploy a
-      public key infrastructure for encrypted email or digital signatures
-      for general institutional purposes.
+      For on campus-students, find out who's living on your floor.
     </p>
   </div>
 
-</div>
+  </div>
 
-<div class="row">
+  <div class="row">
 
   <div class="col-lg-6 project-entry">
     <a class="project-link" name="srctweb" href="#srctweb"><i class="fa fa-globe project-icon"></i></a>
@@ -146,10 +137,10 @@ Mason community.</font></small></legend>
     </p>
   </div>
 
-  <div class="col-lg-6 project-entry">    
+  <div class="col-lg-6 project-entry">
     <a class="project-link" name="whatsopen" href="#whatsopen"><i class="fa fa-clock-o project-icon"></i></a>
 
-    <legend><strong>Whatsopen</strong> 
+    <legend><strong>Whatsopen</strong>
     | <a href="http://whatsopen.gmu.edu">whatsopen.gmu.edu</a></legend>
 
     <a href="#">Docs</a> | <a href="#">Issues</a> |
@@ -167,7 +158,7 @@ Mason community.</font></small></legend>
       kept updated with holidays, etc. Expanding to cover more than dining locations.
     </p>
   </div>
-  
+
 </div>
 
 <legend><strong><a class="project-link" name="active" href="#active">Active</a></strong>
@@ -201,6 +192,32 @@ stable deployment.</small></font></legend>
   </div>
 
   <div class="col-lg-6 project-entry">
+    <a class="project-link" name="bookshare" href="#bookshare"><i class="fa fa-book project-icon"></i></a>
+
+    <legend><strong>Bookshare</strong>
+    | <a href="http://bookshare.srct.gmu.edu">bookshare.srct.gmu.edu</a></legend>
+
+    <a href="#">Docs</a> | <a href="#">Issues</a> |
+    <a href="https://trello.com/b/dSUBVUmj/bookshare">Trello</a> |
+    <a href="#">Email</a>
+    <br><br>
+
+    <strong class="project-role">Project Manager:</strong>
+      Daniel Bond<br>
+    <strong class="project-role">Repository:</strong>
+      <a href="https://git.gmu.edu/srct/bookshare">git.gmu.edu/srct/bookshare</a><br>
+
+    <p class="project-text">
+       Bookshare is a platform for textbook transactions, with books searchable
+       by Name, Author, ISBN, and Class.
+    </p>
+  </div>
+
+  </div>
+
+  <div class="row">
+
+  <div class="col-lg-6 project-entry">
     <a class="project-link" name="ci" href="#ci"><i class="fa fa-bug project-icon"></i></a>
 
     <legend><strong>CI</strong> (Continuous Integration)
@@ -218,10 +235,6 @@ stable deployment.</small></font></legend>
       community use of continuous integration.
     </p>
   </div>
-
-</div>
-
-<div class="row">
 
   <div class="col-lg-6 project-entry">
     <a class="project-link" name="hackmason" href="#hackmason"><i class="fa fa-cogs project-icon"></i></a>
@@ -241,6 +254,10 @@ stable deployment.</small></font></legend>
       HackMason is our site for event information and registration.
     </p>
   </div>
+
+</div>
+
+<div class="row">
 
   <div class="col-lg-6 project-entry">
     <a class="project-link" name="laundry" href="#laundry">
@@ -265,10 +282,6 @@ stable deployment.</small></font></legend>
     </p>
   </div>
 
-</div>
-
-<div class="row">
-
   <div class="col-lg-6 project-entry">
     <a class="project-link" name="photos" href="#photos"><i class="fa fa-camera-retro project-icon"></i></a>
 
@@ -290,27 +303,32 @@ stable deployment.</small></font></legend>
     </p>
   </div>
 
+  </div>
+
+  <div class="row">
+
   <div class="col-lg-6 project-entry">
-    <a class="project-link" name="roomlist" href="#roomlist"><i class="fa fa-users project-icon"></i></a>
+    <a class="project-link" name="pgp" href="#pgp"><i class="fa fa-key project-icon"></i></a>
 
-    <legend><strong>RoomList</strong>
-    | <a href="http://roomlist.srct.io">roomlist.srct.io</a> <small>(beta)</small></legend>
+    <legend><strong>PGP</a></strong>
+    | <a href="http://pgp.srct.gmu.edu">pgp.gmu.edu</a></legend>
 
-    <a href="#">Docs</a> | <a href="#">Issues</a> | <a href="#">Trello</a>
+    <a href="#">Docs</a> | <a href="#">Issues</a> |
+    <a href="https://trello.com/b/EqdF3o9p/pgp">Trello</a> |
+    <a href=#">Email</a>
     <br><br>
 
     <strong class="project-role">Project Manager:</strong>
-      Jason Yeomans<br>
+      Kunal Sarkhel<br>
     <strong class="project-role">Repository:</strong>
-      <a href="https://git.gmu.edu/srct/roomlist">git.gmu.edu/srct/roomlist</a><br>
+      <a href="https://git.gmu.edu/srct/pgp">git.gmu.edu/srct/pgp</a><br>
+
     <p class="project-text">
-      For on campus-students, find out who's living on your floor. 
+      A Mason public key server. Allows for future exploration to deploy a
+      public key infrastructure for encrypted email or digital signatures
+      for general institutional purposes.
     </p>
   </div>
-
-</div>
-
-<div class="row">
 
   <div class="col-lg-6 project-entry">
     <a class="project-link" name="talks" href="#talks"><i class="fa fa-microphone project-icon"></i></a>
@@ -330,6 +348,10 @@ stable deployment.</small></font></legend>
       Hosts easily navigable pages of talk videos, slideshows, and notes.
     </p>
   </div>
+
+  </div>
+
+  <div class="row">
 
   <div class="col-lg-6 project-entry">
     <a class="project-link" name="userspace" href="#userspace"><i class="fa fa-cloud-upload project-icon"></i></a>
@@ -358,21 +380,6 @@ experience leading a development team.</small></font></legend>
 
 <div class="row">
 
-  <div class="col-lg-6 project-entry">
-    <a class="project-link" name="design" href="#design"><i class="fa fa-paint-brush project-icon"></i></a>
-
-    <legend><strong>Design</strong>
-    | go.gmu.edu/srct-design</legend>
-
-    <strong class="project-role">Project Manager:</strong>
-      —<br>
-
-    <p class="project-text">
-      Unified, common design language across all SRCT-developed projects
-      and advertising, with recommendations, templates, and assets, including
-      both LESS and compiled stylesheets.
-    </p>
-  </div>
 
   <div class="col-lg-6 project-entry">
     <a class="project-link" name="etherpad" href="#etherpad"><i class="fa fa-file-text-o project-icon"></i></a>
@@ -391,10 +398,6 @@ experience leading a development team.</small></font></legend>
     </p>
   </div>
 
-</div>
-
-<div class="row">
-
   <div class="col-lg-6 project-entry">
     <a class="project-link" name="maps" href="#maps"><i class="fa fa-map-marker project-icon"></i></a>
 
@@ -407,9 +410,13 @@ experience leading a development team.</small></font></legend>
     <p class="project-text">
       An online mapping utility for navigation inside buildings on campus. The
       university has numerous mapping resources available for students to locate
-      buildings, but none for locating specific rooms and classrooms. 
+      buildings, but none for locating specific rooms and classrooms.
     </p>
   </div>
+
+  </div>
+
+  <div class="row">
 
   <div class="col-lg-6 project-entry">
     <a class="project-link" name="mirrors" href="#mirrors"><i class="fa fa-arrow-circle-down project-icon"></i></a>
@@ -429,10 +436,6 @@ experience leading a development team.</small></font></legend>
     </p>
   </div>
 
-</div>
-
-<div class="row">
-
   <div class="col-lg-6 project-entry">
     <a class="project-link" name="people" href="#people"><i class="fa fa-institution project-icon"></i></a>
 
@@ -450,6 +453,8 @@ experience leading a development team.</small></font></legend>
       currently spread across School and College webpages.
     </p>
   </div>
+
+  <div class="row">
 
   <div class="col-lg-6 project-entry">
     <a class="project-link" name="templates" href="#templates"><i class="fa fa-cubes project-icon"></i></a>
