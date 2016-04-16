@@ -194,7 +194,7 @@ SRCT
         </p>
         <p>
           You can also come to any of our major events: all-day workshops, travel to conferences,
-          hosting speakers, and more. Every one goes on our
+          hosting speakers, and more. Each one goes on our
           <a href="{{ url_for('projects') }}">calendar</a>, on our
           <a href="https://facebook.com/MasonSRCT">Facebook page</a>,
           and is announced on our
@@ -214,25 +214,65 @@ SRCT
         <h3 class="panel-title text-center"><i class="fa fa-files-o fa-fw"></i> Additional Resources</h3>
       </div>
       <div class="panel-body">
-        <p>
-          If you're raring and ready to get started
-        </p>
-        <p>
-          Version control is cool try.github.io
-        </p>
-        <p>
-          Check out the source (;-))for any of our projects on git.gmu.edu and see if there
-          are any issues you're interested in taking on, or you can report bugs you've
-          found yourself
-        </p>
-        <p>
-          Next, you can work through either or both of these tutorials on some of the
-          development frameworks we use Django, Meteor
-        </p>
-        <p>
-          Read about more of the workshops we hold on our wiki, along with more information
-          from infrastructure setup to event planning
-        </p>
+        <ul class="nav nav-pills nav-justified smidge small" role="tablist">
+          <li role="presentation" class="active">
+            <a href="#code" aria-controls="code" role="tab" data-toggle="tab">Code</a>
+          </li>
+          <li role="presentation">
+            <a href="#design" aria-controls="design" role="tab" data-toggle="tab">Design</a>
+          </li>
+          <li role="presentation">
+            <a href="#infra" aria-controls="infra" role="tab" data-toggle="tab">Infrastructure</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane fade in active" id="code">
+            <p>
+              Version control lets developers to save their progress at certain states, and then maintain a history of those saved points. It means you can fearlessly try out ideas and allows for multiple people to easily collaborate on the same project. Git is the popular version control program we use. All of our projects are on the git server we run for Mason, git.gmu.edu, and are mirrored to Github, a similar commercial service. Get a good handle on using git through <a href="https://try.github.io/">this quick tutorial</a>.
+            </p>
+            <p>
+              Next, you can check out the source for our projects, and look at all of the issues we're working on. If you find any bugs, or think of a feature you think would be helpful, you can create an issue yourself. You can dive write in following each project's setup documentation, or work through a tutorial on some of the main development frameworks we use, Django (Python), or Meteor (JavaScript).
+            </p>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="design">
+            <p>
+              On the more artistic side of things
+            </p>
+            <p>
+              Mason's branding guidelines
+              Our CSS
+              Creating adverising for our events and projects and org
+              Making stuff responsive-- so it runs on both desktops and phones
+            <p>
+              Focusing more on usability, here's what that is
+            </p>
+            <p>
+              Don't Make Me Think, which is excellent with lots of pretty pictures and can be read online for free from Mason's library
+            </p>
+            <p>
+              We also strive to make sure that our sites are accessible. Load with dyslexic fonts, or see how the page sounds with a screen reader, or make sure the contrasts are high enough for the colorblind.
+            </p>
+            <p>
+              Read about more of the workshops we hold on our wiki, along with more information
+              from infrastructure setup to event planning
+            </p>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="infra">
+            <p>
+              Of course, not everything we need help with involves code. There are plenty of other aspects where members can help out.
+            </p>
+            <p>
+              Our projects can't help the community without a stable foundation for them to run on
+            </p>
+            <p>
+              Read about more of the workshops we hold on our wiki, along with more information
+              from infrastructure setup to event planning
+            </p>
+            <p>
+              Server setup, ansible, docker, domain names, mailing servers... I have absolutely no idea. This is not my wheelhouse, and is close to being completely black box for me.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
