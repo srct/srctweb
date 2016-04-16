@@ -23,8 +23,8 @@ a[name] {
   background-color: #e4e6d7;
 }
 @font-face {
-    font-family: Xolonium, Arial, sans-serif;
-    src: url(/static/fonts/Xolonium-Regular.otf) format("opentype");
+    font-family: 'Xolonium';
+    src: url('../fonts/Xolonium-Regular.otf') format("opentype");
 }
 .xolonium {
   font-family: Xolonium;
