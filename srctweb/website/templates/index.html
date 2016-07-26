@@ -171,7 +171,7 @@ SRCT
         <p>
           You can also come to any of our major events: all-day workshops, travel to conferences,
           hosting speakers, and more. Every event goes on our
-          <a href="{{ url_for('projects') }}">calendar</a>, on our
+          <a href="{{ url_for('calendar') }}">calendar</a>, on our
           <a href="https://facebook.com/MasonSRCT">Facebook page</a>,
           and is announced on our
           <a href="http://lists.srct.gmu.edu/listinfo/srct-general">mailing list</a>.
@@ -254,20 +254,26 @@ SRCT
           </div>
           <div role="tabpanel" class="tab-pane fade" id="infra">
             <p>
-              Of course, not everything we need help with involves code. There are plenty of other aspects where members can help out.
+              Without reliable server infrastructure to host all of our services,
+              the code we write wouldn't be much help to Mason's community. Take a look
+              at learning to use the Unix command line. In Hollywood, it's the
+              <a href="https://www.youtube.com/watch?v=dFUlAQZB9Ng">sign of an elite hacker</a>,
+              but doesn't have to be mystifying. Sure, no mouse is a bit different, but soon
+              enough, you'll see both how using a terminal gives you far more power, and
+              why for a lot of cases, it's easier than clicking, dragging, and dropping.
             </p>
             <p>
-              Our projects can't help the community without a stable foundation for them to run on
-            </p>
-            <p>
-              Securitah
-            </p>
-            <p>
-              Read about more of the workshops we hold on our wiki, along with more information
-              from infrastructure setup to event planning
-            </p>
-            <p>
-              Server setup, ansible, docker, domain names, mailing servers... I have absolutely no idea. This is not my wheelhouse, and is close to being completely black box for me.
+              The free version of
+              <a href="https://www.codecademy.com/learn/learn-the-command-line">this tutorial</a>
+              is a great place to begin.
+              If you're already using Linux or OSX,
+              <a href="http://cli.learncodethehardway.org/book/">this tutorial</a>
+              is another great resource (ignore the intimidating title) to try things out
+              on your own machine. Once you have a little practice under your belt,
+              try following our documentation to deploy one of our
+              <a href="{{ url_for('projects') }}">projects</a>.
+              <a href="https://git.gmu.edu/srct/whats-open">What's Open</a>
+              is a good one to start with.
             </p>
           </div>
         </div>
