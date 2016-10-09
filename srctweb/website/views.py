@@ -37,10 +37,16 @@ def projects():
         renderHead = True,
     )
 
+@website.route('/sponsors/')
+def sponsors():
+    return render_template("sponsors.html",
+        renderHead = True,
+    )
+
 @website.route('/opt-out/')
 def optOut():
     return render_template("privacy_opt_out.html",
-    
+
     )
 
 ### DOCUMENTS ###
