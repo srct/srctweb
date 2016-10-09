@@ -52,7 +52,7 @@ def fundraising():
 @website.route('/opt-out/')
 def optOut():
     return render_template("privacy_opt_out.html",
-    
+
     )
 
 ### DOCUMENTS ###
