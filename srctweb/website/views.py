@@ -25,6 +25,12 @@ def documents():
         renderHead = True,
     )
 
+@website.route('/events/')
+def events():
+    return render_template("events.html",
+        renderHead = True,
+    )
+
 @website.route('/people/')
 def people():
     return render_template("people.html",
@@ -40,7 +46,7 @@ def projects():
 @website.route('/opt-out/')
 def optOut():
     return render_template("privacy_opt_out.html",
-    
+
     )
 
 ### DOCUMENTS ###
