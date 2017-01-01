@@ -41,6 +41,16 @@ a[name] {
   box-shadow: inset 0px 0px 20px #333;
   padding-top: 100px;
   padding-bottom: 100px;
+  margain-bottom: 0px;
+}
+.mailing-jumbo {
+    background-color: #777777;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margain-top: 0px;
+}
+.email-input {
+    width: 30em;
 }
 .srctlogo {
   width: 10px;
