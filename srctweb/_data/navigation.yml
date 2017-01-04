@@ -22,7 +22,7 @@ main:
         url: "/documents/terms_of_service/"
 
       - title: "Privacy Policy"
-        url: "/documents/privicy_policy/"
+        url: "/documents/privacy_policy/"
 
       - title: "Intellectual Property"
         url: "/documents/intellectual_property/"
