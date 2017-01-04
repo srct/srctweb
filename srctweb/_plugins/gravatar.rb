@@ -1,3 +1,6 @@
+# Modified by Mark Stenglein, <mark@stengle.in>
+# Only returns the URL itself back to the user.
+#
 # This is the Jekyll Gravatar Filter
 #
 # Place this file in your plugins directory
