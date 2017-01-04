@@ -49,3 +49,12 @@ exclude:
 markdown: kramdown
 gems:
   - jekyll-feed
+
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+

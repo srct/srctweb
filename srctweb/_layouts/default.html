@@ -1,0 +1,30 @@
+{% include base_path %}
+
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
+  <head>
+    {% include head.html %}
+  </head>
+
+  <body>
+
+    <div id="wrap">
+      <header>
+        {% include browser-upgrade.html %}
+        {% include navbar.html %}
+      </header>
+
+      <main>
+        {{ content }}
+      </main>
+
+      <div id="footer">
+        {% include footer.html %}
+      </div>
+
+    </div>
+
+    {% include scripts.html %}
+
+  </body>
+</html>

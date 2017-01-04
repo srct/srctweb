@@ -35,7 +35,7 @@ a[name] {
   text-shadow: 1px 1px 6px #333;
 }
 .jumbostyle {
-  background: url(/static/img/meeting.jpg) no-repeat;
+  background: url(/assets/img/meeting.jpg) no-repeat;
   background-size: cover;
   background-position: 20%;
   box-shadow: inset 0px 0px 20px #333;
