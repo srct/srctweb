@@ -21,12 +21,6 @@ baseurl                  : ""
 url                      : "https://srct.gmu.edu"
 
 
-# SEO
-google_site_verification :
-bing_site_verification   :
-alexa_site_verification  :
-yandex_site_verification :
-
 # Social Sharing
 twitter:
   username               : "masonsrct"
