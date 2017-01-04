@@ -1,5 +1,0 @@
-# Localhost for dev
-url : "http://127.0.0.1:4000"
-
-# Analytics off for dev
-analytics: false

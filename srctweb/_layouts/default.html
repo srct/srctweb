@@ -10,7 +10,11 @@
     {% include browser-upgrade.html %}
     {% include navbar.html %}
 
-    {% include jumbotron.html %}
+    {% if page.jumbotron == true %}
+      {% include jumbotron.html %}
+    {% else %}
+      {% include banner.html %}
+    {% endif %}
 
     <div class="container">
       {{ content }}
