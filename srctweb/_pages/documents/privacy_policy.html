@@ -1,16 +1,8 @@
-{% extends "layouts/base.html" %}
-{% block title %}
-SRCT | Docs | Privacy Policy 
-{% endblock %}
+---
+title: "Privacy Policy"
+permalink: "/documents/privacy_policy/"
+---
 
-{% block pagetitle %}
-Privacy Policy
-{% endblock %}
-{% block description %}
-
-{% endblock %}
-
-{% block content %}
 <div class="row">
   <div class="col-sm-10">
     <p>SRCT's projects are very diverse, just like fellow GMU students who write them for our school's benefit. Sometimes, additional provisions may apply for a project, or may need to provide additional clarity from the policy laid out here. In that case, those rules build on top of or over these. This privacy policy is part of Mason SRCT's Terms of Service.</p>
@@ -37,7 +29,7 @@ Privacy Policy
 
       <div class="col-md-6">
         <h2>Can I opt out?</h2>
-	<p>You may <a href="{{ url_for('optOut')}}">opt out</a> (or back in) of all future analytics. Many sites on the internet will not give you this option, or make it very difficult, so if you'd like to opt out of tracking everywhere, you can simply <a href="https://disconnect.me/">block their trackers</a>.</p>
+	<p>You may <a href="/opt_out">opt out</a> (or back in) of all future analytics. Many sites on the internet will not give you this option, or make it very difficult, so if you'd like to opt out of tracking everywhere, you can simply <a href="https://disconnect.me/">block their trackers</a>.</p>
 	<p>Depending on the project, your interactions and information you upload will be retained for the functionality of the project, and can't be removed, except as in violation of our <a href="/documents/terms_of_service">Terms of Service</a>, even upon graduation or other conclusion of your relationship with the university and the closure of your full access GMU account.</p>
       </div>  
 
@@ -49,26 +41,14 @@ Privacy Policy
 	Should any portion of this privacy policy be deemed unenforceable, all its other terms will nevertheless remain in full force and effect.
 	Many of our projects require GMU user account authentication, and therefore by design not aimed at minors under the age of thirteen. For the others, please contact us if you believe someone twelve or younger is using our site without parental consent.
         We're from Fairfax, Virginia, United States and are subject to law within its jurisdiction.
-        We may revise this policy; when we make, at our discretion, assignficant change, we will display a prominent link to the change on the front page of our site. Please <a href="{{ url_for('contact') }}">contact us</a> with any questions, comments, or concerns.</p>
+        We may revise this policy; when we make, at our discretion, assignficant change, we will display a prominent link to the change on the front page of our site. Please <a href="/contact/">contact us</a> with any questions, comments, or concerns.</p>
       </div>
     </div>
 </div>
   
   <div class="col-sm-2 hidden-xs">
-
-    <h4><strong>Documents</strong></h4>
-      <div class="list-group">
-        <a href="{{ url_for('constitution') }}" class="list-group-item">Constitution</a>
-        <a href="{{ url_for('usagePolicy') }}" class="list-group-item">Usage Policy</a>
-        <a href="{{ url_for('termsOfService') }}" class="list-group-item">Terms of Service</a>
-        <a href="{{ url_for('privacyPolicy') }}" class="list-group-item active">Privacy Policy</a>
-        <a href="{{ url_for('intellectualProperty') }}" class="list-group-item">Intellectual Property</a>
-        <a href="{{ url_for('softwareFreedom') }}" class="list-group-item">Software Freedom</a>
-        <a href="{{ url_for('logos') }}" class="list-group-item">Logos</a>
-      </div>
-  
+    {% include documentsMenu.html %}
   </div>
 
 </div>
 
-{% endblock %}

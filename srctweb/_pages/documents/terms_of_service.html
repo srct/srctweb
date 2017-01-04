@@ -1,16 +1,8 @@
-{% extends "layouts/base.html" %}
-{% block title %}
-SRCT | Docs | Terms of Service
-{% endblock %}
+---
+title: "Terms of Service"
+permalink: /documents/terms_of_service/
+---
 
-{% block pagetitle %}
-Terms of Service
-{% endblock %}
-{% block description %}
-
-{% endblock %}
-
-{% block content %}
 <div class="row">
   <div class="col-sm-10">
 
@@ -19,7 +11,7 @@ Terms of Service
   free time. Sometimes a project may require additional terms, and those
   terms will be listed on the project's site. Those terms become part of
   your agreement with us when you use those projects. If you have any
-  questions, please <a href="{{ url_for('contact') }}">contact us</a> before accessing our
+  questions, please <a href="/contact/">contact us</a> before accessing our
   services. :-) Use of our projects constitutes your agreement to these
   terms, and your acknowledgement that you are legally able to form a
   binding contract.</p>
@@ -34,7 +26,7 @@ Terms of Service
 	<p>Many of our services have
 	<a href="https://en.wikipedia.org/wiki/Application_programming_interface">
 	APIs</a>, and you can get backend access to our projects by coming to
-	<a href="{{ url_for('calendar') }}">meetings</a> for questions or help, so please
+	<a href="/calendar/">meetings</a> for questions or help, so please
 	don't try to access, disrupt, or otherwise interfere with our
 	projects in a way we don't intend. It takes a lot of work to keep
 	our projects running as it is. Because we are hosted on GMU machines,
@@ -75,7 +67,7 @@ Terms of Service
 	<p><strong>Privacy Policy</strong></p>
 	<p>We may send service announcements and other information to users.
 	You will be able to opt out of these emails. Please see our
-	<a href="{{ url_for('privacyPolicy') }}">privacy policy</a> for more
+	<a href="/documents/privacy_policy/">privacy policy</a> for more
 	about how we use and keep confidential your personal information.</p>
 	<p><strong>User Rights</strong></p>
 	<p>Use of our projects does not confer SRCT membership.</p>
@@ -172,20 +164,8 @@ Terms of Service
   </div>
   
   <div class="col-sm-2 hidden-xs">
-
-    <h4><strong>Documents</strong></h4>
-      <div class="list-group">
-        <a href="{{ url_for('constitution') }}" class="list-group-item">Constitution</a>
-        <a href="{{ url_for('usagePolicy') }}" class="list-group-item">Usage Policy</a>
-        <a href="{{ url_for('termsOfService') }}" class="list-group-item active">Terms of Service</a>
-        <a href="{{ url_for('privacyPolicy') }}" class="list-group-item">Privacy Policy</a>
-        <a href="{{ url_for('intellectualProperty') }}" class="list-group-item">Intellectual Property</a>
-        <a href="{{ url_for('softwareFreedom') }}" class="list-group-item">Software Freedom</a>
-        <a href="{{ url_for('logos') }}" class="list-group-item">Logos</a>
-      </div>
-  
+    {% include documentsMenu.html %}
   </div>
 
 </div>
 
-{% endblock %}

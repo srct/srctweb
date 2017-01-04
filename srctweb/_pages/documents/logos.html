@@ -1,53 +1,32 @@
-{% extends "layouts/base.html" %}
-{% block title %}
-SRCT | Docs | Logos
-{% endblock %}
-
-{% block pagetitle %}
-Logos
-{% endblock %}
-{% block description %}
-
-{% endblock %}
-
-{% block content %}
+---
+title: "Logos"
+permalink: /documents/logos/
+---
 
 <div class="row">
   <div class="col-sm-10">
 
   <legend>Rectangular SRCT Logo</legend>
     <div class="col-sm-4 smidge text-center"><strong>
-      <a href="/static/media/SRCT_rectangle.svg" download="SRCT_rectangle.svg">SVG</a></strong></div>
+      <a href="/assets/media/SRCT_rectangle.svg" download="SRCT_rectangle.svg">SVG</a></strong></div>
     <div class="col-sm-4 smidge text-center"><strong>
-      <a href="/static/media/SRCT_rectangle_lg.png" download="SRCT_rectangle_lg.png">PNG (Large)</a></strong></div>
+      <a href="/assets/media/SRCT_rectangle_lg.png" download="SRCT_rectangle_lg.png">PNG (Large)</a></strong></div>
     <div class="col-sm-4 smidge text-center"><strong>
-      <a href="/static/media/SRCT_rectangle_sm.png" download="SRCT_rectangle_sm.png">PNG (Small)</a></strong></div>
+      <a href="/assets/media/SRCT_rectangle_sm.png" download="SRCT_rectangle_sm.png">PNG (Small)</a></strong></div>
 
   <legend>Square SRCT Logo</legend>
     <div class="col-sm-4 smidge text-center"><strong>
-      <a href="/static/media/SRCT_square.svg" download="SRCT_square.svg">SVG</a></strong></div>
+      <a href="/assets/media/SRCT_square.svg" download="SRCT_square.svg">SVG</a></strong></div>
     <div class="col-sm-4 smidge text-center"><strong>
-      <a href="/static/media/SRCT_square_lg.png" download="SRCT_square_lg.png">PNG (Large)</a></strong></div>
+      <a href="/assets/media/SRCT_square_lg.png" download="SRCT_square_lg.png">PNG (Large)</a></strong></div>
     <div class="col-sm-4 smidge text-center"><strong>
-      <a href="/static/media/SRCT_square_sm.png" download="SRCT_square_sm.png">PNG (Small)</a></strong></div>
+      <a href="/assets/media/SRCT_square_sm.png" download="SRCT_square_sm.png">PNG (Small)</a></strong></div>
 
   </div>
   
   <div class="col-sm-2 hidden-xs">
-
-    <h4><strong>Documents</strong></h4>
-      <div class="list-group">
-        <a href="{{ url_for('constitution') }}" class="list-group-item">Constitution</a>
-        <a href="{{ url_for('usagePolicy') }}" class="list-group-item">Usage Policy</a>
-        <a href="{{ url_for('termsOfService') }}" class="list-group-item">Terms of Service</a>
-        <a href="{{ url_for('privacyPolicy') }}" class="list-group-item">Privacy Policy</a>
-        <a href="{{ url_for('intellectualProperty') }}" class="list-group-item">Intellectual Property</a>
-        <a href="{{ url_for('softwareFreedom') }}" class="list-group-item">Software Freedom</a>
-        <a href="{{ url_for('logos') }}" class="list-group-item active">Logos</a>
-      </div>
-  
+    {% include documentsMenu.html %}
   </div>
 
 </div>
 
-{% endblock %}

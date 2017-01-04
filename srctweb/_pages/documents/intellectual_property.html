@@ -1,16 +1,8 @@
-{% extends "layouts/base.html" %}
-{% block title %}
-SRCT | Docs | Intellectual Property
-{% endblock %}
+---
+title: "Intellectual Property"
+permalink: /documents/intellectual_property/
+---
 
-{% block pagetitle %}
-Intellectual Property
-{% endblock %}
-{% block description %}
-
-{% endblock %}
-
-{% block content %}
 <div class="row">
   <div class="col-sm-10">
 
@@ -25,20 +17,8 @@ Intellectual Property
   </div>
   
   <div class="col-sm-2 hidden-xs">
-
-    <h4><strong>Documents</strong></h4>
-      <div class="list-group">
-        <a href="{{ url_for('constitution') }}" class="list-group-item">Constitution</a>
-        <a href="{{ url_for('usagePolicy') }}" class="list-group-item">Usage Policy</a>
-        <a href="{{ url_for('termsOfService') }}" class="list-group-item">Terms of Service</a>
-        <a href="{{ url_for('privacyPolicy') }}" class="list-group-item">Privacy Policy</a>
-        <a href="{{ url_for('intellectualProperty') }}" class="list-group-item active">Intellectual Property</a>
-        <a href="{{ url_for('softwareFreedom') }}" class="list-group-item">Software Freedom</a>
-        <a href="{{ url_for('logos') }}" class="list-group-item">Logos</a>
-      </div>
-  
+    {% include documentsMenu.html %}
   </div>
 
 </div>
 
-{% endblock %}

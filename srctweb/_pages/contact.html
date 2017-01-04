@@ -1,16 +1,9 @@
-{% extends "layouts/base.html" %}
-{% block title %}
-SRCT | Contact
-{% endblock %}
+---
+title: "Contact"
+description: "Drop us a line!"
+permalink: /contact/
+---
 
-{% block pagetitle %}
-Contact
-{% endblock %}
-{% block description %}
-Drop us a line!
-{% endblock %}
-
-{% block content %}
 <h4><p>SRCT communicates through mailing lists, our <a href="Slack team"></a>, IRC on <a href="http://freenode.net/">freenode</a> (#srct), and via our
 <a href="https://facebook.com/groups/gmu.srct">private Facebook group</a>--
 just request to be added.</p></h4>
@@ -80,6 +73,5 @@ Fairfax, VA 22030<br>
 
 <legend><i class="fa fa-question-circle fa-fw"></i>&nbsp;<strong>Direct Contact</strong></legend>
 
-<p>The Mason email usernames of our board and developers are on our <a href="{{ url_for('people') }}">people</a> page for directly emailing SRCT members through <a href="peoplefinder.gmu.edu">peoplefinder</a>.</p>
+<p>The Mason email usernames of our board and developers are on our <a href="/people/">people</a> page for directly emailing SRCT members through <a href="peoplefinder.gmu.edu">peoplefinder</a>.</p>
 
-{% endblock %}
