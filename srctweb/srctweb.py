@@ -1,7 +1,8 @@
 #!flask/bin/python
+import sys
 from website import website
 from website import freezer
-import sys
+
 
 if __name__ == '__main__':	## This is for debugging use only.
     if len(sys.argv) > 1 and sys.argv[1] == "build":
