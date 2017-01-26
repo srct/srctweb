@@ -43,7 +43,7 @@ def sponsors():
         renderHead = True,
     )
 
-@website.route('/fundraising/')
+@website.route('/donate/')
 def fundraising():
     return render_template("fundraising.html",
         renderHead = True,
