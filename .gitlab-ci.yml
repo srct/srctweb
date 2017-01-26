@@ -1,0 +1,13 @@
+image: python:2
+
+pages:
+  script:
+  - pip install -r requirements.txt
+  - python srctweb/srctweb.py build
+  - mv srctweb/website/build/ public/
+  artifacts:
+    paths:
+    - public/
+  only:
+  - master
+

@@ -1,3 +1,6 @@
 *.sw*
 *.pyc
 *~
+srctweb/website/build/
+.venv
+.virtualevn

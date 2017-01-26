@@ -6,7 +6,7 @@ SRCT | People
 People
 {% endblock %}
 {% block description %}
-The people who make up this community of developers!
+The awesome people who make up this community of developers!
 {% endblock %}
 {% block content %}
 <div class="row">
@@ -14,7 +14,7 @@ The people who make up this community of developers!
   <a href="http://wiki.srct.gmu.edu/Executive_Board">Executive Board</a>
 </strong></legend>
 
-<table class="table table-hover">
+<table class="table table-hover" id="executive">
   <thead>
     <tr>
       <th></th>
@@ -25,7 +25,7 @@ The people who make up this community of developers!
   </thead>
   <tbody>
     <tr>
-      <td><img class="img-circle img-responsive center center-block" src="{{ 'jyeoman2@gmu.edu' | gravatar }}" alt = "gravatar image"</td>
+      <td><img class="img-circle gravatar img-responsive center center-block" src="{{ 'jyeoman2@gmu.edu' | gravatar }}" alt="gravatar image"</td>
       <td><h5>Jason Yeomans</h5></td>
       <td>
         <a href="http://wiki.srct.gmu.edu/President"><h5>President</h5></a>
@@ -33,7 +33,7 @@ The people who make up this community of developers!
       <td><h5><em>jyeoman2</em></h5></td>
     </tr>
     <tr>
-      <td><img class="img-circle img-responsive center center-block" src="{{ 'mbaile18@gmu.edu' | gravatar }}" alt = "gravatar image"</td>
+      <td><img class="img-circle gravatar img-responsive center center-block" src="{{ 'mbaile18@gmu.edu' | gravatar }}" alt = "gravatar image"</td>
       <td><h5>Michael Bailey</h5></td>
       <td>
         <a href="http://wiki.srct.gmu.edu/Systems_Administrator"><h5>Systems Admininstrator</h5></a>
@@ -41,7 +41,7 @@ The people who make up this community of developers!
       <td><h5><em>mbaile18</em></h5></td>
     </tr>
     <tr>
-      <td><img class="img-circle img-responsive center center-block" src="{{ 'dhaynes3@gmu.edu' | gravatar }}" alt = "gravatar image"</td>
+      <td><img class="img-circle gravatar img-responsive center center-block" src="{{ 'dhaynes3@gmu.edu' | gravatar }}" alt = "gravatar image"</td>
       <td><h5>David Haynes</h5></td>
       <td>
         <a href="http://wiki.srct.gmu.edu/Vice_President"><h5>Vice President</h5></a>
@@ -49,7 +49,7 @@ The people who make up this community of developers!
       <td><h5><em>dhaynes3</em></h5></td>
     </tr>
     <tr>
-      <td><img class="img-circle img-responsive center center-block" src="{{ 'tkegel@gmu.edu' | gravatar }}" alt = "gravatar image"</td>
+      <td><img class="img-circle gravatar img-responsive center center-block" src="{{ 'tkegel@gmu.edu' | gravatar }}" alt = "gravatar image"</td>
       <td><h5>Thomas Kegel</h5></td>
       <td>
         <a href="http://wiki.srct.gmu.edu/Treasurer"><h5>Treasurer</h5></a>
@@ -57,7 +57,7 @@ The people who make up this community of developers!
       <td><h5><em>tkegel</em></h5></td>
     </tr>
     <tr>
-      <td><img class="img-circle img-responsive center center-block" src="{{ 'mstengle@gmu.edu' | gravatar }}" alt = "gravatar image"</td>
+      <td><img class="img-circle gravatar img-responsive center center-block" src="{{ 'mstengle@gmu.edu' | gravatar }}" alt = "gravatar image"</td>
       <td><h5>Mark Stenglein</h5></td>
       <td>
         <a href="http://wiki.srct.gmu.edu/Secretary"><h5>Secretary</h5></a>
@@ -66,7 +66,7 @@ The people who make up this community of developers!
     </tr>
     <!--
     <tr>
-      <td><img class="img-circle img-responsive center center-block" src="{{ 'asonntag@gmu.edu' | gravatar }}" alt = "gravatar image"</td>
+      <td><img class="img-circle gravatar img-responsive center center-block" src="{{ 'asonntag@gmu.edu' | gravatar }}" alt = "gravatar image"</td>
       <td><h5>Audrey Sonntag</h5></td>
       <td>
         <a href="http://wiki.srct.gmu.edu/Historian"><h5>Historian</h5></a>
@@ -76,7 +76,7 @@ The people who make up this community of developers!
     <tr>
     -->
     <tr>
-      <td><img class="img-circle img-responsive center center-block" src="{{ 'kdobolyi@gmu.edu' | gravatar }}" alt = "gravatar image"</td>
+      <td><img class="img-circle gravatar img-responsive center center-block" src="{{ 'kdobolyi@gmu.edu' | gravatar }}" alt = "gravatar image"</td>
       <td><h5>Kinga Dobolyi</h5></td>
       <td>
         <a href="http://wiki.srct.gmu.edu/Faculty_Advisor"><h5>Faculty Advisor</h5></a>
@@ -92,7 +92,7 @@ The people who make up this community of developers!
   <a href="http://wiki.srct.gmu.edu/Developers">Developers</a>
 </strong></legend>
 <div class="col-md-6 people-left">
-<table class="table table-hover">
+<table class="devs table table-hover">
   <thead>
     <tr>
       <th><h4>Name</h4></th>
@@ -135,6 +135,14 @@ The people who make up this community of developers!
     <tr>
       <td>Jakob Kressel</td>
       <td><em>jkressel</em></td>
+    </tr>
+    <tr>
+      <td>Eyad Hasan</td>
+      <td><em>ehasan3</em></td>
+    </tr>
+    <tr>
+      <td>Mattias Duffy</td>
+      <td><em>mduffy8</em></td>
     </tr>
   </tbody>
 </table>
@@ -181,6 +189,18 @@ The people who make up this community of developers!
       <td>Thomas Kegel</td>
       <td><em>tkegel</em></td>
     </tr>
+    <tr>
+      <td>Robert Hitt</td>
+      <td><em>rhitt</em></td>
+    </tr>
+    <tr>
+      <td>Zach Osman</td>
+      <td><em>zosman</em></td>
+    </tr>
+    <tr>
+      <td>Danny Kim</td>
+      <td><em>dkim74</em></td>
+    </tr>
   <tbody>
 </table>
 </div>
@@ -191,7 +211,7 @@ The people who make up this community of developers!
   Alumni
 </strong></legend>
 <div class="col-md-6 people-left">
-<table class="table table-hover">
+<table class="devs2 table table-hover">
   <thead>
     <tr>
       <th><h4>Name</h4></th>
@@ -238,6 +258,10 @@ The people who make up this community of developers!
     <tr>
       <td>Akshay Karthik</td>
       <td><em>akarthik</em></td>
+    </tr>
+    <tr>
+      <td>Patrick Murray</td>
+      <td><em>pmurray8</em></td>
     </tr>
   <tbody>
 </table>
