@@ -13,6 +13,11 @@ def calendar():
         renderHead = True,
     )
 
+@website.route('/librejs/')
+def librejs():
+    return render_template("librejs.html",
+        renderHead = True,
+    )
 @website.route('/contact/')
 def contact():
     return render_template("contact.html",
@@ -40,7 +45,7 @@ def projects():
 @website.route('/opt-out/')
 def optOut():
     return render_template("privacy_opt_out.html",
-    
+
     )
 
 ### DOCUMENTS ###
