@@ -1,16 +1,16 @@
 SRCTweb
 ===
 
-Our own little site on the world wide web
+Our own little site on the world wide web!
 
 On Contributing
 ---
 
-SRCTweb welcomes all the help it can get. Even if you don't feel like you can be helpful the more technical aspects, we definitely need designers, technical writers, and testers.
+SRCTweb welcomes all the help it can get. Even if you don't feel like you can be helpful with the more technical aspects, we definitely need designers, technical writers, and testers.
 
-There are many things that can be done with this project (see the "To Do" section), but sometimes it's the small things that count, so don't be afraid of contributing just a small spelling mistake.
+There are many things that can be done with this project (see the "To Do" section), but sometimes it's the small things that count, so don't be afraid of contributing something as small as a spelling mistake.
 
-If you need help at all please contact and SRCT member. We want people to contribute, so if you are struggling, or just want to learn we are more than willing to help.
+If you need help, please contact a SRCT member. We want people to contribute, so if you are struggling, or just want to learn, we are more than willing to help.
 
 The project lead for this project is **Daniel Bond**. *dbond2@gmu.edu*
 
@@ -41,16 +41,16 @@ python srctweb.py
 To-do
 ---
 
-Note-- this should also be on the wiki
+Note-- this should also be on the [wiki](http://wiki.srct.gmu.edu/)
 
 **1.1 Release**
-* set up database for people, meeting date on index page, projects
-* figure out where to put a link to meeting notes
+* Set up database for people, meeting date on index page, projects
+* Figure out where to put a link to meeting notes
 * Jeykll for meeting notes, finish hackmason (both not in this repository)
 * Figure out parallaxjs for front page
 * Figure out intellectual property with GMU
-* finish writing privacy policy
-* affix js for documents navigation-- example http://www.bootstrapzero.com/bootstrap-template/affix-sidebar
+* Finish writing privacy policy
+* Affix js for documents navigation-- example http://www.bootstrapzero.com/bootstrap-template/affix-sidebar
 
 ---
 
