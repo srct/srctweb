@@ -13,5 +13,5 @@ gravatar = Gravatar(website,
                     rating='g',
                     default='mm',
                     force_default=False,
-                    use_ssl=False,
+                    use_ssl=True,
                     base_url=None)
