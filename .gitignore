@@ -1,3 +1,6 @@
 *.sw*
 *.pyc
 *~
+srctweb/_site/
+.sass-cache/
+.jekyll-metadata
