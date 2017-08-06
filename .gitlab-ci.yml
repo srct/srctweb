@@ -10,8 +10,7 @@ before_script:
 build:
   stage: build
   script:
-  - cd srctweb/
-  - bundle exec jekyll build -d '../build'
+  - bundle exec jekyll build --trace -d '../build'
   artifacts:
     paths:
     - build
