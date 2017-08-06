@@ -41,7 +41,7 @@ exclude:
 
 # Build settings
 markdown: kramdown
-plugins:
+plugins_dir:
   - jekyll-feed
 
 defaults:

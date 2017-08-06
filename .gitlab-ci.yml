@@ -1,0 +1,16 @@
+image: ruby:2.3
+
+variables:
+  JEKYLL_ENV: production
+
+before_script:
+  - cd srctweb/
+  - bundle install
+
+build:
+  stage: build
+  script:
+  - bundle exec jekyll build --trace -d '../build'
+  artifacts:
+    paths:
+    - build
