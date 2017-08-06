@@ -2,7 +2,8 @@
 locale                   : "en-US"
 title                    : "SRCT"
 email                    : "srct@gmu.edu"
-description              : "SRCTs home on the internet"
+description              : "Mason SRCT is a student organization at George Mason University that establishes and maintains systems which provide specific services for Mason's community."
+author                   : "Mason SRCT"
 
 # the subpath of your site, e.g. /blog
 baseurl                  : ""
