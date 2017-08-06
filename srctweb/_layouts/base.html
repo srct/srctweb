@@ -1,66 +1,43 @@
 <html lang="en">
+
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title> {% block title %} {% endblock %} </title>
     <link href="/static/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="/static/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="/static/css/font-awesome.min.css" rel="stylesheet">
     <link href="/static/css/style.css" rel="stylesheet">
-    <link rel="icon" href="/static/img/favicon.ico">
-    <script>
-        /*    
-        @licstart  The following is the entire license notice for the 
-        JavaScript code in this page.
-
-        Copyright (C) 2014 Mason SRCT
-
-        The JavaScript code in this page is free software: you can
-        redistribute it and/or modify it under the terms of the GNU
-        General Public License (GNU GPL) as published by the Free Software
-        Foundation, either version 3 of the License, or (at your option)
-        any later version.  The code is distributed WITHOUT ANY WARRANTY;
-        without even the implied warranty of MERCHANTABILITY or FITNESS
-        FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-        As additional permission under GNU GPL version 3 section 7, you
-        may distribute non-source (e.g., minimized or compacted) forms of
-        that code without the copy of the GNU GPL normally required by
-        section 4, provided you include this license notice and a URL
-        through which recipients can access the Corresponding Source.   
-
-        @licend  The above is the entire license notice
-        for the JavaScript code in this page.
-        */
-    </script>
+    <link rel="icon" href="/assets/img/favicon.ico">
     <meta name="description" content="Mason SRCT is a student organization at George Mason University that establishes and maintains systems which provide specific services for Mason's community.">
-    <title> {% block title %} {% endblock %} </title>
   </head>
 
   <body>
     <div id="wrap">
-    {% include 'layouts/navbar.html' %}
-
-    {% if renderHead %}
-    <div id="banner">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 page-header">
-            <h1><strong> {% block pagetitle %} {% endblock %}</strong></h1>
-            <p class="lead"> {% block description %} {% endblock %} </p>
+      {% include 'layouts/navbar.html' %}
+      
+      {% if renderHead %}
+        <div id="banner">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 page-header">
+                <h1><strong> {% block pagetitle %} {% endblock %}</strong></h1>
+                <p class="lead"> {% block description %} {% endblock %} </p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    {% endif %}
-    
-     {% block jumbotron %}
-     {% endblock %}
+      {% endif %}
+      
+      {% block jumbotron %}
+      {% endblock %}
 
-    <div class="container">
+      <div class="container">
         {% block content %}
         {% endblock %}
-
-    </div>
+      </div>
     </div>
 
     <div id="footer">
@@ -69,24 +46,6 @@
 
     <script src="/static/js/jquery-2.0.3.min.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
-    {% block scripts %}
-    {% endblock %}
-
-    <!-- Piwik -->
-    <script type="text/javascript">
-      var _paq = _paq || [];
-      _paq.push(["trackPageView"]);
-      _paq.push(["enableLinkTracking"]);
-    
-      (function() {
-        var u="https://piwik.srct.gmu.edu/";
-        _paq.push(["setTrackerUrl", u+"piwik.php"]);
-        _paq.push(["setSiteId", "2"]);
-        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
-        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
-      })();
-    </script>
-    <!-- End Piwik Code -->
-
   </body>
+
 </html>
