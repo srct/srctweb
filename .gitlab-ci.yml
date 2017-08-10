@@ -18,6 +18,8 @@ build:
 prod_deploy:
   stage: build
   script:
+    - cd /srv/srctweb-jekyll/srctweb && git pull && cd ../
+    - mv /srv/srctweb-jekyll/srctweb/* /srv/srctweb-jekyll/
     - cd /srv/srctweb-jekyll/ && bundle exec jekyll build --trace -d '/srv/srctweb-jekyll/_site'
   only:
     - master
