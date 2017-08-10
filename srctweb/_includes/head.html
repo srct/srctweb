@@ -1,0 +1,36 @@
+{% include base_path %}
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>{{ site.title }}{% if page.permalink != '/' %} | {{ page.title }}{% endif %}</title>
+<meta name="description" content="{{ site.description }}">
+<!-- Chrome on Android navbar color -->
+<meta name="theme-color" content="#006633">
+<!-- Opengraph tags -->
+<meta property="og:url" content="{{ site.url }}{{ page.permalink }}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ site.title }}{% if page.permalink != '/' %} | {{ page.title }}{% endif %}">
+<meta property="og:image" content="{{ site.url }}/assets/img/SRCT_sq_white_shadow.png">
+<meta property="og:description" content="{{ page.description }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:locale" content="{{ site.locale }}">
+<meta property="article:author" content="{{ site.author }}">
+<!-- Twitter card tags -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@MasonSRCT">
+<meta name="twitter:creator" content="@MasonSRCT">
+<meta name="twitter:url" content="{{ site.url }}{{ page.permalink }}">
+<meta name="twitter:title" content="{{ site.title }}{% if page.permalink != '/' %} | {{ page.title }}{% endif %}">
+<meta name="twitter:description" content="{{ page.description }}">
+<meta name="twitter:image" content="{{ site.url }}/assets/img/SRCT_sq_white_shadow.png">
+
+<!-- Load stylesheets -->
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="/assets/css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<!-- Load favicon -->
+<link rel="icon" href="/assets/img/favicon.ico">
+
+<script src="/assets/js/jquery-2.0.3.min.js"></script>

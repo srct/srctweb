@@ -1,0 +1,40 @@
+# Main navigation and links for it
+main:
+  - title: "Projects"
+    url: "/projects/"
+
+  - title: "Calendar"
+    url: "/calendar/"
+
+  - title: "People"
+    url: "/people/"
+
+  - title: "Documents"
+    url: "/documents/"
+    children:
+      - title: "General Policy"
+        url: "/documents/policy"
+
+      - title: "Constitution"
+        url: "/documents/constitution/"
+
+      - title: "Usage Policy"
+        url: "/documents/usage_policy/"
+
+      - title: "Terms of Service"
+        url: "/documents/terms_of_service/"
+
+      - title: "Privacy Policy"
+        url: "/documents/privacy_policy/"
+
+      - title: "Intellectual Property"
+        url: "/documents/intellectual_property/"
+
+      - title: "Software Freedom"
+        url: "/documents/software_freedom/"
+
+      - title: "Logos"
+        url: "/documents/logos/"
+
+  - title: "Contact"
+    url: "/contact/"

@@ -1,0 +1,140 @@
+/* Sticky footer styles */
+
+/* The html and body elements cannot have any padding or margin. */
+html,
+body {
+height:100%;
+}
+a[name] {
+  padding-top: 50px;
+}
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -100px;
+  /* Pad bottom by footer height */
+  padding: 0 0 130px;
+}
+/* Set the fixed height of the footer here */
+#footer {
+  height: 100px;
+  background-color: #e4e6d7;
+}
+@font-face {
+    font-family: 'Xolonium';
+    src: url('../fonts/Xolonium-Regular.otf') format("opentype");
+}
+.xolonium {
+  font-family: Xolonium;
+}
+.srct-title {
+  color: white;
+  font-size: 1.72em;
+  text-shadow: 1px 1px 6px #333;
+}
+.jumbostyle {
+  background: url(/assets/img/meeting.jpg) no-repeat;
+  background-size: cover;
+  background-position: 20%;
+  box-shadow: inset 0px 0px 20px #333;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.srctlogo {
+  width: 10px;
+}
+.smidge {
+  padding-bottom: 10px;
+}
+.smidgen {
+  padding-bottom: 5px;
+}
+.people-left {
+  padding-left:0;
+  padding-right:0;
+}
+.people-right {
+  padding-right:0;
+  padding-left:0;
+}
+@media(min-width:992px){
+  .people-left {
+    padding-right:15px;
+  }
+  .people-right {
+    padding-left:15px;
+  }
+}
+/**
+* A cool little hack I found to try to allow a responsive Google Cal:
+* http://themeloom.com/2013/02/tips-embed-google-maps-and-calendars-in-a-responsive-wordpress-theme/
+**/
+.googlecal-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+.googlecal-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/** Projects Page **/
+.project-entry {
+  margin-bottom:10px;
+}
+.project-icon {
+  text-align:center;
+  display: block;
+  font-size:100px;
+  margin:0 auto;
+  padding-bottom: 10px;
+}
+/* can't you extend CSS classes? */
+.project-link {
+  /* Padding and margin business because of the static header */
+  padding-top:50px !important;
+  margin-top:-50px;
+  display:block;
+  color:#000;
+}
+.project-link:hover, .project-link:active, .project-link:focus {
+  text-decoration: none;
+  outline:0;
+}
+.project-icon-stacked {
+  font-size:55px;
+}
+.project-role {
+  width: 150px;
+  display: inline-block;
+  color: #3c4042;
+  font-weight: bold;
+  display: inline-block;
+  text-align: left;
+  background: transparent;
+  font-size: 0.9em;
+}
+.project-text {
+  margin-top:10px;
+  padding-bottom:15px;
+}
+#banner {
+  /*background:#FBFCCA;*/
+  background: #e4e6d7;
+  /*background: #ffcc33;*/
+  /*background: #27AE60;*/
+  width: 100%;
+  margin-bottom: 15px;
+}
+.page-header {
+  margin-top:0;
+  border-bottom:none;
+}

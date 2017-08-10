@@ -1,6 +1,12 @@
 *.sw*
 *.pyc
 *~
+<<<<<<< HEAD
 srctweb/website/build/
 .venv
 .virtualevn
+=======
+srctweb/_site/
+.sass-cache/
+.jekyll-metadata
+>>>>>>> origin/1.0-jekyll-rewrite

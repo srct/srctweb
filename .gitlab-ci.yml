@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 image: python:2
 
 pages:
@@ -11,3 +12,21 @@ pages:
   only:
   - master
 
+=======
+image: ruby:2.3
+
+variables:
+  JEKYLL_ENV: production
+
+before_script:
+  - cd srctweb/
+  - bundle install
+
+build:
+  stage: build
+  script:
+  - bundle exec jekyll build --trace -d '../build'
+  artifacts:
+    paths:
+    - build
+>>>>>>> origin/1.0-jekyll-rewrite
