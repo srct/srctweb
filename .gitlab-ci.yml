@@ -1,18 +1,4 @@
-<<<<<<< HEAD
-image: python:2
 
-pages:
-  script:
-  - pip install -r requirements.txt
-  - python srctweb/srctweb.py build
-  - mv srctweb/website/build/ public/
-  artifacts:
-    paths:
-    - public/
-  only:
-  - master
-
-=======
 image: ruby:2.3
 
 variables:
@@ -29,4 +15,3 @@ build:
   artifacts:
     paths:
     - build
->>>>>>> origin/1.0-jekyll-rewrite
