@@ -12,8 +12,6 @@ build:
   stage: build
   script:
   - bundle exec jekyll build --trace -d '../build'
-only:
-    - master
   artifacts:
     paths:
     - build
