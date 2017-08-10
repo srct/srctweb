@@ -12,6 +12,17 @@ build:
   stage: build
   script:
   - bundle exec jekyll build --trace -d '../build'
+only:
+    - master
   artifacts:
     paths:
     - build
+prod_deploy:
+  stage: build
+  script:
+    - cd /srv/srctweb-jekyll/ && bundle exec jekyll build --trace -d '/srv/srctweb-jekyll/_site'
+  only:
+    - master
+  tags:
+    - master
+    - builds
