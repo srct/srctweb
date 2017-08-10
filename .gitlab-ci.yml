@@ -18,7 +18,8 @@ build:
 prod_deploy:
   stage: deploy
   script:
-    - export GIT_SSL_NO_VERIFY=true && cd /srv/srctweb-jekyll/source && git pull && cd ../
+    - export GIT_SSL_NO_VERIFY=true && cd /srv/srctweb-jekyll/source && git stash save --keep-index && git stash drop
+&& git pull && cd ../
     - cp -rf /srv/srctweb-jekyll/source/* /srv/srctweb-jekyll/
     - cd /srv/srctweb-jekyll/ && bundle exec jekyll build --trace -d '/srv/srctweb-jekyll/_site'
   only:
