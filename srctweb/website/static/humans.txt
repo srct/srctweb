@@ -1,3 +1,0 @@
-SRCT is the product of the many GMU students who make it happen, through
-contributions large and small, constantly updating our code repositories. If
-you'd like to help out too, check out srct.gmu.edu/contact.
