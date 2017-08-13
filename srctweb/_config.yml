@@ -31,8 +31,7 @@ exclude:
 
 # Build settings
 markdown: kramdown
-plugins_dir:
-  - jekyll-feed
+
 
 defaults:
   # _pages
@@ -42,9 +41,3 @@ defaults:
     values:
       layout: default
       jumbotron: false
-
-gravatar:
-  default_image: mm
-  size: 80
-  rating: g
-  secure: true
