@@ -21,7 +21,7 @@ prod_deploy:
     - export GIT_SSL_NO_VERIFY=true && cd /srv/srctweb-jekyll/source && git stash save --keep-index && git stash drop && return true
     - export GIT_SSL_NO_VERIFY=true && cd /srv/srctweb-jekyll/source  && git pull && cd ../
     - cp -rf /srv/srctweb-jekyll/source/* /srv/srctweb-jekyll/
-    - cd /srv/srctweb-jekyll/ && bundle install && return true
+    - cd /srv/srctweb-jekyll/ && bundle install
     - cd /srv/srctweb-jekyll/ && bundle exec jekyll build --trace -d '/srv/srctweb-jekyll/_site'
   only:
     - master
