@@ -1,5 +1,5 @@
 ---
-title: "Usage Policy"
+title: "Usage & Disclosure Policy"
 permalink: "/documents/usage_policy/"
 ---
 
@@ -27,7 +27,7 @@ permalink: "/documents/usage_policy/"
 
     <legend>Handling abuse</legend>
     <p>Misuse of SRCT systems should be addressed by emailing the
-    <a href="http://wiki.srct.gmu.edu/Hardware">system maintainer</a>.
+    <a href="abuse@srct.gmu.edu">abuse team</a>.
     SRCT members will investigate the issue and take corrective action as
     deemed necessary. This may include disabling user access, taking down content,
     etc to ensure SRCT serves the educational goals of the University. Abuse
@@ -35,13 +35,84 @@ permalink: "/documents/usage_policy/"
     <a href="http://www.gmu.edu/resources/committee/srp/stopit.html">StopIt</a>
     team if appropriate.</p>
 
-    <p>System maintainers are the primary point of contact for urgent issues.</p>
+    <p>System administrators are the primary point of contact for urgent issues.</p>
 
     <legend>Handling service interruptions</legend>
     <p>SRCT will make an effort to let users know about known service interruptions
     ahead of time. In case of sudden outages, updates will be provided as soon as
     information is available and a full post-mortem will be posted. Mailing lists
     for this to be determined.</p>
+
+    <legend>Responsible Disclosure Policy</legend>
+    <p><i>Derived from Bugcrowd's Open Source Responsible Disclosure Framework</i></p>
+    <p>We take the security of our systems seriously, and we value the security community. The responsible disclosure of security vulnerabilities helps us ensure the security and privacy of our users.</p>
+    <strong><p>Guidelines</p></strong>
+    <p>We require that all researchers:
+    <ul>
+      <li>Make every effort to avoid privacy violations, degradation of user experience, disruption to production systems, and destruction of data during security testing;</li>
+      <li>Perform research only within the scope set out below;</li>
+      <li>Use the identified communication channels to report vulnerability information to us; and
+      Keep information about any vulnerabilities you’ve discovered confidential between yourself and SRCT until we’ve had 90 days to resolve the issue.</li>
+    </ul>
+    </p>
+
+    <p>If you follow these guidelines when reporting an issue to us, we commit to:
+    <ul>
+      <li>Not pursue or support any legal action related to your research;</li>
+      <li>Work with you to understand and resolve the issue quickly (including an initial confirmation of your report within 72 hours of submission);</li>
+      <li>Recognize your contribution on our Security Researcher Hall of Fame under "People" if you are the first to report the issue and we make an open code or configuration change based on the issue, and credit you throughout the open source process.</li>
+    </ul>
+    </p>
+
+    <p><b>In Scope:</b><p>
+      <p><ul><li>Any deployed SRCT project listed on https://srct.gmu.edu/projects</li></ul></p>
+    <p><b>Out of Scope:</b></p>
+    <p>
+        Any services hosted by 3rd party providers and services are excluded from scope. These services include:
+        <ul>
+        <li>Google Analytics</li>
+        <li>Any external CDNs</li>
+        <li>Any non-SRCT hosted gmu.edu (if there's confusion about this, contact Michael Bailey or Nic Anderson at abuse@srct.gmu.edu)
+        <li>Fabric (used for analytics)</li>
+        <li>Other 3rd Party Services</li>
+    </p>
+
+    <p><b>In the interest of the safety of our users, staff, the Internet at large and you as a security researcher, the following test types are excluded from scope:</b></p>
+
+    <p>
+    <ul>
+    <li>Findings from physical testing such as office access (e.g. open doors, tailgating)</li>
+    <li>Findings derived primarily from social engineering (e.g. phishing, vishing)</li>
+    <li>Findings from applications or systems not listed in the ‘Scope’ section</li>
+    <li>UI and UX bugs and spelling mistakes</li>
+    <li>Network level Denial of Service (DoS/DDoS) vulnerabilities</li>
+    <li>Any systems involved or attack types that would otherwise violate University Policies</li>
+    </ul>
+    </p>
+
+
+    <p><i>Please note if there's anything such as UI and UX bugs and spelling mistakes, you're more than welcome to contact SRCT anyways at exec@srct.gmu.edu where we will file a Gitlab issue, or go directly to the appropriate project at git.gmu.edu and, if you're a student with an active Patriot Pass, file the issue yourself.</i></p>
+
+    <p>
+    <b>Things we do not want to receive:</b>
+    <ul>
+      <li>Personally identifiable information (PII)</li>
+      <li>Credit card holder data (though, we shouldn't be holding any of this)</li>
+      <li>Information that could potentially violate the university's policies (please remember we are students)</li>
+    </ul>
+    </p>
+
+    <b><p>How to report a security vulnerability?</b></p>
+    <p>If you believe you’ve found a security vulnerability in one of our products or platforms please send it to us by emailing abuse@srct.gmu.edu. Please include the following details with your report:
+    <ul>
+      <li>Description of the location and potential impact of the vulnerability;</li>
+    <li>A detailed description of the steps required to reproduce the vulnerability (POC scripts, screenshots, and compressed screen captures are all helpful to us);</li>
+    <li>Your name/handle and (preferably) a <a href='https://en.gravatar.com/'>Gravatar recognized</a> email for recognition on our "People" page.</li>
+    <li>If you’d like to encrypt the information, please use Keybase. Our current Systems Administrator (a security researcher) is reachable at https://keybase.io/bailey.</li>
+    </ul>
+    </p>
+
+
   </div>
   
   <div class="col-sm-2 hidden-xs">
