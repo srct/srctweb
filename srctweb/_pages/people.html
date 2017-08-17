@@ -324,3 +324,13 @@ permalink: /people/
 </table>
 </div>
 </div>
+<script>
+gravatars = $( "img[alt='gravatar image']" )
+gravatars.each(function( index ) {
+  if ($(this).attr('src').includes('@gmu.edu')) {
+        url = $(this).attr('src')
+        var md5 = $.md5(url)
+        $(this).attr('src','https://www.gravatar.com/avatar/'+md5)
+  }
+});
+</script>
