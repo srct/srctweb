@@ -4,3 +4,6 @@
 srctweb/website/build/
 .venv
 .virtualevn
+srctweb/_site/
+.sass-cache/
+.jekyll-metadata
