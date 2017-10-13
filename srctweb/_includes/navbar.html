@@ -1,27 +1,38 @@
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<!-- Navbar -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
   <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand xolonium" href="/"><img src="/assets/img/SRCT_square.svg" width=24 height=24 alt=""/>&nbsp;&nbsp;Mason SRCT</a>
-    </div>
 
-    <div class="navbar-right collapse navbar-collapse navbar-ex1-collapse">
-      <ul class="nav navbar-nav">
+    <!-- Brand -->
+    <a class="navbar-brand my-2 my-lg-0 xolonium" href="/">
+      <img src="/assets/img/SRCT_square.svg" width="30" height="30" class="d-inline-block align-top" alt="Mason SRCT">
+      &nbsp;Mason SRCT&nbsp;
+    </a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse"
+      aria-controls="collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapse -->
+    <div class="collapse navbar-collapse" id="collapse">
+      <ul class="navbar-nav ml-auto">
         {% for link in site.data.navigation.main %}
           {% if link.children == null %}
-            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ link.url }}">{{ link.title }}</a>
+            </li>
           {% else %}
-            <li class="dropdown">
-              <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">{{ link.title }} <b class="caret"></b></a>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="dropdown-link"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  {{ link.title }} 
+              </a>
+              <div class="dropdown-menu">
                 {% for childLink in link.children %}
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="{{ childLink.url }}">{{ childLink.title }}</a></li>
+                  <a class="dropdown-item" href="{{ childLink.url }}">{{ childLink.title }}</a>          
                 {% endfor %}
-              </ul>
+              </div>
             </li>
           {% endif %}
         {% endfor %}

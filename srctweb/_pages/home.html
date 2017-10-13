@@ -9,10 +9,9 @@ jumbotron: true
 <div class="row smidge">
   <div class="col-md-12 text-center">
     <h4>
-      <span class="label label-default">
-        <i class="fa fa-gavel fa-fw"></i>&nbsp;<strong>Next Meeting</strong>
-       </span>&nbsp;&nbsp;
-       <span id="meetingDate">Please wait while we fetch the upcoming meeting information...</span>
+      <i class="fa fa-gavel fa-fw"></i>&nbsp;<strong>Next Meeting</strong>
+      &nbsp;
+      <span id="meetingDate">Please wait while we fetch the upcoming meeting information...</span>
     </h4>
   </div>
 </div>
@@ -34,9 +33,9 @@ jumbotron: true
 <div class="row smidge">
   <legend><i class="fa fa-child fa-fw"></i>&nbsp;<strong>Initiatives</strong></legend>
 
-  <div class="col-lg-3 col-lg-push-9 col-md-offset-0 col-md-4 col-md-push-8 col-sm-offset-3 col-sm-6 col-xs-offset-3 col-xs-6 smidge">
-    <img src="/assets/img/openhatch.jpg" alt="Renfred and Daniel assist Heather, a student attending our Openhatch workshop in 2014." class="img-circle img-responsive center-block">
-  </div>
+  <!-- Projects & Infrastructure Responsive Image -->
+  <img src="/assets/img/openhatch.jpg" alt="Renfred and Daniel assist Heather, a student attending our Openhatch workshop in 2014." class="index-image d-md-none d-flex mx-auto">  
+  
   <div class="col-lg-9 col-lg-pull-3 col-md-8 col-md-pull-4 col-sm-12 col-xs-12 smidge">
     <h4><strong>Projects & Infrastructure</strong></h4>
       <p>Our primary purpose is improving life at Mason by developing and hosting
@@ -65,15 +64,12 @@ jumbotron: true
          your idea to fruition and deployment.</p>
   </div>
 
-  <div class="col-xs-offset-2 col-xs-8 smidge">
-    <hr />
-  </div>
-  <div class="col-xs-2">
-  </div>
+  <!-- Projects & Infrastructure Image -->
+  <img src="/assets/img/openhatch.jpg" alt="Renfred and Daniel assist Heather, a student attending our Openhatch workshop in 2014." class="index-image d-none d-lg-block">
 
-  <div class="col-lg-3 col-lg-push-9 col-md-offset-0 col-md-4 col-md-push-8 col-sm-offset-3 col-sm-6 col-xs-offset-3 col-xs-6 smidge">
-    <img src="/assets/img/bitcamp.jpg" alt="Michel and Ben compete at Bitcamp, a hackathon held at the university of Maryland, in 2014." class="img-circle img-responsive center-block">
-  </div>
+  <!-- Events & Workshops Responsive Image -->
+  <img src="/assets/img/bitcamp.jpg" alt="Michel and Ben compete at Bitcamp, a hackathon held at the university of Maryland, in 2014." class="index-image d-md-none d-flex mx-auto">
+  
   <div class="col-lg-9 col-lg-pull-3 col-md-8 col-md-pull-4 col-sm-12 col-xs-12 smidge">
     <h4><strong>Events & Workshops</strong></h4>
       <p>We work to offer opportunities for Mason students to strengthen their skills and
@@ -99,15 +95,12 @@ jumbotron: true
          or to the next release.</p>
   </div>
 
-  <div class="col-xs-offset-2 col-xs-8 smidge">
-    <hr />
-  </div>
-  <div class="col-xs-2">
-  </div>
+  <!-- Events & Workshops Image -->
+  <img src="/assets/img/bitcamp.jpg" alt="Michel and Ben compete at Bitcamp, a hackathon held at the university of Maryland, in 2014." class="index-image d-none d-lg-block">
 
-  <div class="col-lg-3 col-lg-push-9 col-md-offset-0 col-md-4 col-md-push-8 col-sm-offset-3 col-sm-6 col-xs-offset-3 col-xs-6 smidge">
-    <img src="/assets/img/org-fair.jpg" alt="Chris, Melissa, and Luca  stand at our table for Student Involvement's Get Connected student org fair in the beginning of fall 2014." class="img-circle img-responsive center-block">
-  </div>
+  <!-- Outreach & Community Responsive Image -->
+  <img src="/assets/img/org-fair.jpg" alt="Chris, Melissa, and Luca  stand at our table for Student Involvement's Get Connected student org fair in the beginning of fall 2014." class="index-image d-md-none d-flex mx-auto">
+  
   <div class="col-lg-9 col-lg-pull-3 col-md-8 col-md-pull-4 col-sm-12 col-xs-12 smidge">
     <h4><strong>Outreach & Community</strong></h4>
       <p>We believe in returning the skills we've learned together back to our community.
@@ -131,16 +124,20 @@ jumbotron: true
          possible. Women and students from minority groups are welcomed and encouraged to
          participate and join. And if you're in CS 101, come say hello!</p>
   </div>
+
+  <!-- Outreach & Community Image -->
+  <img src="/assets/img/org-fair.jpg" alt="Chris, Melissa, and Luca  stand at our table for Student Involvement's Get Connected student org fair in the beginning of fall 2014." class="index-image d-none d-lg-block">
 </div>
 
 <div class="row smidge">
   <legend><i class="fa fa-laptop fa-fw"></i>&nbsp;<strong>Getting Involved</strong></legend>
+
   <div class="col-lg-4">
-    <div class="panel panel-primary">
-      <div class="panel-heading">
-        <h3 class="panel-title text-center"><i class="fa fa-comments-o fa-fw"></i> Get In Touch</h3>
+    <div class="card border-primary index-card">
+      <div class="card-header text-white bg-primary">
+        <h4 class="card-title text-center"><i class="fa fa-comments-o fa-fw"></i> Get In Touch</h4>
       </div>
-      <div class="panel-body">
+      <div class="card-body">
         <p>
           We communicate and organize primarily on <a href="https://slack.com/is">Slack</a>.
           Slack is a communication app for teams. If you've used
@@ -170,11 +167,11 @@ jumbotron: true
   </div>
 
   <div class="col-lg-4">
-    <div class="panel panel-primary">
-      <div class="panel-heading">
-        <h3 class="panel-title text-center"><i class="fa fa-heart-o fa-fw"></i> Stop On By</h3>
+    <div class="card border-primary index-card">
+      <div class="card-header text-white bg-primary">
+        <h4 class="card-title text-center"><i class="fa fa-heart-o fa-fw"></i> Stop On By</h4>
       </div>
-      <div class="panel-body">
+      <div class="card-body">
         <p>
           There are a couple of opportunities to come and say hello. During the semester,
           we hold weekly meetings, where we run
@@ -203,24 +200,28 @@ jumbotron: true
   </div>
 
   <div class="col-lg-4">
-    <div class="panel panel-primary">
-      <div class="panel-heading">
-        <h3 class="panel-title text-center"><i class="fa fa-files-o fa-fw"></i> Additional Resources</h3>
+    <div class="card border-primary index-card">
+      <div class="card-header text-white bg-primary">
+        <h4 class="card-title text-center"><i class="fa fa-files-o fa-fw"></i> Additional Resources</h4>
       </div>
       <div class="panel-body">
-        <ul class="nav nav-pills nav-justified smidgen small" role="tablist">
-          <li role="presentation" class="active">
-            <a href="#code" aria-controls="code" role="tab" data-toggle="tab"><strong>Code</strong></a>
-          </li>
-          <li role="presentation">
-            <a href="#design" aria-controls="design" role="tab" data-toggle="tab"><strong>Design</strong></a>
-          </li>
-          <li role="presentation">
-            <a href="#infra" aria-controls="infra" role="tab" data-toggle="tab"><strong>Infrastructure</strong></a>
-          </li>
-        </ul>
-        <div class="tab-content">
-          <div role="tabpanel" class="tab-pane fade in active" id="code">
+        <br />
+        <div class="row d-flex">
+          <ul class="nav nav-pills mx-auto">
+            <li role="presentation" class="nav-item">
+              <a class="nav-link active" href="#code" aria-controls="code" role="tab" data-toggle="pill"><strong>Code</strong></a>
+            </li>
+            <li role="presentation" class="nav-item">
+              <a class="nav-link" href="#design" aria-controls="design" role="tab" data-toggle="pill"><strong>Design</strong></a>
+            </li>
+            <li role="presentation" class="nav-item">
+              <a class="nav-link" href="#infra" aria-controls="infra" role="tab" data-toggle="pill"><strong>Infrastructure</strong></a>
+            </li>
+          </ul>
+        </div>
+        <br />        
+        <div class="tab-content container">
+          <div role="tabpanel" class="tab-pane fade show active" id="code">
             <p>
               Version control lets developers keep an organized history of their changes.
               This means you can fearlessly try out your ideas and allows multiple people
