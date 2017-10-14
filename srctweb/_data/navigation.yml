@@ -3,6 +3,9 @@ main:
   - title: "Projects"
     url: "/projects/"
 
+  - title: "Events"
+    url: "/events/"
+
   - title: "Calendar"
     url: "/calendar/"
 
