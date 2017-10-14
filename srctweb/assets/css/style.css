@@ -87,6 +87,16 @@ a[name] {
   margin-bottom: 1rem;
 }
 
+.exec-image {
+  border-radius: 50%;
+  height: 5rem;
+}
+
+.member-image {
+  border-radius: 50%;
+  height: 3rem;
+}
+
 /**
 * A cool little hack I found to try to allow a responsive Google Cal:
 * http://themeloom.com/2013/02/tips-embed-google-maps-and-calendars-in-a-responsive-wordpress-theme/

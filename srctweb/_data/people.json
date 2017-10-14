@@ -1,0 +1,29 @@
+[
+  {
+    "name": "David Haynes",
+    "email": "dhaynes3@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": true,
+      "position": "President"
+    }
+  },
+  {
+    "name": "Zach Knox",
+    "email": "zknox@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": true,
+      "position": "Vice President"
+    }  
+  },
+  {
+    "name": "Michael Bailey",
+    "email": "mbaile18@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": true,
+      "position": "Systems Admininstrator"
+    }    
+  }
+]
