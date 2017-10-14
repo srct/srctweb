@@ -5,7 +5,8 @@
     "alum": false,
     "exec": {
       "status": true,
-      "position": "President"
+      "position": "President",
+      "link": "http://wiki.srct.gmu.edu/President"
     }
   },
   {
@@ -14,7 +15,8 @@
     "alum": false,
     "exec": {
       "status": true,
-      "position": "Vice President"
+      "position": "Vice President",
+      "link": "http://wiki.srct.gmu.edu/Vice_President"
     }  
   },
   {
@@ -23,7 +25,383 @@
     "alum": false,
     "exec": {
       "status": true,
-      "position": "Systems Admininstrator"
+      "position": "Systems Administrator",
+      "link": "http://wiki.srct.gmu.edu/Systems_Administrator"
     }    
-  }
+  },
+  {
+    "name": "Robert Hitt",
+    "email": "rhitt@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": true,
+      "position": "Treasurer",
+      "link": "http://wiki.srct.gmu.edu/Treasurer"
+    }    
+  },
+  {
+    "name": "Danny Kim",
+    "email": "dkim74@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": true,
+      "position": "Secretary",
+      "link": "http://wiki.srct.gmu.edu/Secretary"
+    }    
+  },
+  {
+    "name": "Kinga Dobolyi",
+    "email": "kdobolyi@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": true,
+      "position": "Faculty Advisor",
+      "link": "http://wiki.srct.gmu.edu/Faculty_Advisor"
+    }    
+  },
+  {
+    "name": "Bryon Bacon",
+    "email": "bbacon@gmu.edu",
+    "alum": true,
+    "exec": {
+      "status": false
+    }
+  },
+  {
+    "name": "Jason Yeomans",
+    "email": "jyeoman2@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "David Stein",
+    "email": "dstein3@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Lilas Dinh",
+    "email": "vdinh3@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Mark Stenglein",
+    "email": "mstengle@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Greg Aronson",
+    "email": "garonson@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Jakob Kressel",
+    "email": "jkressel@gmu.edu",
+    "alum": true,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Eyad Hasan",
+    "email": "ehasan3@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Grady Moran",
+    "email": "gmoran@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Leo Grandinetti",
+    "email": "lgrandin@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Tanner Grehawick",
+    "email": "ggrehawi@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Manuel Gauto",
+    "email": "mgauto@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Nic Anderson",
+    "email": "nander13@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Daniel Bond",
+    "email": "dbond2@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Sherif Sarhan",
+    "email": "ssarhan2@gmu.edu",
+    "alum": true,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Briana Abraham",
+    "email": "babraha2@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Matthew Rogers",
+    "email": "mroger4@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Thomas Kegel",
+    "email": "tkegel@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Mattias Duffy",
+    "email": "mduffy@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Andres Villogas",
+    "email": "jvilloga@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Jay Wilson",
+    "email": "jwilso48@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Zach Osman",
+    "email": "zosman@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Andrew Hrdy",
+    "email": "ahrdy@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Abdullah Sahyouni",
+    "email": "asahyoun@gmu.edu",
+    "alum": true,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Ben Waters",
+    "email": "bwaters3@gmu.edu",
+    "alum": true,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Kara Mahoney",
+    "email": "kmahone5@gmu.edu",
+    "alum": true,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Bryan Hoyle",
+    "email": "bhoyle@gmu.edu",
+    "alum": true,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Nathan LaPierre",
+    "email": "nlapier2@gmu.edu",
+    "alum": true,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Chase Gleason",
+    "email": "sgleaso2@gmu.edu",
+    "alum": true,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Melissa Mahan",
+    "email": "mmahan2@gmu.edu",
+    "alum": true,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Ananya Dhawan",
+    "email": "adhawan2@gmu.edu",
+    "alum": true,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Benjamin Ward",
+    "email": "bward10@gmu.edu",
+    "alum": true,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Akshay Karthik",
+    "email": "akarthik@gmu.edu",
+    "alum": true,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Ross Bragg",
+    "email": "rbragg@gmu.edu",
+    "alum": true,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Eric Cawi",
+    "email": "ecawi@gmu.edu",
+    "alum": true,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Mariet Kurtz",
+    "email": "mkurtz2@gmu.edu",
+    "alum": true,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Samer Masterson",
+    "email": "smasters@gmu.edu",
+    "alum": true,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Michel Rouly",
+    "email": "jrouly@gmu.edu",
+    "alum": true,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Chris Reffett",
+    "email": "creffett@gmu.edu",
+    "alum": true,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Renfred Harper",
+    "email": "rharper2@gmu.edu",
+    "alum": true,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Rishi Deshpande",
+    "email": "rdespha2@gmu.edu",
+    "alum": true,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Mark McCaskey",
+    "email": "mmccask2@gmu.edu",
+    "alum": true,
+    "exec": {
+      "status": false
+    }    
+  },
+  {
+    "name": "Kunal Sarkhel",
+    "email": "ksarkhel@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": false
+    }    
+  },
+
 ]

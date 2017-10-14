@@ -24,7 +24,7 @@ permalink: /people/
         <tr>
           <td><img class="exec-image" src="{{ member.email | get_gravatar }}" alt="gravatar image"></td>
           <td class="align-middle"><h5>{{ member.name }}</h5></td>
-          <td class="align-middle"><h5>{{ member.exec.position }}</h5></td>
+          <td class="align-middle"><h5><a href="{{ member.exec.link }}">{{ member.exec.position }}</a></h5></td>
           <td class="align-middle"><h5><a href="mailto:{{ member.email }}">{{ member.email }}</a></h5></td>
         </tr>
       {% endif %}
