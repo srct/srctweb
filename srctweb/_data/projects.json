@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Go",
+    "current_release": "Go 2.2 - Bloomin' Onion Edition",
+    "current_release_url": "https://git.gmu.edu/srct/go/milestones/3",
+    "next_release": "Go 2.3 - Smash Mouth & Fake News Edition",
+    "next_release_url": "https://git.gmu.edu/srct/go/milestones/4",
+    "status": "active",    
+    "repo_url": "git.gmu.edu/srct/go",
+    "fa_icon": "fa-link",
+    "project_manager": "David Haynes",
+    "deployed_url": "go.gmu.edu",
+    "issues_url": "https://git.gmu.edu/srct/go/issues",
+    "docs_url": "https://git.gmu.edu/srct/go/blob/master/README.md",
+    "blurb": "Providing URL shortening would enhance branding when used by organizations in ULife and elsewhere. For example, all shortened links to a gmu.edu website would appear as go.gmu.edu/nHU8oPm instead of bit.ly/nHU8oPm."
+  }
+]
