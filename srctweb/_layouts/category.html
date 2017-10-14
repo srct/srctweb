@@ -11,7 +11,7 @@ layout: default
 <h4>{{ post.event_date | date: "%A %B %-d, %Y" }}</h4>
 <br />
 {% if post.hero_image %}
-<img class="img-responsive" src="{{ post.hero_image | absolute_url }}" alt={{ post.hero_alt }} width="500">
+<p><img class="img-fluid" src="{{ post.hero_image | absolute_url }}" alt={{ post.hero_alt }}></p>
 {% endif %}
 {{ post.excerpt }}<p><a href="{{ post.url | absolute_url }}">Read More <i class="fa fa-arrow-circle-right"></i></a></p>
 <br />
