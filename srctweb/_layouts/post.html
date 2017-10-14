@@ -1,0 +1,26 @@
+{% include base_path %}
+
+<!--todo: change this to be more unique later-->
+
+<html lang="{{ site.locale | slice: 0,2 }}">
+
+<head>
+    {% include head.html %}
+</head>
+
+<body>
+    {% include navbar.html %} {% if page.jumbotron == true %} {% include jumbotron.html %} {% else %} {% include banner.html
+    %} {% endif %}
+
+    <div class="container">
+        {{ content }}
+    </div>
+</body>
+
+<div id="footer">
+    {% include footer.html %}
+</div>
+
+{% include scripts.html %}
+
+</html>
