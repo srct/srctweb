@@ -1,11 +1,12 @@
 ---
 title: "Events"
+description: "A listing of events we've held past, present, and future"
 permalink: /events/
 ---
 
 {% for post in site.posts offset: 0 limit: 4 %}
-    <h3><a href="{{ post.url | absolute_url }}"{{ post.title }}</a></h3>
-    <h4>{{ post.event_date }}</h4>
+    <h1><a href="{{ post.url | absolute_url }}">{{ post.title }} <i class="fa fa-arrow-circle-right"></i></a></h1>
+    <h4>{{ post.event_date | date: "%A %B %-d, %Y" }}</h4>
     <br />
     {{ post.excerpt }}
     <br />
