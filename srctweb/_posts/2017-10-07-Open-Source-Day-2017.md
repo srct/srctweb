@@ -11,7 +11,7 @@ hero_image: "/assets/img/ossday2017.jpg"
 hero_alt: "Participants at Open Source Day 2017"
 ---
 
-### **When**: {{ page.event_date | date: "%A %B %-d, %Y" }}
+### **When**: {{ page.event_date | date: "%A %B %-d, %Y at %l:%M%P" }}
 ### **Where**: {{ page.location }}
 
 -----------------------------------------------
