@@ -8,7 +8,12 @@ layout: default
         <i class="fa fa-arrow-circle-right"></i>
     </a>
 </h1>
+{% if page.category == events %}
 <h4>{{ post.event_date | date: "%A %B %-d, %Y" }}</h4>
+{% else %}
+<h4>{{ post.date | date: "%A %B %-d, %Y" }}</h4>
+{% endif %}
+
 <br />
 {% if post.hero_image %}
 <p><img class="img-fluid" src="{{ post.hero_image | absolute_url }}" alt={{ post.hero_alt }}></p>
