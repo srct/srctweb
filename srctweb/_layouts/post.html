@@ -24,8 +24,21 @@
             </div>
         </div>
     {% else %}
-        {% include banner.html
-    %} {% endif %}
+        <div id="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>
+                            <strong>{{ page.title }}</strong>
+                        </h1>
+                        {% if page.category != 'events' %}
+                        <p class="text-muted">{{ page.date | date: "%A %B %-d, %Y" }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
 
     <div class="container">
         {{ content }}
