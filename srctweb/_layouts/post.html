@@ -9,7 +9,24 @@
 </head>
 
 <body>
-    {% include navbar.html %} {% if page.jumbotron == true %} {% include jumbotron.html %} {% else %} {% include banner.html
+    {% include navbar.html %}
+    {% if page.hero_image %} 
+        <style>
+                 .postjumbo { background: url({{ page.hero_image }}) no-repeat; background-size: cover; background-position: 20%; box-shadow:
+    inset 0px 0px 20px #333; padding-top: 100px; padding-bottom: 100px; border-radius: unset; }
+        </style>
+        <div class="jumbotron postjumbo">
+            <div class="container">
+                <div class="d-flex justify-content-center flex-wrap">
+                    <h1 style="color: white">{{ page.title }}</h1>
+                    <br />
+                    <h2 style="color: white">{{ post.event_date | date: "%A %B %-d, %Y" }}</h2>
+                </div>
+            </div>
+        </div>
+
+    {% else %}
+        {% include banner.html
     %} {% endif %}
 
     <div class="container">
