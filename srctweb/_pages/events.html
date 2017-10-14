@@ -1,0 +1,12 @@
+---
+title: "Events"
+permalink: /events/
+---
+
+{% for post in site.posts offset: 0 limit: 4 %}
+    <h3><a href="{{ post.url | absolute_url }}"{{ post.title }}</a></h3>
+    <h4>{{ post.event_date }}</h4>
+    <br />
+    {{ post.excerpt }}
+    <br />
+{% endfor %}
