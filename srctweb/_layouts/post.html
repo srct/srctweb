@@ -11,6 +11,7 @@
 <body>
     {% include navbar.html %}
     {% if page.hero_image %} 
+        <!--The only reason I used <style> here was so that I could use front matter w/ CSS.-->
         <style>
                  .postjumbo { background: url({{ page.hero_image }}) no-repeat; background-size: cover; background-position: 20%; box-shadow:
     inset 0px 0px 20px #333; padding-top: 100px; padding-bottom: 100px; border-radius: unset; }
@@ -19,11 +20,9 @@
             <div class="container">
                 <div class="d-flex justify-content-center flex-wrap">
                     <h1 style="color: white">{{ page.title }}</h1>
-                    <h2 style="color: white">{{ post.event_date | date: "%A %B %-d, %Y" }}</h2>
                 </div>
             </div>
         </div>
-
     {% else %}
         {% include banner.html
     %} {% endif %}
