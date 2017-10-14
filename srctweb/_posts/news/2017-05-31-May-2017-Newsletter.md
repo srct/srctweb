@@ -1,20 +1,11 @@
 ---
-title: "Open Source Day 2017"
+title: "May 2017 Newsletter"
 
 layout: post
-categories: events
-slug: ossday2017
-date: 2017-08-29 00:00:00 -0400
-event_date: 2017-10-07 09:30:00 -0400
-location: "The Hub Rooms 1 and 2"
-hero_image: "/assets/img/ossday2017.jpg"
-hero_alt: "Participants at Open Source Day 2017"
+categories: news
+slug: May2017Newsletter
+date: 2017-05-31 00:00:00 -0400
 ---
-
-### **When**: {{ page.event_date | date: "%A %B %-d, %Y at %l:%M%P" }}
-### **Where**: {{ page.location }}
-
------------------------------------------------
 
 Learn the tools and culture of open source development, meet great people, and help impact real projects during this all-day immersion workshop. No prior experience is needed for participation in this event: students of all levels of technical skill and from all majors are welcomed. (Not all contributions come in the form of code. It can be artwork, documenation and copy, translations, and more!) And yes, all meals and snacks are provided.
 
