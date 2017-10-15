@@ -190,7 +190,7 @@
     "blurb": "Creative-commons licensed photographs of Mason locations and community. (Offical Mason photographs are protected by copyright and the property of George Mason University."
   },
   {
-    "name": "Roomlist",
+    "name": "Bookshare",
     "language": "Python",
     "current_release": "1.0 - Aeneid",
     "current_release_url": "https://git.gmu.edu/srct/bookshare/milestones/2",
@@ -247,5 +247,5 @@
     "issues_url": "https://git.gmu.edu/srct/advisor/issues",
     "docs_url": "https://git.gmu.edu/srct/advisor/blob/master/README.md",
     "blurb": "Advisor is an automatic academic advising system. The goal is to allow students to enter their academic history in a standard form and receive an interactive list of coursework they are required to complete for graduation, as well as possible electives and prerequisite trees. This would not serve as a replacement for in-person academic advisor meetings."
-  },
+  }
 ]
