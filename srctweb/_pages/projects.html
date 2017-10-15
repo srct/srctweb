@@ -18,13 +18,13 @@ description: "Projects created and maintained by SRCT's members."
           {% if project.deployed_url %}| <a href="https://{{ project.deployed_url }}">{{ project.deployed_url }}</a>{% endif %}
         </legend>
         {% if project.docs_url %}<a href="{{ project.docs_url }}">Docs</a>{% endif %}
-        {% if project.issues_url %}| <a href="{{ project.issues_url }}">Issues</a>{% endif %}
-        <br><br>
+        {% if project.issues_url %}| <a href="{{ project.issues_url }}">Issues</a><br><br>{% endif %}
 
         {% if project.project_manager %}<strong class="project-role">Project Manager:</strong> {{ project.project_manager }}<br>{% endif %}
         {% if project.repo_url %}<strong class="project-role">Repository:</strong> <a href="{{ project.repo_url }}">{{ project.repo_url }}</a><br>{% endif %}
         {% if project.current_release %}<strong class="project-role">Current Release:</strong> <a href="{{ project.current_release_url }}">{{ project.current_release }}</a><br>{% endif %}
-        {% if project.next_release %}<strong class="project-role">Next Release:</strong> <a href="{{ project.next_release_url }}">{{ project.next_release }}</a>{% endif %}
+        {% if project.next_release %}<strong class="project-role">Next Release:</strong> <a href="{{ project.next_release_url }}">{{ project.next_release }}</a><br>{% endif %}
+        {% if project.language %}<strong class="project-role">Language:</strong> {{ project.language }}{% endif %}
         
         <p class="project-text">
           {{ project.blurb }}
@@ -36,7 +36,7 @@ description: "Projects created and maintained by SRCT's members."
 
 <!-- In Development -->
 <legend><strong><a class="project-link" name="in_dev" href="#in_dev">In Development</a></strong>
-<font color="gray"><small>Projects in active development in preparation for stable deployment.</small></font></legend>
+<font color="gray"><small>Projects in active development that are in preparation for stable deployment.</small></font></legend>
 
 <div class="row">
   {% for project in site.data.projects %}
@@ -54,8 +54,9 @@ description: "Projects created and maintained by SRCT's members."
         {% if project.project_manager %}<strong class="project-role">Project Manager:</strong> {{ project.project_manager }}<br>{% endif %}
         {% if project.repo_url %}<strong class="project-role">Repository:</strong> <a href="{{ project.repo_url }}">{{ project.repo_url }}</a><br>{% endif %}
         {% if project.current_release %}<strong class="project-role">Current Release:</strong> <a href="{{ project.current_release_url }}">{{ project.current_release }}</a><br>{% endif %}
-        {% if project.next_release %}<strong class="project-role">Next Release:</strong> <a href="{{ project.next_release_url }}">{{ project.next_release }}</a>{% endif %}
-          
+        {% if project.next_release %}<strong class="project-role">Next Release:</strong> <a href="{{ project.next_release_url }}">{{ project.next_release }}</a><br>{% endif %}
+        {% if project.language %}<strong class="project-role">Language:</strong> {{ project.language }}{% endif %}
+        
         <p class="project-text">
           {{ project.blurb }}
         </p>
@@ -84,8 +85,9 @@ description: "Projects created and maintained by SRCT's members."
         {% if project.project_manager %}<strong class="project-role">Project Manager:</strong> {{ project.project_manager }}<br>{% endif %}
         {% if project.repo_url %}<strong class="project-role">Repository:</strong> <a href="{{ project.repo_url }}">{{ project.repo_url }}</a><br>{% endif %}
         {% if project.current_release %}<strong class="project-role">Current Release:</strong> <a href="{{ project.current_release_url }}">{{ project.current_release }}</a><br>{% endif %}
-        {% if project.next_release %}<strong class="project-role">Next Release:</strong> <a href="{{ project.next_release_url }}">{{ project.next_release }}</a>{% endif %}
-            
+        {% if project.next_release %}<strong class="project-role">Next Release:</strong> <a href="{{ project.next_release_url }}">{{ project.next_release }}</a><br>{% endif %}
+        {% if project.language %}<strong class="project-role">Language:</strong> {{ project.language }}{% endif %}
+        
         <p class="project-text">
           {{ project.blurb }}
         </p>
@@ -114,8 +116,9 @@ description: "Projects created and maintained by SRCT's members."
         {% if project.project_manager %}<strong class="project-role">Project Manager:</strong> {{ project.project_manager }}<br>{% endif %}
         {% if project.repo_url %}<strong class="project-role">Repository:</strong> <a href="{{ project.repo_url }}">{{ project.repo_url }}</a><br>{% endif %}
         {% if project.current_release %}<strong class="project-role">Current Release:</strong> <a href="{{ project.current_release_url }}">{{ project.current_release }}</a><br>{% endif %}
-        {% if project.next_release %}<strong class="project-role">Next Release:</strong> <a href="{{ project.next_release_url }}">{{ project.next_release }}</a>{% endif %}
-              
+        {% if project.next_release %}<strong class="project-role">Next Release:</strong> <a href="{{ project.next_release_url }}">{{ project.next_release }}</a><br>{% endif %}
+        {% if project.language %}<strong class="project-role">Language:</strong> {{ project.language }}{% endif %}
+        
         <p class="project-text">
           {{ project.blurb }}
         </p>
