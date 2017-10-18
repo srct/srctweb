@@ -1,0 +1,54 @@
+{% include base_path %}
+
+<!--todo: change this to be more unique later-->
+
+<html lang="{{ site.locale | slice: 0,2 }}">
+
+<head>
+    {% include head.html %}
+</head>
+
+<body>
+    {% include navbar.html %}
+    {% if page.hero_image %} 
+        <!--The only reason I used <style> here was so that I could use front matter w/ CSS.-->
+        <style>
+                 .postjumbo { background: url({{ page.hero_image }}) no-repeat; background-size: cover; background-position: 20%; box-shadow:
+    inset 0px 0px 20px #333; padding-top: 100px; padding-bottom: 100px; border-radius: unset; }
+        </style>
+        <div class="jumbotron postjumbo">
+            <div class="container">
+                <div class="d-flex justify-content-center flex-wrap">
+                    <h1 style="color: white">{{ page.title }}</h1>
+                </div>
+            </div>
+        </div>
+    {% else %}
+        <div id="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>
+                            <strong>{{ page.title }}</strong>
+                        </h1>
+                        {% if page.category != 'events' %}
+                        <p class="text-muted">{{ page.date | date: "%A %B %-d, %Y" }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+
+    <div class="container">
+        {{ content }}
+    </div>
+</body>
+
+<div id="footer">
+    {% include footer.html %}
+</div>
+
+{% include scripts.html %}
+
+</html>
