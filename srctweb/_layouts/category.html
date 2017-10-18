@@ -13,10 +13,32 @@ layout: default
 {% endif %}
 
 <br />
+<div class="row">
 {% if post.hero_image %}
-<p><img class="img-fluid" src="{{ post.hero_image | absolute_url }}" alt={{ post.hero_alt }}></p>
+    <div class="col-md-6">
+        <p>
+            <img class="img-fluid" src="{{ post.hero_image | absolute_url }}" alt={{ post.hero_alt }}>
+        </p>
+    </div>
+    <div class="col-md-6">
+        <p>
+            {{ post.excerpt }}
+        </p>
+        <p>
+            <a href="{{ post.url | absolute_url }}">Read More
+                <i class="fa fa-arrow-circle-right"></i>
+            </a>
+        </p>
+    </div>
+{% else %}
+{{ post.excerpt }}
+<p>
+    <a href="{{ post.url | absolute_url }}">Read More
+        <i class="fa fa-arrow-circle-right"></i>
+    </a>
+</p>
 {% endif %}
-{{ post.excerpt }}<p><a href="{{ post.url | absolute_url }}">Read More <i class="fa fa-arrow-circle-right"></i></a></p>
+</div>
 <br />
 {% endfor %}
 
