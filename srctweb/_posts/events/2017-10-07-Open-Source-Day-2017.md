@@ -4,9 +4,9 @@ title: "Open Source Day 2017"
 layout: event
 categories: events
 slug: ossday2017
-date: 2017-08-29 00:00:00 -0400
+date: 2017-08-29T00:00:00-0400
 
-event_date: 2017-10-07 09:30:00 -0500
+event_date: 2017-10-07T09:30:00-0400
 location: "The Hub Rooms 1 and 2"
 hero_image: "/assets/img/ossday2017.jpg"
 hero_alt: "Participants at Open Source Day 2017"
