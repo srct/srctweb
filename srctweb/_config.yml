@@ -1,5 +1,6 @@
 # Site settings
 locale                   : "en-US"
+timezone                 : "UTC"
 title                    : "SRCT"
 email                    : "srct@gmu.edu"
 description              : "Mason SRCT is a student organization at George Mason University that establishes and maintains systems which provide specific services for Mason's community."
