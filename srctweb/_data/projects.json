@@ -40,12 +40,12 @@
     "name": "PatriotChat",
     "language": "JavaScript",
     "status": "in_dev",
-    "repo_url":  "github.com/zosman1/PatriotChat",
+    "repo_url":  "github.com/zosman1/patriotchat",
     "fa_icon": "fa-comments-o",
     "project_manager": "Zach Osman",
     "issues_url": "https://github.com/zosman1/PatriotChat/issues",
     "docs_url": "https://github.com/zosman1/PatriotChat/blob/master/README.md",
-    "blurb": "Providing a space for GMU students to communicate with each other. This was created as a way for students to contact group members who might not be easily accessible through conventional means. This is built in react-native, which allows for iOS and Android development to be the same."
+    "blurb": "Providing a space for GMU students to communicate with each other. This was created as a way for students to contact group members who might not be easily accessible through conventional means. This is built in react-native, which allows for iOS and Android development to happen simultaneously."
   },
   {
     "name": "Roomlist",
