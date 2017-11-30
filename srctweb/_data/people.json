@@ -17,7 +17,7 @@
       "status": true,
       "position": "Vice President",
       "link": "http://wiki.srct.gmu.edu/Vice_President"
-    }  
+    }
   },
   {
     "name": "Michael Bailey",
@@ -27,7 +27,7 @@
       "status": true,
       "position": "Systems Administrator",
       "link": "http://wiki.srct.gmu.edu/Systems_Administrator"
-    }    
+    }
   },
   {
     "name": "Robert Hitt",
@@ -37,7 +37,7 @@
       "status": true,
       "position": "Treasurer",
       "link": "http://wiki.srct.gmu.edu/Treasurer"
-    }    
+    }
   },
   {
     "name": "Danny Kim",
@@ -47,7 +47,7 @@
       "status": true,
       "position": "Secretary",
       "link": "http://wiki.srct.gmu.edu/Secretary"
-    }    
+    }
   },
   {
     "name": "Kinga Dobolyi",
@@ -57,7 +57,7 @@
       "status": true,
       "position": "Faculty Advisor",
       "link": "http://wiki.srct.gmu.edu/Faculty_Advisor"
-    }    
+    }
   },
   {
     "name": "Bryon Bacon",
@@ -73,7 +73,7 @@
     "alum": false,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "David Stein",
@@ -81,7 +81,7 @@
     "alum": false,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Lilas Dinh",
@@ -89,7 +89,7 @@
     "alum": false,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Mark Stenglein",
@@ -97,7 +97,7 @@
     "alum": false,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Greg Aronson",
@@ -105,7 +105,7 @@
     "alum": false,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Jakob Kressel",
@@ -113,7 +113,7 @@
     "alum": true,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Eyad Hasan",
@@ -121,7 +121,7 @@
     "alum": false,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Grady Moran",
@@ -129,7 +129,7 @@
     "alum": false,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Leo Grandinetti",
@@ -137,7 +137,7 @@
     "alum": false,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Tanner Grehawick",
@@ -145,7 +145,7 @@
     "alum": false,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Manuel Gauto",
@@ -153,7 +153,7 @@
     "alum": false,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Nic Anderson",
@@ -161,7 +161,7 @@
     "alum": false,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Daniel Bond",
@@ -169,7 +169,7 @@
     "alum": false,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Sherif Sarhan",
@@ -177,7 +177,7 @@
     "alum": true,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Briana Abraham",
@@ -185,7 +185,7 @@
     "alum": false,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Matthew Rogers",
@@ -193,7 +193,7 @@
     "alum": false,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Thomas Kegel",
@@ -201,7 +201,7 @@
     "alum": false,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Mattias Duffy",
@@ -209,7 +209,7 @@
     "alum": false,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Andres Villogas",
@@ -217,7 +217,7 @@
     "alum": false,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Jay Wilson",
@@ -225,7 +225,7 @@
     "alum": false,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Zach Osman",
@@ -233,7 +233,7 @@
     "alum": false,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Andrew Hrdy",
@@ -241,7 +241,7 @@
     "alum": false,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Abdullah Sahyouni",
@@ -249,7 +249,7 @@
     "alum": true,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Ben Waters",
@@ -257,7 +257,7 @@
     "alum": true,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Kara Mahoney",
@@ -265,7 +265,7 @@
     "alum": true,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Bryan Hoyle",
@@ -273,7 +273,7 @@
     "alum": true,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Nathan LaPierre",
@@ -281,7 +281,7 @@
     "alum": true,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Chase Gleason",
@@ -289,7 +289,7 @@
     "alum": true,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Melissa Mahan",
@@ -297,7 +297,7 @@
     "alum": true,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Ananya Dhawan",
@@ -305,7 +305,7 @@
     "alum": true,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Benjamin Ward",
@@ -313,7 +313,7 @@
     "alum": true,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Akshay Karthik",
@@ -321,7 +321,7 @@
     "alum": true,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Ross Bragg",
@@ -329,7 +329,7 @@
     "alum": true,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Eric Cawi",
@@ -337,7 +337,7 @@
     "alum": true,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Mariet Kurtz",
@@ -345,7 +345,7 @@
     "alum": true,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Samer Masterson",
@@ -353,7 +353,7 @@
     "alum": true,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Michel Rouly",
@@ -361,7 +361,7 @@
     "alum": true,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Chris Reffett",
@@ -369,7 +369,7 @@
     "alum": true,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Renfred Harper",
@@ -377,7 +377,7 @@
     "alum": true,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Rishi Deshpande",
@@ -385,7 +385,7 @@
     "alum": true,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Mark McCaskey",
@@ -393,7 +393,7 @@
     "alum": true,
     "exec": {
       "status": false
-    }    
+    }
   },
   {
     "name": "Kunal Sarkhel",
@@ -401,7 +401,14 @@
     "alum": false,
     "exec": {
       "status": false
-    }    
+    }
   },
-
+  {
+    "name": "Landon DeCoito",
+    "email": "rdecoito@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": false
+    }
+  },
 ]
