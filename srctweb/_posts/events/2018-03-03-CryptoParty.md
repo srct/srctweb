@@ -6,7 +6,7 @@ categories: events
 slug: cryptoparty2018
 date: 2017-12-01T00:00:00-0400
 
-event_date: 2018-03-03T09:30:00-0400
+event_date: 2018-03-03T10:30:00-0400
 location: "The Hub Rooms 3, 4 and 5"
 hero_image: "/assets/img/smiling.jpeg"
 hero_alt: "Participants at CryptoParty 2017"
