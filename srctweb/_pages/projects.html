@@ -12,7 +12,7 @@ description: "Projects created and maintained by SRCT's members."
   {% for project in site.data.projects %}
     {% if project.status == 'active' %}
       <div class="col-lg-6 project-entry">
-        <a class="project-link" name="{{ project.name }}" href="#{{ project.name }}"><i class="fa {{ project.fa_icon }} project-icon"></i></a>
+        <a class="project-link" name="{{ project.name }}" href="#{{ project.name }}"><i class="{{ project.fa_icon }} project-icon"></i></a>
         <legend>
           <strong>{{ project.name }}</strong>
           {% if project.deployed_url %}| <a href="https://{{ project.deployed_url }}">{{ project.deployed_url }}</a>{% endif %}
@@ -42,7 +42,7 @@ description: "Projects created and maintained by SRCT's members."
   {% for project in site.data.projects %}
     {% if project.status == 'in_dev' %}
       <div class="col-lg-6 project-entry">
-        <a class="project-link" name="{{ project.name }}" href="#{{ project.name }}"><i class="fa {{ project.fa_icon }} project-icon"></i></a>
+        <a class="project-link" name="{{ project.name }}" href="#{{ project.name }}"><i class="{{ project.fa_icon }} project-icon"></i></a>
         <legend>
           <strong>{{ project.name }}</strong>
           {% if project.deployed_url %}| <a href="https://{{ project.deployed_url }}">{{ project.deployed_url }}</a>{% endif %}
@@ -73,7 +73,7 @@ description: "Projects created and maintained by SRCT's members."
   {% for project in site.data.projects %}
     {% if project.status == 'inactive' %}
       <div class="col-lg-6 project-entry">
-        <a class="project-link" name="{{ project.name }}" href="#{{ project.name }}"><i class="fa {{ project.fa_icon }} project-icon"></i></a>
+        <a class="project-link" name="{{ project.name }}" href="#{{ project.name }}"><i class="{{ project.fa_icon }} project-icon"></i></a>
         <legend>
           <strong>{{ project.name }}</strong>
           {% if project.deployed_url %}| <a href="https://{{ project.deployed_url }}">{{ project.deployed_url }}</a>{% endif %}
@@ -104,7 +104,7 @@ description: "Projects created and maintained by SRCT's members."
   {% for project in site.data.projects %}
     {% if project.status == 'ideas' %}
       <div class="col-lg-6 project-entry">
-        <a class="project-link" name="{{ project.name }}" href="#{{ project.name }}"><i class="fa {{ project.fa_icon }} project-icon"></i></a>
+        <a class="project-link" name="{{ project.name }}" href="#{{ project.name }}"><i class="{{ project.fa_icon }} project-icon"></i></a>
         <legend>
           <strong>{{ project.name }}</strong>
           {% if project.deployed_url %}| <a href="https://{{ project.deployed_url }}">{{ project.deployed_url }}</a>{% endif %}
