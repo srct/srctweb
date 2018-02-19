@@ -16,7 +16,7 @@ main:
     url: "/documents/"
     children:
       - title: "General Policy"
-        url: "/documents/policy"
+        url: "/documents/policy/"
 
       - title: "Constitution"
         url: "/documents/constitution/"
@@ -38,6 +38,9 @@ main:
 
       - title: "Logos"
         url: "/documents/logos/"
+
+      - title: "Community Guidelines"
+        url: "/documents/community_guidelines/"
 
   - title: "Contact"
     url: "/contact/"
