@@ -14,3 +14,22 @@ build:
   artifacts:
     paths:
     - build
+    
+deploy_staging:
+  stage: deploy
+  script:
+  - echo 'Deploy bot awayyy';
+  environment:
+    name: staging
+    url: https://srct.gmu.io
+
+deploy_production:
+  stage: deploy
+  script: echo "Deploy bot awayyyyy"
+  environment:
+    name: production
+    url: https://srct.gmu.edu
+  when: manual
+  only:
+    - master
+
