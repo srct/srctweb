@@ -13,6 +13,9 @@ before_script:
 
 build:
   stage: build
+  before_script:
+  - cd srctweb/
+  - bundle install
   script:
   - bundle exec jekyll build --trace -d '../build'
   artifacts:
