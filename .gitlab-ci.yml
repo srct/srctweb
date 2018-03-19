@@ -9,12 +9,15 @@ variables:
 
 before_script:
   - cd srctweb/
+  - gem install bundler
   - bundle install
+
 
 build:
   stage: build
   before_script:
   - cd srctweb/
+  - gem install bundler
   - bundle install
   script:
   - bundle exec jekyll build --trace -d '../build'
