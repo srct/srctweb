@@ -39,15 +39,15 @@
     "blurb": "GitLab is a central host for Git repositories. It's like GitHub, but operated by Mason for Mason. Any student or member of the community may log into it with their Mason NetID. Users may upload code either for private work or public viewing, and may allow others to contribute to their projects."
   },
   {
-    "name": "PatriotChat",
-    "language": "JavaScript",
+    "name": "Masontoday",
+    "language": "JavaScript: React Native",
     "status": "in_dev",
-    "repo_url": "github.com/zosman1/patriotchat",
-    "fa_icon": "fas fa-comments",
+    "repo_url": "https://github.com/zosman1/masontoday/",
+    "fa_icon": "far fa-calendar-alt",
     "project_manager": "Zach Osman",
-    "issues_url": "https://github.com/zosman1/PatriotChat/issues",
-    "docs_url": "https://github.com/zosman1/PatriotChat/blob/master/README.md",
-    "blurb": "Providing a space for GMU students to communicate with each other. This was created as a way for students to contact group members who might not be easily accessible through conventional means. This is built in react-native, which allows for iOS and Android development to happen simultaneously."
+    "issues_url": "https://github.com/zosman1/masontoday/issues",
+    "docs_url": "https://github.com/zosman1/masontoday/blob/master/README.md",
+    "blurb": "Mobile app showing students events and other happenings around the Mason campus"
   },
   {
     "name": "Roomlist",
