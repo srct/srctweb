@@ -24,7 +24,6 @@ build:
     
 deploy_staging:
   stage: deploy
-  image: ruby:2.3
   script:
   - echo 'Deploy bot awayyy';
   environment:
@@ -33,7 +32,6 @@ deploy_staging:
 
 deploy_production:
   stage: deploy
-  image: ruby:2.3
   script: echo "Deploy bot awayyyyy"
   environment:
     name: production
