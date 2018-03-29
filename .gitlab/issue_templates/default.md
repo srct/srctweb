@@ -9,8 +9,4 @@ approach the problem.
 
 Here you should include a bullet point list of links to documentation, stack overflow,
 whatever, that could help guide someone on what it is they are trying to do.
-<<<<<<< HEAD
 Essentially, a list of links to point them in the right direction.
-=======
-Essentially, a list of links to point them in the right direction.
->>>>>>> origin/1.0-jekyll-rewrite
