@@ -417,7 +417,14 @@
     "alum": false,
     "exec": {
       "status": false
-    }    
+    }
   },
-
+  {
+    "name": "Zac Wood",
+    "email": "zwood2@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": false
+    }
+  },
 ]
