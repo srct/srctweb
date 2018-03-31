@@ -427,4 +427,12 @@
       "status": false
     }
   },
+   {
+    "name": "Molly Thomson",
+    "email": "mthomso2@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": false
+    }
+  },
 ]
