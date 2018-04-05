@@ -43,7 +43,7 @@ tablesorter_css: true
       <thead>
         <tr>
           <th data-sorter="false"></th>
-          <th><h4>Name</h4></th>
+          <th class="sorter-last-name"><h4>Name</h4></th>
           <th data-sorter="false"><h4>Email</h4></th>
         </tr>
       </thead>
@@ -70,7 +70,7 @@ tablesorter_css: true
       <thead>
         <tr>
           <th data-sorter="false"></th>
-          <th><h4>Name</h4></th>
+          <th class="sorter-last-name"><h4>Name</h4></th>
           <th data-sorter="false"><h4>Email</h4></th>
         </tr>
       </thead>
@@ -92,6 +92,23 @@ tablesorter_css: true
 <script src="/assets/js/jquery.tablesorter.min.js" type="text/javascript"></script>
 <script>
 $(function() {
+  // from https://stackoverflow.com/questions/38209618/
+  // response there by the person who maintains the project
+  $.tablesorter.addParser({
+    id: 'last-name',
+    is: function() {
+      return false;
+    },
+    format: function(str) {
+      var parts = (str || '').split(/\s+/),
+        last = parts.pop();
+      parts.unshift(last);
+      return parts.join(' ');
+    },
+    // set type, either numeric or text
+    type: 'text'
+  });
+
   $("#devs-table").tablesorter({
     theme: "bootstrap",
     sortList: [[1,0]]
