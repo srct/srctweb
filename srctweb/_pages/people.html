@@ -3,7 +3,6 @@ title: "People"
 description: "The people who make up this community of developers!"
 permalink: /people/
 tablesorter_css: true
-tablesorter_js: true
 ---
 
 <!-- Exec Table -->
@@ -90,14 +89,16 @@ tablesorter_js: true
   </div>
 </div>
 
+<script src="/assets/js/jquery.tablesorter.min.js" type="text/javascript"></script>
 <script>
 $(function() {
-  $("#devs-table").tablesorter(
+  $("#devs-table").tablesorter({
     theme: "bootstrap",
-    {sortList: [[1,0]]}
-  );
-  $("#alums-table").tablesorter(
-    {sortList: [[1,0]]}
-  );
+    sortList: [[1,0]]
+  });
+  $("#alums-table").tablesorter({
+    theme: "bootstrap",
+    sortList: [[1,0]]
+  });
 });
 </script>
