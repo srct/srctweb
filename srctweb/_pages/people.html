@@ -2,9 +2,9 @@
 title: "People"
 description: "The people who make up this community of developers!"
 permalink: /people/
+tablesorter_css: true
+tablesorter_js: true
 ---
-
-<script type="text/javascript" src="assets/js/jquery.tablesorter.min.js"></script>
 
 <!-- Exec Table -->
 <h3>
@@ -40,12 +40,12 @@ permalink: /people/
     <h3>
       <strong><a href="http://wiki.srct.gmu.edu/Developers">Developers</a></strong>
     </h3>
-    <table class="table table-hover text-center">
+    <table id="devs-table" class="table table-hover text-center">
       <thead>
         <tr>
-          <th></th>
+          <th data-sorter="false"></th>
           <th><h4>Name</h4></th>
-          <th><h4>Email</h4></th>
+          <th data-sorter="false"><h4>Email</h4></th>
         </tr>
       </thead>
       <tbody>
@@ -67,12 +67,12 @@ permalink: /people/
     <h3>
       <strong><a href="#">Alumni</a></strong>
     </h3>
-    <table class="table table-hover text-center">
+    <table id="alums-table" class="table table-hover text-center">
       <thead>
         <tr>
-          <th></th>
+          <th data-sorter="false"></th>
           <th><h4>Name</h4></th>
-          <th><h4>Email</h4></th>
+          <th data-sorter="false"><h4>Email</h4></th>
         </tr>
       </thead>
       <tbody>
@@ -89,3 +89,15 @@ permalink: /people/
     </table>
   </div>
 </div>
+
+<script>
+$(function() {
+  $("#devs-table").tablesorter(
+    theme: "bootstrap",
+    {sortList: [[1,0]]}
+  );
+  $("#alums-table").tablesorter(
+    {sortList: [[1,0]]}
+  );
+});
+</script>
