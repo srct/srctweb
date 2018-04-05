@@ -50,7 +50,7 @@ tablesorter_js: true
       </thead>
       <tbody>
         {% for member in site.data.people %}
-          {% if member.alum == false %}
+          {% if member.alum == false and member.exec.position != 'Faculty Advisor' %}
             <tr>
               <td><img class="member-image" src="{{ member.email | get_gravatar }}" alt="gravatar image"></td>
               <td class="align-middle">{{ member.name }}</td>

@@ -1,11 +1,11 @@
-# from https://tlattimore.com/blog/using-gravatar-in-jekyll/
+# modified from https://tlattimore.com/blog/using-gravatar-in-jekyll/
 require 'digest/md5'
 
 module Jekyll
   module GravatarFilter
     # Add our new liquid filter.
     def get_gravatar(input)
-      "//www.gravatar.com/avatar/#{hash(input)}"
+      "//www.gravatar.com/avatar/#{hash(input)}?d=mm"
     end
 
     private :hash
