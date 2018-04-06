@@ -6,8 +6,10 @@
     {% include scripts.html %}
   </head>
 
-  <body id="body">
-    {% include navbar.html %}
+  <body>
+    <header>
+      {% include navbar.html %}
+    </header>
 
     {% if page.jumbotron == true %}
       {% include jumbotron.html %}
@@ -15,13 +17,12 @@
       {% include banner.html %}
     {% endif %}
 
-    <div class="container">
+    <main role="main" class="container">
       {{ content }}
-    </div>
+    </main>
+
+    <footer class="footer">
+      {% include footer.html %}
+    </footer>
   </body>
-
-  <div id="footer">
-    {% include footer.html %}
-  </div>
-
 </html>
