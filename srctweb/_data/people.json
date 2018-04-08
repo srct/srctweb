@@ -70,7 +70,7 @@
   {
     "name": "Jason Yeomans",
     "email": "jyeoman2@gmu.edu",
-    "alum": false,
+    "alum": true,
     "exec": {
       "status": false
     }
