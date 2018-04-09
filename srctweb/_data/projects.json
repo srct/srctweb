@@ -220,11 +220,11 @@
     "name": "sks-rs",
     "language": "Rust",
     "status": "in_dev",
-    "repo_url": "github.com/srct/sks-rs",
+    "repo_url": "https://github.com/srct/sks-rs",
     "fa_icon": "fas fa-key",
     "project_manager": "Kunal Sarkhel",
     "issues_url": "https://github.com/srct/sks-rs/issues",
-    "docs_url": "github.com/srct/sks-rs/blob/master/README.md",
+    "docs_url": "https://github.com/srct/sks-rs/blob/master/README.md",
     "blurb": "Rust implementation of the Synchronizing Key Server for PGP keys."
   },
   {
