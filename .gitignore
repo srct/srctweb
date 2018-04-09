@@ -2,8 +2,8 @@
 *.pyc
 *~
 srctweb/website/build/
-.venv
 .virtualevn
+.venv
 srctweb/_site/
 .sass-cache/
 .jekyll-metadata
