@@ -143,7 +143,7 @@
     "repo_url": "https://git.gmu.edu/srct/whats-open-android",
     "fa_icon": "far fa-clock",
     "project_manager": "Robert Hitt",
-    "googleplay_url": "play.google.com/store/apps/details?id=srct.whatsopen&hl=en/",
+    "googleplay_url": "https://play.google.com/store/apps/details?id=srct.whatsopen&hl=en/",
     "issues_url": "https://git.gmu.edu/srct/whats-open-android/issues",
     "docs_url": "https://git.gmu.edu/srct/whats-open-android/blob/master/README.md",
     "blurb": "Android client app for the What's Open API."
