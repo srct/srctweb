@@ -40,14 +40,14 @@
   },
   {
     "name": "Masontoday",
-    "language": "JavaScript: React Native",
+    "language": "Python",
     "status": "in_dev",
-    "repo_url": "https://github.com/zosman1/masontoday/",
+    "repo_url": "https://git.gmu.edu/srct/mason-today-web",
     "fa_icon": "far fa-calendar-alt",
-    "project_manager": "Zach Osman",
-    "issues_url": "https://github.com/zosman1/masontoday/issues",
-    "docs_url": "https://github.com/zosman1/masontoday/blob/master/README.md",
-    "blurb": "Mobile app showing students events and other happenings around the Mason campus"
+    "project_manager": "Aaron Poulter-Martinez and Landon DeCoito",
+    "issues_url": "https://git.gmu.edu/srct/mason-today-webissues",
+    "docs_url": "https://git.gmu.edu/srct/mason-today-webblob/master/README.md",
+    "blurb": "API and Web service providing students a way to easily view events at Mason."
   },
   {
     "name": "Roomlist",
@@ -67,12 +67,11 @@
   },
   {
     "name": "Schedules",
-    "language": "Typescript",
-    "status": "inactive",
+    "language": "Ruby on Rails",
+    "status": "in_dev",
     "repo_url": "https://git.gmu.edu/srct/schedules",
     "fa_icon": "far fa-calendar",
-    "project_manager": "Mark Stenglein",
-    "deployed_url": "schedules.gmu.edu",
+    "project_manager": "Zac Wood",
     "issues_url": "https://git.gmu.edu/srct/schedules/issues",
     "docs_url": "https://git.gmu.edu/srct/schedules/blob/master/README.md",
     "blurb": "A simple application to add your class schedule to calendar applications like Outlook and Google Calendar."
@@ -134,7 +133,7 @@
     "blurb": "Progressive Web App client for the What's Open API."
   },
   {
-    "name": "What's Open Android",
+    "name": "What's Open for Android",
     "language": "Java",
     "current_release": "1.0 - Cassowary Edition",
     "current_release_url": "https://git.gmu.edu/srct/whats-open-android/milestones/1",
@@ -144,18 +143,19 @@
     "repo_url": "https://git.gmu.edu/srct/whats-open-android",
     "fa_icon": "far fa-clock",
     "project_manager": "Robert Hitt",
-    "deployed_url": "play.google.com/store/apps/details?id=srct.whatsopen&hl=en/",
+    "googleplay_url": "play.google.com/store/apps/details?id=srct.whatsopen&hl=en/",
     "issues_url": "https://git.gmu.edu/srct/whats-open-android/issues",
     "docs_url": "https://git.gmu.edu/srct/whats-open-android/blob/master/README.md",
     "blurb": "Android client app for the What's Open API."
   },
   {
-    "name": "What's Open iOS",
+    "name": "What's Open for iOS",
     "language": "Swift",
-    "next_release": "1.0",
-    "next_release_url": "https://git.gmu.edu/srct/whats-open-ios/milestones/2",
+    "current_release": "1.0",
+    "curremt_release_url": "https://git.gmu.edu/srct/whats-open-ios/milestones/2",
     "status": "active",
     "repo_url": "https://git.gmu.edu/srct/whats-open-ios",
+    "appstore_url": "https://itunes.apple.com/us/app/whats-open-at-mason/id1331260366",
     "fa_icon": "far fa-clock",
     "project_manager": "Eyad Hasan",
     "issues_url": "https://git.gmu.edu/srct/whats-open-ios/issues",
