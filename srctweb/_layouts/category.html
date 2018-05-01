@@ -8,6 +8,8 @@ layout: default
 </h1>
 {% if page.category == 'events' %}
 <h4>{{ post.event_date | date: "%A %B %-d, %Y" }}</h4>
+{% elsif post.author %}
+<h4>by {{ post.author }} | {{ post.date | date: "%A %B %-d, %Y" }}</h4>
 {% else %}
 <h4>{{ post.date | date: "%A %B %-d, %Y" }}</h4>
 {% endif %}
@@ -22,18 +24,26 @@ layout: default
     </div>
     <div class="col-md-6">
         <p>
-            {{ post.excerpt }}
+            {% if post.content contains "<!-- more -->" %}
+                    {{ post.content | split:"<!-- more -->" | first }}
+            {% else %}
+                {{ post.excerpt }}
+            {% endif %}
         </p>
         <p>
-            <a href="{{ post.url | absolute_url }}">Read More
+            <a href="{{ post.url | prepend: site.url }}">Read More
                 <i class="fas fa-arrow-circle-right"></i>
             </a>
         </p>
     </div>
 {% else %}
-{{ post.excerpt }}
+{% if post.content contains "<!-- more -->" %}
+        {{ post.content | split:"<!-- more -->" | first }}
+{% else %}
+    {{ post.excerpt }}
+{% endif %}
 <p>
-    <a href="{{ post.url | absolute_url }}">Read More
+    <a href="{{ post.url | prepend: site.url }}">Read More
         <i class="fas fa-arrow-circle-right"></i>
     </a>
 </p>
@@ -44,5 +54,5 @@ layout: default
 
 <br />
 {% if page.archive %}
-<p><a href="{{ page.archive | aosulute_url }}"><i class="fas fa-arrow-circle-left"></i> Archive</a></p>
+<p><a href="{{ page.archive | prepend: site.url }}"><i class="fas fa-arrow-circle-left"></i> Archive</a></p>
 {% endif %}
