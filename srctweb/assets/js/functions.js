@@ -29,6 +29,19 @@ function checkDate() {
     // Virginia Primaries and General Elections
     // Date reference: https://www.fairfaxcounty.gov/elections/ecalendar
 
+    var primaryMessage = "<div class='alert alert-info mb-0 text-center' role='alert'>" +
+                           "<i class='fa fa-info-circle'></i> " +
+                           "Today is Virginia's Primary Election. " +
+                           "Polls are open from 6:00am - 7:00pm. " +
+                           "Photo ID is required. " +
+                           "<a href='https://vote.elections.virginia.gov/VoterInformation/'" +
+                            "class='alert-link'>" +
+                           "Click here to verify your registration status, " +
+                           "find your polling place, and review your ballot." +
+                           "</a>" +
+                         "</div>";
+
+    var generalMessage = primaryMessage.replace(/Primary/i, 'General');
 
     // primaries are the second Tuesday of June
     if (month == 6) {
@@ -39,15 +52,13 @@ function checkDate() {
         secondTuesday = 1 + (((2 - weekday) + 7) % 7) + 7;
 
         if (day == secondTuesday) {
-            var page = document.body;
-            page.insertAdjacentHTML("afterbegin",
-                                    "<div class='alert alert-info mb-0 text-center' role='alert'><i class='fa fa-info-circle'></i> Today is Virginia's Primary Elections. Polls are open from 6:00am - 7:00pm. Photo ID is required. <a href='https://vote.elections.virginia.gov/VoterInformation/' class='alert-link'>Click here to verify your registration status, find your polling place, and review your ballot.</a></div>");
+            document.body.insertAdjacentHTML("afterbegin", primaryMessage);
         }
 
     // generals are the first Tuesday after the first Monday of November
     } else if (month == 11) {
         novemberFirst = new Date(year, month, 1);
-        weekday = novemberFirst.getDay()
+        weekday = novemberFirst.getDay();
 
         // if the first day of the month is a Tuesday
         if (weekday == 1) {
@@ -58,7 +69,7 @@ function checkDate() {
         }
 
         if (day == general) {
-            console.log("It's election day!");
+            document.body.insertAdjacentHTML("afterbegin", generalMessage);
         }
     }
 }
