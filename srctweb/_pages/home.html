@@ -326,14 +326,17 @@ $(function() {
     "key":apiKey
   },
   function(data) {
-    //console.log(data.items[0])
-    var d = new Date(data.items[0].start.dateTime),
-        monthName = d.toLocaleString("en-us", {month: "long"}),
-        dateOptions = { weekday: 'long', month: 'long', day: 'numeric' },
-        timeOptions = { hour: 'numeric', minute: 'numeric'},
-        dateString = d.toLocaleString("en-us", dateOptions),
-        timeString = d.toLocaleString("en-us", timeOptions);
-    $("#meetingDate").text("Join us for our next meeting in "+data.items[0].location+" at "+timeString+" on "+dateString +". Make sure to bring your laptop!")
+      if(data.items.length == 0) {
+      $("#meetingDate").text("No meetings scheduled yet. Check back soon!");
+    } else {
+        var d = new Date(data.items[0].start.dateTime),
+            monthName = d.toLocaleString("en-us", {month: "long"}),
+            dateOptions = { weekday: 'long', month: 'long', day: 'numeric' },
+            timeOptions = { hour: 'numeric', minute: 'numeric'},
+            dateString = d.toLocaleString("en-us", dateOptions),
+            timeString = d.toLocaleString("en-us", timeOptions);
+        $("#meetingDate").text("Join us for our next meeting in "+data.items[0].location+" at "+timeString+" on "+dateString +". Make sure to bring your laptop!")
+      }
   });
 });
 </script>
