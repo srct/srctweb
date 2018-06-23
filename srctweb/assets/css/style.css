@@ -1,12 +1,15 @@
 /* Sticky footer styles */
+
 html {
   position: relative;
   min-height: 100%;
 }
+
 body {
   /* Margin bottom by footer height */
   margin-bottom: 120px;
 }
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -17,29 +20,37 @@ body {
 }
 
 /* Custom page CSS */
+
 a[name] {
   padding-top: 50px;
 }
+
 @font-face {
-    font-family: 'Xolonium';
-    src: url('../fonts/Xolonium-Regular.otf') format("opentype");
+  font-family: 'Xolonium';
+  src: url('../fonts/Xolonium-Regular.otf') format("opentype");
 }
+
 .xolonium {
   font-family: Xolonium;
 }
+
 #srct-logo-home {
-  padding-top: 1rem;  
+  padding-top: 1rem;
 }
+
 .srct-logo {
   height: 10rem;
-  width: 10rem;  
+  width: 10rem;
 }
+
 .srct-title {
   color: white;
   font-size: 2rem;
   padding-top: 0.35rem;
   padding-left: 0.5rem;
-  text-shadow: 1px 1px 6px #333;}
+  text-shadow: 1px 1px 6px #333;
+}
+
 .jumbostyle {
   background: url(/assets/img/meeting.jpg) no-repeat;
   background-size: cover;
@@ -49,29 +60,35 @@ a[name] {
   padding-bottom: 100px;
   border-radius: unset;
 }
+
 .srctlogo {
   width: 10px;
 }
+
 .smidge {
   padding-bottom: 10px;
 }
+
 .smidgen {
   padding-bottom: 5px;
 }
+
 .people-left {
-  padding-left:0;
-  padding-right:0;
+  padding-left: 0;
+  padding-right: 0;
 }
+
 .people-right {
-  padding-right:0;
-  padding-left:0;
+  padding-right: 0;
+  padding-left: 0;
 }
-@media(min-width:992px){
+
+@media(min-width:992px) {
   .people-left {
-    padding-right:15px;
+    padding-right: 15px;
   }
   .people-right {
-    padding-left:15px;
+    padding-left: 15px;
   }
 }
 
@@ -99,47 +116,58 @@ a[name] {
 * A cool little hack I found to try to allow a responsive Google Cal:
 * http://themeloom.com/2013/02/tips-embed-google-maps-and-calendars-in-a-responsive-wordpress-theme/
 **/
+
 .googlecal-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
 }
+
 .googlecal-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /** Projects Page **/
+
 .project-entry {
-  margin-bottom:10px;
+  margin-bottom: 10px;
 }
+
 .project-icon {
-  text-align:center;
+  text-align: center;
   display: block;
-  font-size:100px;
-  margin:0 auto;
+  font-size: 100px;
+  margin: 0 auto;
   padding-bottom: 10px;
 }
+
 /* can't you extend CSS classes? */
+
 .project-link {
   /* Padding and margin business because of the static header */
-  padding-top:50px !important;
-  margin-top:-50px;
-  display:block;
-  color:#000;
+  padding-top: 50px !important;
+  margin-top: -50px;
+  display: block;
+  color: #000;
 }
-.project-link:hover, .project-link:active, .project-link:focus {
+
+.project-link:hover,
+.project-link:active,
+.project-link:focus {
   text-decoration: none;
   outline: 0;
 }
+
 .project-icon-stacked {
-  font-size:55px;
+  font-size: 55px;
 }
+
 .project-role {
   width: 150px;
   display: inline-block;
@@ -150,10 +178,12 @@ a[name] {
   background: transparent;
   font-size: 0.9em;
 }
+
 .project-text {
-  margin-top:10px;
-  padding-bottom:15px;
+  margin-top: 10px;
+  padding-bottom: 15px;
 }
+
 #banner {
   padding-top: 2rem;
   background: #e4e6d7;
@@ -161,18 +191,22 @@ a[name] {
   margin-bottom: 15px;
   font-size: 22.5px;
 }
+
 .page-header {
-  margin-top:0;
-  border-bottom:none;
+  margin-top: 0;
+  border-bottom: none;
 }
+
 .white-branding {
   color: black;
   background-color: white;
 }
+
 .green-branding {
   color: white;
   background-color: #006633;
 }
+
 .black-branding {
   color: white;
   background-color: black;
