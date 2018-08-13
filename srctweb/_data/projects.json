@@ -42,11 +42,11 @@
     "name": "Masontoday",
     "language": "JavaScript: React Native",
     "status": "in_dev",
-    "repo_url": "https://github.com/zosman1/masontoday/",
+    "repo_url": "https://github.com/srct/masontoday/",
     "fa_icon": "far fa-calendar-alt",
     "project_manager": "Zach Osman",
-    "issues_url": "https://github.com/zosman1/masontoday/issues",
-    "docs_url": "https://github.com/zosman1/masontoday/blob/master/README.md",
+    "issues_url": "https://github.com/srct/masontoday/issues",
+    "docs_url": "https://github.com/srct/masontoday/blob/master/README.md",
     "blurb": "Mobile app showing students events and other happenings around the Mason campus"
   },
   {
