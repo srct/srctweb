@@ -3,7 +3,7 @@
   {
     "name": "Go",
     "language": "Python",
-    "current_release": "Go 2.2 - Bloomin' Onion Edition",
+    "current_release": "Go 2.3 - Smash Mouth & Fake News Edition",
     "current_release_url": "https://git.gmu.edu/srct/go/milestones/3",
     "next_release": "Go 2.3 - Smash Mouth & Fake News Edition",
     "next_release_url": "https://git.gmu.edu/srct/go/milestones/4",
@@ -39,7 +39,18 @@
     "blurb": "GitLab is a central host for Git repositories. It's like GitHub, but operated by Mason for Mason. Any student or member of the community may log into it with their Mason NetID. Users may upload code either for private work or public viewing, and may allow others to contribute to their projects."
   },
   {
-    "name": "Masontoday",
+    "name": "Masontoday Mobile",
+    "language": "JavaScript (React Native)",
+    "status": "in_dev",
+    "repo_url": "https://github.com/srct/masontoday/",
+    "fa_icon": "far fa-calendar-alt",
+    "project_manager": "Zach Osman",
+    "issues_url": "https://github.com/srct/masontoday/issues",
+    "docs_url": "https://github.com/srct/masontoday/blob/master/README.md",
+    "blurb": "Mobile app showing students events and other happenings around the Mason campus"
+  },
+  {
+    "name": "Masontoday API & Web",
     "language": "Python",
     "status": "in_dev",
     "repo_url": "https://git.gmu.edu/srct/mason-today-web",
@@ -68,8 +79,10 @@
   {
     "name": "Schedules",
     "language": "Ruby on Rails",
-    "status": "in_dev",
+    "status": "active",
+    "current_release": "1.0",
     "repo_url": "https://git.gmu.edu/srct/schedules",
+    "deployed_url": "schedules.gmu.edu",
     "fa_icon": "far fa-calendar",
     "project_manager": "Zac Wood",
     "issues_url": "https://git.gmu.edu/srct/schedules/issues",
@@ -95,7 +108,7 @@
     "current_release_url": "https://git.gmu.edu/srct/weather/milestones/1",
     "next_release": "Beta",
     "next_release_url": "https://git.gmu.edu/srct/weather/milestones/2",
-    "status": "active",
+    "status": "inactive",
     "repo_url": "https://git.gmu.edu/srct/weather",
     "fa_icon": "fas fa-umbrella",
     "project_manager": "Zach Knox",
@@ -105,7 +118,7 @@
     "blurb": "Provides a beautiful way to check up on the weather across all of Mason's campuses."
   },
   {
-    "name": "What's Open",
+    "name": "What's Open API",
     "language": "Python",
     "current_release": "2.1 - Grain of Salt",
     "current_release_url": "https://git.gmu.edu/srct/whats-open/tags/2.1.1",
@@ -175,7 +188,9 @@
   {
     "name": "What's Open Google Assistant",
     "language": "JavaScript",
-    "status": "ideas",
+    "status": "in_dev",
+    "repo_url": "https://git.gmu.edu/srct/whats-open-assistant",
+    "project_manager": "Ayham Hasan",
     "fa_icon": "far fa-clock",
     "blurb": "Google Home client app for the What's Open API."
   },
@@ -183,7 +198,6 @@
     "name": "Photos",
     "status": "in_dev",
     "repo_url": "https://flickr.com/masonsrct",
-    "project_manager": "Mark Stenglein",
     "fa_icon": "fas fa-camera",
     "issues_url": "https://git.gmu.edu/srct/whats-open-alexa/issues",
     "docs_url": "https://git.gmu.edu/srct/whats-open-alexa/blob/master/README.md",
@@ -220,11 +234,11 @@
     "name": "sks-rs",
     "language": "Rust",
     "status": "in_dev",
-    "repo_url": "github.com/srct/sks-rs",
+    "repo_url": "https://github.com/srct/sks-rs",
     "fa_icon": "fas fa-key",
     "project_manager": "Kunal Sarkhel",
     "issues_url": "https://github.com/srct/sks-rs/issues",
-    "docs_url": "github.com/srct/sks-rs/blob/master/README.md",
+    "docs_url": "https://github.com/srct/sks-rs/blob/master/README.md",
     "blurb": "Rust implementation of the Synchronizing Key Server for PGP keys."
   },
   {
@@ -247,5 +261,15 @@
     "issues_url": "https://git.gmu.edu/srct/advisor/issues",
     "docs_url": "https://git.gmu.edu/srct/advisor/blob/master/README.md",
     "blurb": "Advisor is an automatic academic advising system. The goal is to allow students to enter their academic history in a standard form and receive an interactive list of coursework they are required to complete for graduation, as well as possible electives and prerequisite trees. This would not serve as a replacement for in-person academic advisor meetings."
+  },
+  {
+    "name": "Where",
+    "status": "in_dev",
+    "repo_url": "https://git.gmu.edu/srct/where",
+    "fa_icon": "fas fa-map-marker",
+    "project_manager": "Jay Wilson",
+    "issues_url": "https://git.gmu.edu/srct/where/issues",
+    "docs_url": "https://git.gmu.edu/srct/where/blob/master/README.md",
+    "blurb": "Mapping effort for various facilities and amenities on campus"
   }
 ]

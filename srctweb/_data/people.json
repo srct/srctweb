@@ -50,8 +50,8 @@
     }
   },
   {
-    "name": "Kinga Dobolyi",
-    "email": "kdobolyi@gmu.edu",
+    "name": "Jonathan Bell",
+    "email": "bellj@gmu.edu",
     "alum": false,
     "exec": {
       "status": true,
@@ -70,7 +70,7 @@
   {
     "name": "Jason Yeomans",
     "email": "jyeoman2@gmu.edu",
-    "alum": false,
+    "alum": true,
     "exec": {
       "status": false
     }
@@ -443,4 +443,28 @@
       "status": false
     }
   },
+   {
+    "name": "Christopher Gallarno",
+    "email": "cgallarn@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": false
+    }
+  },
+   {
+    "name": "Tyler Hallada",
+    "email": "thallada@gmu.edu",
+    "alum": true,
+    "exec": {
+      "status": false
+    }
+  },
+   {
+    "name": "Luke Faraone",
+    "email": "lfaraone@gmu.edu",
+    "alum": true,
+    "exec": {
+      "status": false
+    }
+  }
 ]
