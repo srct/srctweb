@@ -211,3 +211,7 @@ a[name] {
   color: white;
   background-color: black;
 }
+
+.store-badge {
+  padding: 2px;
+}
