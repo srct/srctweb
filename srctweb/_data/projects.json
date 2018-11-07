@@ -44,7 +44,7 @@
     "repo_url": "https://github.com/srct/masontoday/",
     "fa_icon": "far fa-calendar-alt",
     "project_manager": "Zach Osman",
-    "deployed_url": "go.gmu.edu/masontodayMobile",
+    "appstore_url": "https://itunes.apple.com/us/app/masontoday/id1399929911",
     "issues_url": "https://github.com/srct/masontoday/issues",
     "docs_url": "https://github.com/srct/masontoday/blob/master/README.md",
     "blurb": "Mobile app showing students events and other happenings around the Mason campus"
