@@ -10,13 +10,21 @@
     }
   },
   {
-    "name": "Robert Hitt",
-    "email": "rhitt@gmu.edu",
+    "name": "Zac Wood",
+    "email": "zwood2@gmu.edu",
     "alum": false,
     "exec": {
       "status": true,
       "position": "Vice President",
       "link": "http://wiki.srct.gmu.edu/Vice_President"
+    }
+  },
+  {
+    "name": "Robert Hitt",
+    "email": "rhitt@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": false
     }
   },
   {
@@ -414,14 +422,6 @@
   {
     "name": "Landon DeCoito",
     "email": "rdecoito@gmu.edu",
-    "alum": false,
-    "exec": {
-      "status": false
-    }
-  },
-  {
-    "name": "Zac Wood",
-    "email": "zwood2@gmu.edu",
     "alum": false,
     "exec": {
       "status": false
