@@ -61,6 +61,7 @@ Attempt to avoid unrelated topics that derail project channels. Small tangents a
 5. Discuss politics in designated channels unless necessary or directly relevant.
 6. Avoid usage of @everyone or @channel unless absolutely necessary, or if the channel is known to have many @channels.
 7. Avoid repeatedly @ message (otherwise referred to as pinging) someone, especially if they’re unresponsive.
+8. No soliciting.
 
 </div>
 <div class="col-sm-2 hidden-xs">
