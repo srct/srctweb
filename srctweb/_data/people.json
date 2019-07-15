@@ -2,11 +2,9 @@
   {
     "name": "David Haynes",
     "email": "dhaynes3@gmu.edu",
-    "alum": false,
+    "alum": true,
     "exec": {
-      "status": true,
-      "position": "President",
-      "link": "http://wiki.srct.gmu.edu/President"
+      "status": false
     }
   },
   {
@@ -15,8 +13,18 @@
     "alum": false,
     "exec": {
       "status": true,
-      "position": "Vice President",
-      "link": "http://wiki.srct.gmu.edu/Vice_President"
+      "position": "President",
+      "link": "http://wiki.srct.gmu.edu/President"
+    }
+  },
+  {
+    "name": "Gilberto Barrientos",
+    "email": "gbarrien@masonlive.gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": true,
+      "position": "Secretary",
+      "link": "http://wiki.srct.gmu.edu/Secretary"
     }
   },
   {
@@ -32,9 +40,7 @@
     "email": "mbaile18@gmu.edu",
     "alum": false,
     "exec": {
-      "status": true,
-      "position": "Systems Administrator",
-      "link": "http://wiki.srct.gmu.edu/Systems_Administrator"
+      "status": false
     }
   },
   {
@@ -42,9 +48,7 @@
     "email": "apoulter@gmu.edu",
     "alum": false,
     "exec": {
-      "status": true,
-      "position": "Treasurer",
-      "link": "http://wiki.srct.gmu.edu/Treasurer"
+      "status": false
     }
   },
   {
@@ -52,9 +56,7 @@
     "email": "jvilloga@gmu.edu",
     "alum": false,
     "exec": {
-      "status": true,
-      "position": "Secretary",
-      "link": "http://wiki.srct.gmu.edu/Secretary"
+      "status": false
     }
   },
   {
@@ -144,7 +146,9 @@
     "email": "ehasan3@gmu.edu",
     "alum": false,
     "exec": {
-      "status": false
+      "status": true,
+      "position": "Systems Administrator",
+      "link": "http://wiki.srct.gmu.edu/Systems_Administrator"
     }
   },
   {
@@ -256,7 +260,9 @@
     "email": "ahrdy@gmu.edu",
     "alum": false,
     "exec": {
-      "status": false
+      "status": true,
+      "position": "Vice President",
+      "link": "http://wiki.srct.gmu.edu/Vice_President"
     }
   },
   {
@@ -424,7 +430,9 @@
     "email": "rdecoito@gmu.edu",
     "alum": false,
     "exec": {
-      "status": false
+      "status": true,
+      "position": "Treasurer",
+      "link": "http://wiki.srct.gmu.edu/Treasurer"
     }
   },
    {
