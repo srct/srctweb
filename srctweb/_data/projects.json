@@ -19,7 +19,7 @@
     "name": "Schedules",
     "language": "Ruby on Rails",
     "status": "active",
-    "current_release": "2.1",
+    "current_release": "3.0",
     "repo_url": "https://git.gmu.edu/srct/schedules",
     "deployed_url": "schedules.gmu.edu",
     "fa_icon": "far fa-calendar",
@@ -45,8 +45,8 @@
   {
     "name": "What's Open Web",
     "language": "JavaScript",
-    "current_release": "1.0",
-    "next_release": "2.0",
+    "current_release": "2.2",
+    "next_release": "2.3",
     "status": "active",
     "repo_url": "https://git.gmu.edu/srct/whats-open-web",
     "fa_icon": "far fa-clock",
@@ -59,7 +59,7 @@
   {
     "name": "What's Open for iOS",
     "language": "Swift",
-    "current_release": "1.0",
+    "current_release": "1.2",
     "curremt_release_url": "https://git.gmu.edu/srct/whats-open-ios/milestones/2",
     "status": "active",
     "repo_url": "https://git.gmu.edu/srct/whats-open-ios",
