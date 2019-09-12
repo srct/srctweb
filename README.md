@@ -35,7 +35,7 @@ use one at all), but Homebrew is highly reccomended.
 
 To get homebrew, run the following command in a terminal:
 
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 **Note**: You do NOT need to use `sudo` when running any Homebrew commands, and
 it likely won't work if you do.
