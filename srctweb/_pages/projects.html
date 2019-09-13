@@ -11,7 +11,7 @@ description: "Projects created and maintained by SRCT's members."
 <div class="row">
   {% for project in site.data.projects %}
     {% if project.status == 'active' %}
-      <div class="col-lg-6 project-entry">
+      <div class="col-lg-6 mb-2">
         <a class="project-link" name="{{ project.name }}" href="#{{ project.name }}"><i class="{{ project.fa_icon }} project-icon"></i></a>
         <legend>
           <strong>{{ project.name }}</strong>
@@ -28,7 +28,7 @@ description: "Projects created and maintained by SRCT's members."
         {% if project.next_release %}<strong class="project-role">Next Release:</strong> <a href="{{ project.next_release_url }}">{{ project.next_release }}</a><br>{% endif %}
         {% if project.language %}<strong class="project-role">Language:</strong> {{ project.language }}{% endif %}
         
-        <p class="project-text">
+        <p class="mt-2 pb-3">
           {{ project.blurb }}
         </p>
       </div>
@@ -43,7 +43,7 @@ description: "Projects created and maintained by SRCT's members."
 <div class="row">
   {% for project in site.data.projects %}
     {% if project.status == 'in_dev' %}
-      <div class="col-lg-6 project-entry">
+      <div class="col-lg-6 mb-2">
         <a class="project-link" name="{{ project.name }}" href="#{{ project.name }}"><i class="{{ project.fa_icon }} project-icon"></i></a>
         <legend>
           <strong>{{ project.name }}</strong>
@@ -59,7 +59,7 @@ description: "Projects created and maintained by SRCT's members."
         {% if project.next_release %}<strong class="project-role">Next Release:</strong> <a href="{{ project.next_release_url }}">{{ project.next_release }}</a><br>{% endif %}
         {% if project.language %}<strong class="project-role">Language:</strong> {{ project.language }}{% endif %}
         
-        <p class="project-text">
+        <p class="mt-2 pb-3">
           {{ project.blurb }}
         </p>
       </div>
@@ -74,7 +74,7 @@ description: "Projects created and maintained by SRCT's members."
 <div class="row">
   {% for project in site.data.projects %}
     {% if project.status == 'inactive' %}
-      <div class="col-lg-6 project-entry">
+      <div class="col-lg-6 mb-2">
         <a class="project-link" name="{{ project.name }}" href="#{{ project.name }}"><i class="{{ project.fa_icon }} project-icon"></i></a>
         <legend>
           <strong>{{ project.name }}</strong>
@@ -90,7 +90,7 @@ description: "Projects created and maintained by SRCT's members."
         {% if project.next_release %}<strong class="project-role">Next Release:</strong> <a href="{{ project.next_release_url }}">{{ project.next_release }}</a><br>{% endif %}
         {% if project.language %}<strong class="project-role">Language:</strong> {{ project.language }}{% endif %}
         
-        <p class="project-text">
+        <p class="mt-2 pb-3">
           {{ project.blurb }}
         </p>
       </div>
@@ -105,7 +105,7 @@ description: "Projects created and maintained by SRCT's members."
 <div class="row">
   {% for project in site.data.projects %}
     {% if project.status == 'ideas' %}
-      <div class="col-lg-6 project-entry">
+      <div class="col-lg-6 mb-2">
         <a class="project-link" name="{{ project.name }}" href="#{{ project.name }}"><i class="{{ project.fa_icon }} project-icon"></i></a>
         <legend>
           <strong>{{ project.name }}</strong>
@@ -121,7 +121,7 @@ description: "Projects created and maintained by SRCT's members."
         {% if project.next_release %}<strong class="project-role">Next Release:</strong> <a href="{{ project.next_release_url }}">{{ project.next_release }}</a><br>{% endif %}
         {% if project.language %}<strong class="project-role">Language:</strong> {{ project.language }}{% endif %}
         
-        <p class="project-text">
+        <p class="mt-2 pb-3">
           {{ project.blurb }}
         </p>
       </div>

@@ -34,10 +34,6 @@ a[name] {
   font-family: Xolonium;
 }
 
-#srct-logo-home {
-  padding-top: 1rem;
-}
-
 .srct-logo {
   height: 10rem;
   width: 10rem;
@@ -63,37 +59,6 @@ a[name] {
 
 .srctlogo {
   width: 10px;
-}
-
-.smidge {
-  padding-bottom: 10px;
-}
-
-.smidgen {
-  padding-bottom: 5px;
-}
-
-.people-left {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.people-right {
-  padding-right: 0;
-  padding-left: 0;
-}
-
-@media(min-width:992px) {
-  .people-left {
-    padding-right: 15px;
-  }
-  .people-right {
-    padding-left: 15px;
-  }
-}
-
-.index-card {
-  margin-bottom: 1rem;
 }
 
 .index-image {
@@ -135,10 +100,6 @@ a[name] {
 
 /** Projects Page **/
 
-.project-entry {
-  margin-bottom: 10px;
-}
-
 .project-icon {
   text-align: center;
   display: block;
@@ -177,11 +138,6 @@ a[name] {
   text-align: left;
   background: transparent;
   font-size: 0.9em;
-}
-
-.project-text {
-  margin-top: 10px;
-  padding-bottom: 15px;
 }
 
 #banner {
