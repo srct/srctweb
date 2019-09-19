@@ -105,6 +105,16 @@ If that doesn't work, try:
 
 You should see that the server is running by going to [http://localhost:4000](http://localhost:4000) in your browser. Any changes you make to your local file system will be mirrored in the server.
 
+### Installing Jekyll manually (windows)
+
+1. Go to https://jekyllrb.com/docs/installation/windows/
+2. Press the RubyInstaller link
+3. Install the Ruby+Devkit 2.6.4-1 (x64)
+4. Go through the installer
+5. Open a terminal and type gem install jekyll bundler tzinfo tzinfo-data
+6. Go to the folder you installed srctweb and type jekyll serve -s './srctweb' -d './srctweb/_site'
+9. Navigate to localhost:4000 in a web browser
+
 # Contrubuting
 
 Please read `CONTRIBUTING.md` for specific information and best practices on how
