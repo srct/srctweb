@@ -50,15 +50,7 @@ Finally we can install git with:
 
 ### On Windows
 
-We recommend that if you are on Windows 10 AE (Anniversary Edition) or above to make use of the
-Windows Subsystem for Linux (WSL). The following link should get you up and running:
-
-[https://msdn.microsoft.com/en-us/commandline/wsl/install_guide](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide)
-
-#### Contributing with Windows
-
-If you are not on Windows 10 or would rather prefer to not use the WSL you may download Git for
-Windows here:
+Download Git for Windows here:
 
 [https://git-scm.com/download/win](https://git-scm.com/download/win)
 
@@ -91,7 +83,7 @@ and get to working on setting up a development environment!
 Installing Docker on your system:
 
 * For macOS go here: https://docs.docker.com/docker-for-mac/
-* For Windows go here: https://docs.docker.com/docker-for-windows/
+* For Windows (**PROFESSIONAL EDITION ONLY**) go here: https://docs.docker.com/docker-for-windows/
 * For your specific linux disro go here: https://docs.docker.com/engine/installation/
   * Additionally, you will need to install docker-compose: https://docs.docker.com/compose/install/
 
@@ -105,7 +97,9 @@ If that doesn't work, try:
 
 You should see that the server is running by going to [http://localhost:4000](http://localhost:4000) in your browser. Any changes you make to your local file system will be mirrored in the server.
 
-### Installing Jekyll manually (windows)
+### Installing Jekyll manually
+
+#### Windows
 
 1. Go to https://jekyllrb.com/docs/installation/windows/
 2. Press the RubyInstaller link
