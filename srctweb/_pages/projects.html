@@ -15,9 +15,9 @@ description: "Projects created and maintained by SRCT's members."
         <a class="project-link" name="{{ project.name }}" href="#{{ project.name }}"><i class="{{ project.fa_icon }} project-icon"></i></a>
         <legend>
           <strong>{{ project.name }}</strong>
-          {% if project.deployed_url %}| <a href="https://{{ project.deployed_url }}">{{ project.deployed_url }}</a>{% endif %}
-          {% if project.appstore_url %}<br /><a href="{{ project.appstore_url }}"><img class="store-badge" src="/assets/img/AppStoreBadge.png" alt="Download on the App Store"></a>{% endif %}
-          {% if project.googleplay_url %}<br /><a href="{{ project.googleplay_url }}"><img class="store-badge" src="/assets/img/GooglePlayBadge.png" alt="Get It on Google Play"></a>{% endif %}
+          {% if project.deployed_url %}| <a href="https://{{ project.deployed_url }}" target="_blank">{{ project.deployed_url }}</a>{% endif %}
+          {% if project.appstore_url %}<br /><a href="{{ project.appstore_url }}" target="_blank"><img class="store-badge" src="/assets/img/AppStoreBadge.png" alt="Download on the App Store"></a>{% endif %}
+          {% if project.googleplay_url %}<br /><a href="{{ project.googleplay_url }}" target="_blank"><img class="store-badge" src="/assets/img/GooglePlayBadge.png" alt="Get It on Google Play"></a>{% endif %}
         </legend>
         {% if project.docs_url %}<a href="{{ project.docs_url }}">Docs</a>{% endif %}
         {% if project.issues_url %}| <a href="{{ project.issues_url }}">Issues</a><br><br>{% endif %}
@@ -47,7 +47,7 @@ description: "Projects created and maintained by SRCT's members."
         <a class="project-link" name="{{ project.name }}" href="#{{ project.name }}"><i class="{{ project.fa_icon }} project-icon"></i></a>
         <legend>
           <strong>{{ project.name }}</strong>
-          {% if project.deployed_url %}| <a href="https://{{ project.deployed_url }}">{{ project.deployed_url }}</a>{% endif %}
+          {% if project.deployed_url %}| <a href="https://{{ project.deployed_url }}" target="_blank">{{ project.deployed_url }}</a>{% endif %}
         </legend>
         {% if project.docs_url %}<a href="{{ project.docs_url }}">Docs</a>{% endif %}
         {% if project.issues_url %}| <a href="{{ project.issues_url }}">Issues</a>{% endif %}
@@ -78,7 +78,7 @@ description: "Projects created and maintained by SRCT's members."
         <a class="project-link" name="{{ project.name }}" href="#{{ project.name }}"><i class="{{ project.fa_icon }} project-icon"></i></a>
         <legend>
           <strong>{{ project.name }}</strong>
-          {% if project.deployed_url %}| <a href="https://{{ project.deployed_url }}">{{ project.deployed_url }}</a>{% endif %}
+          {% if project.deployed_url %}| <a href="https://{{ project.deployed_url }}" target="_blank">{{ project.deployed_url }}</a>{% endif %}
         </legend>
         {% if project.docs_url %}<a href="{{ project.docs_url }}">Docs</a>{% endif %}
         {% if project.issues_url %}| <a href="{{ project.issues_url }}">Issues</a>{% endif %}
@@ -109,7 +109,7 @@ description: "Projects created and maintained by SRCT's members."
         <a class="project-link" name="{{ project.name }}" href="#{{ project.name }}"><i class="{{ project.fa_icon }} project-icon"></i></a>
         <legend>
           <strong>{{ project.name }}</strong>
-          {% if project.deployed_url %}| <a href="https://{{ project.deployed_url }}">{{ project.deployed_url }}</a>{% endif %}
+          {% if project.deployed_url %}| <a href="https://{{ project.deployed_url }}" target="_blank">{{ project.deployed_url }}</a>{% endif %}
         </legend>
         {% if project.docs_url %}<a href="{{ project.docs_url }}">Docs</a>{% endif %}
         {% if project.issues_url %}| <a href="{{ project.issues_url }}">Issues</a>{% endif %}
