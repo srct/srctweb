@@ -64,7 +64,7 @@ the SRCT code respository with SSH.
 
 **a)** Configure your ssh keys by following the directions at:
 
-**[git.gmu.edu/help/ssh/README](https://git.gmu.edu/help/ssh/README)**
+**[https://git.gmu.edu/srct/schedules/wikis/Adding-SSH-Keys-to-GitLab](https://git.gmu.edu/srct/schedules/wikis/Adding-SSH-Keys-to-GitLab)**
 
 **b)** Now, on your computer, navigate to the directory in which you want to download the project (ie. perhaps one called `~/development/SRCT`), and run
 
