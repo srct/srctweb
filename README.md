@@ -109,6 +109,27 @@ You should see that the server is running by going to [http://localhost:4000](ht
 6. Go to the folder you installed srctweb and type jekyll serve -s './srctweb' -d './srctweb/_site'
 9. Navigate to localhost:4000 in a web browser
 
+#### MacOS
+
+1. Install homebrew if you have not already done it.
+2. Type "brew install rbenv ruby-build" to install rbenv, a tool to manage ruby versions.
+3. Run the command "rbenv init"
+    If you get an error such as:
+    # Load rbenv automatically by appending
+    # the following to ~/.bash_profile:
+    
+    try the following: "echo 'eval "$(rbenv init -)"' >> ~/.bash_profile"
+4. Install a specific version of rbenv using the command, "rbenv install 2.6.5".
+5. Enter the command "rbenv global 2.6.5".
+6. Type command "ruby -v" to confirm the ruby version as 2.6.5.
+7. "gem install bundler" to install bundler, the tool to download ruby packages.
+8. go into the srctweb directory, run cd srctweb again then run "bundle install" to
+    install the ruby packages needed for the project.
+9. Enter "bundle exec jekyll serve" or "jekyll serve" if the first command fails.
+    If you are getting an error saying the port is unavaible, just type "bundle exec jekyll serve --port [portnum].
+
+    
+
 # Contrubuting
 
 Please read `CONTRIBUTING.md` for specific information and best practices on how

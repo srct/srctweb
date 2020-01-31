@@ -1,0 +1,130 @@
+<p>This is going to be one part of what will presumably be part of a multi-piece transparency initiative in which I, Michael Bailey (Lead Systems Admin on the Infrastructure Management Team at SRCT), show the campus community (and SRCT) how information is served at SRCT. I’ll cover how our sites are served and a few IT tricks we use including Host matching, reverse proxy, and auditing. <strong>These pieces are going to tow a line between what is right and what we do</strong>. I will try to disclaim what we do and what the right move would be to do, because they aren’t always the same as this is effectively a volunteer position with limited resources.</p>
+
+<!--more-->
+
+<h1 id="addressing-aquia">Addressing Aquia</h1>
+
+<p>I’ve been hearing a lot in terms of people wondering what the situation is with Aquia. Presently we are working on having relatively semantic changes shuffled between us and Professor Bell according to ITS’s requests and concerns. We are working now on getting our servers to a new intermediate location until we can move in. After all of this is done, we may need to hold for background checks. They have not started to my knowledge and really only apply to me.</p>
+
+<h1 id="how-requests-are-made-to-us">How Requests are Made to Us</h1>
+
+<p>Essentially, whenever a browser is provided a URL like go.gmu.edu, it asks a series of servers where it actually is on the internet via it’s <a href="https://en.wikipedia.org/wiki/IP_address">IP Address</a>. This is a configuration known as <a href="https://en.wikipedia.org/wiki/Domain_Name_System">DNS</a> and we have ours configured at <a href="http://www.he.net/">Hurricane Electric</a>. Our *.gmu.edu domains were handled with an agreement with <a href="https://itservices.gmu.edu/services/view-service.cfm?customel_dataPageID_4609=6141">GMU Networking</a>. As a reminder or if you weren’t aware, pretty much everyone on the Infrastructure Management Team is in the workforce, so there’s some vested trust in how we handle things.</p>
+
+<p><img src="/assets/img/imt/dns.png" alt="imt" title="dhaynes making dns requests" /></p>
+
+<h1 id="what-happens-after-requests-are-made-to-us">What Happens After Requests Are Made To Us</h1>
+
+<p>So now we have a web request we need to fulfill sent to 107.170.176.214. All we have to go on as far as fulfilling their request is the browser requesting from our IP right? <strong>This is a key misconception.</strong> We get a wide variety of information, including, on average, what is below. Not only can we use this information to route your request to the right site internally, we can use this to handle other things, such as if we are able to serve you an old copy without issue (<a href="https://en.wikipedia.org/wiki/Cache_(computing)">caching</a>).</p>
+
+<p><img src="/assets/img/imt/go_request.png" alt="imt" title="HTTP Payload " /></p>
+
+<p>As an example of caching, services like Whats Open can cache data in certain cases. For instance, if you requested what was open at 3:00pm, while the interface may change as far as what is closed when you ask again at 3:05pm, the actual hours aren’t changed so we are free and clear to serve you “stale” hours without requiring the server to go back and fetch the hours again, which may take processing power.</p>
+
+<p>More importantly, routing the request properly. A key element our web server, nginx, is able to manage is the “Host” header. It can read this and determine what actual page you’re trying to visit. It’s a simple configuration in nginx called <a href="http://nginx.org/en/docs/http/server_names.html">server_name</a>. It defines what configurations should be taken into effect in what cases.</p>
+
+<h1 id="redirecting-request-internally">Redirecting Request Internally</h1>
+
+<p>Despite being rich applications in most cases rather than just static HTML, we host multiple applications of multiple types on our servers.</p>
+
+<p>Take for instance “albert”, where following web configurations/routes exist.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>albert  bookshare  gitbot  icinga-web.conf  
+pgp    pmwiki    roomlist    schedules  weather
+api     default    go      mediawiki        
+piwik  punycode  sched-joke  srctweb    
+whats-open-web
+</code></pre>
+</div>
+
+<p>As a result, we really squeeze resources out. We have 2GB of memory on albert, leaverage swap, and 30GB of disk on Albert. Gitlab is on a much bigger dedicated box, so that’s a different story.</p>
+
+<p>But what does this actual delivery look like? Take for instance our Go example.</p>
+
+<p>Here’s ashortened version of what’s in production, ignoring certain overrided paths, comments or anything “extra” we don’t need to care about.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>server {
+	listen 443 ssl;
+	include ssl.conf;
+	server_name go.gmu.edu;
+	ssl_certificate /etc/nginx/ssl/go/go-chain.crt;
+	ssl_certificate_key /etc/nginx/ssl/go/go.key;
+	
+	location / {
+		proxy_pass http://localhost:9992/;
+		proxy_set_header Host $host;
+		proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+		proxy_set_header X-Real-IP $remote_addr;
+		proxy_connect_timeout 10s;
+		real_ip_header X-Forwarded-For;
+		real_ip_recursive on;
+		error_page 502 /502.html;
+		error_page 504 /502.html;
+	}
+</code></pre>
+</div>
+
+<p>This is effectively what configures go. So what does this actually do? Let’s break them down.</p>
+
+<p><code class="highlighter-rouge">listen 443 ssl</code> enables HTTPS on HTTPS’s port (443), that pretty HTTPS lock you see in your browser. This is supported by <code class="highlighter-rouge">ssl_certificate</code> and <code class="highlighter-rouge">ssl_certificate_key</code>. There’s another configuration to reroute HTTP (plaintext) requests to HTTPS (secure) for the user experience.</p>
+
+<p><code class="highlighter-rouge">server_name</code> is effectively what we discussed in the past where we check the Host header. <a href="http://nginx.org/en/docs/http/request_processing.html">For more, see Nginx’s documentation on it</a>.</p>
+
+<p><code class="highlighter-rouge">proxy_pass</code> is the key part. It tells the browser any requests under the path (<code class="highlighter-rouge">/</code> being virtually every request) to port 9992 on the server. This lets us host multiple sites and services, whether they’re Django apps or other apps, often in Docker containers, at the same time on a series of innocuous ports and keep them out of sight and out of mind.</p>
+
+<p>Other settings ensure even in the internal service sitting on port 9992 we are still getting key info like the Host. Django cares about this, because if you visit <code class="highlighter-rouge">terroristbombs.veryunsafe.com</code> or the raw IP of the server (in our case wouldn’t work) and it’s pointed at Go, Go may not want to serve you it.</p>
+
+<p>All of this proxying is why if you visit the <a href="http://107.170.176.214/">raw IP of any of our servers</a> you either get nothing useful or a failure of some variety.</p>
+
+<h1 id="once-it-reaches-the-right-port">Once It Reaches The Right Port</h1>
+
+<p>We now need to check out what service is on port 9992 to actually manage anything granular about go. We run <code class="highlighter-rouge">lsof -i -n -P|grep 9992</code> as root to list useful information about ports to commands and search for 9992 specifically.</p>
+
+<p>We get</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>systemd       1       root  107u  IPv4    30604      0t0  TCP 127.0.0.1:9992 (LISTEN)
+gunicorn   1265         go    7u  IPv4    30604      0t0  TCP 127.0.0.1:9992 (LISTEN)
+gunicorn  23126         go    7u  IPv4    30604      0t0  TCP 127.0.0.1:9992 (LISTEN)
+</code></pre>
+</div>
+
+<p>First and foremost, <code class="highlighter-rouge">systemd</code> is a fundamental building block system for Linux but probably indicates it has a <code class="highlighter-rouge">systemctl</code> service set for the application. In Go’s case, this is set up.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>root@albert:/etc/nginx/sites-enabled# systemctl status go
+● go.service - Roomlist Gunicorn daemon
+   Loaded: loaded (/etc/systemd/system/go.service; enabled; vendor preset: enabled)
+   Active: active (running) since Wed 2018-04-11 16:32:18 EDT; 2 weeks 4 days ago
+ Main PID: 1265 (gunicorn)
+    Tasks: 2
+   Memory: 45.8M
+      CPU: 9min 15.871s
+   CGroup: /system.slice/go.service
+           ├─ 1265 /srv/go/venv/bin/python2 /srv/go/venv/bin/gunicorn --pid /run/go/pid --log-level=debug --timeout=20 -b 127.0.0.1:9992
+           └─23126 /srv/go/venv/bin/python2 /srv/go/venv/bin/gunicorn --pid /run/go/pid --log-level=debug --timeout=20 -b 127.0.0.1:9992
+
+Apr 30 09:13:41 albert.srct.gmu.edu gunicorn[1265]: [2018-04-30 09:13:41 +0000] [23126] [DEBUG] GET /
+Apr 30 09:18:41 albert.srct.gmu.edu gunicorn[1265]: [2018-04-30 09:18:41 +0000] [23126] [DEBUG] GET /
+Apr 30 09:23:41 albert.srct.gmu.edu gunicorn[1265]: [2018-04-30 09:23:41 +0000] [23126] [DEBUG] GET /
+Apr 30 09:28:41 albert.srct.gmu.edu gunicorn[1265]: [2018-04-30 09:28:41 +0000] [23126] [DEBUG] GET /
+</code></pre>
+</div>
+
+<p>We won’t go in depth as to how the service is configured, but I should disclose in production it technically says <code class="highlighter-rouge">9991</code> in the command lines under “CGroup” but in almost all services it’d say <code class="highlighter-rouge">9992</code> in the command lines and it’s functionally the same.</p>
+
+<p><strong>It’s worth noting another (probably better) way to do all of this is through UNIX Sockets</strong> or in Django’s case uwsgi. For more on Sockets, see the Tweeted comic below by Julia Evans aka @b0rk.</p>
+
+<p><a href="https://twitter.com/b0rk/status/810261842291462145"><img src="/assets/img/imt/sockets.png" alt="imt" title="Sockets comic" /></a></p>
+
+<p>So now we have a request that goes from the browser, to our server, to an internal port, and back out to the interwebz! Could be better, could be worse, but given limited man-hours and infrastructure, this is how most SRCT services look.</p>
+
+<style>
+
+img[alt="imt"] {
+	width: 25%;
+}
+@media only screen and (max-width: 600px) {
+    img[alt="imt"] {
+        width: 100%;
+    }
+}
+
+</style>
+
