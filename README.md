@@ -128,8 +128,6 @@ You should see that the server is running by going to [http://localhost:4000](ht
 9. Enter "bundle exec jekyll serve" or "jekyll serve" if the first command fails.
     If you are getting an error saying the port is unavaible, just type "bundle exec jekyll serve --port [portnum].
 
-    
-
 # Contrubuting
 
 Please read `CONTRIBUTING.md` for specific information and best practices on how
