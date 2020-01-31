@@ -38,5 +38,13 @@
         {% endfor %}
       </ul>
     </div>
-  </div>
+</div>
 </nav>
+
+{% for alert in site.data.alerts %}
+<div class="alert alert-primary" role="alert" style="margin-bottom: 0px;border-radius: 0px;display:none;" start="{{ alert.start }}" end="{{ alert.end }}">
+    <div class="container">
+        &#x1f6c8; {{alert.title}}
+    </div>
+</div>
+{% endfor %}

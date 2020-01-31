@@ -3,6 +3,8 @@ function checkDate() {
         month = '' + (d.getMonth() + 1),
         day = '' + d.getDate()
         year = '' + d.getYear();
+    
+    loadAlerts(d);
 
     // Mason Pride Week
 
@@ -72,6 +74,39 @@ function checkDate() {
             document.body.insertAdjacentHTML("afterbegin", generalMessage);
         }
     }
+}
+
+// The fact JavaScript does not have this function built in is the reason I'm sad at night
+function ISOStringToDate(str) {
+    const re = /\d+/g;
+    results = str.match(re);
+    results = results.map(Number)
+
+    // We've been supplied a day, month, year
+    if (results.length == 3) {
+        return new Date(results[0], results[1] - 1, results[2], 0, 0, 0, 0);
+    
+    // We've been supplied a day, month, year, hour, minute, second
+    // This is 7 long because Liquid's YAML parser adds the timezone offset as 
+    // +XXXX on the right. We just ignore it.
+    } else if (results.length == 7) {
+        return new Date(results[0], results[1] - 1, results[2], results[3], results[4], results[5]);
+    } else {
+        return new Date();
+    }
+    
+}
+
+// Make the alerts visible that need to be made visible
+function loadAlerts(date) {
+    $('.alert').each(function(index) {
+        start = ISOStringToDate($(this).attr("start"));
+        end = ISOStringToDate($(this).attr("end"));
+
+        if (date > start && date < end)
+            $(this).slideDown();
+        
+    });
 }
 
 window.onload = checkDate
