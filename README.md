@@ -119,7 +119,7 @@ You should see that the server is running by going to [http://localhost:4000](ht
      Load rbenv automatically by appending
      The following to ~/.bash_profile:
      ```
-    
+
     try the following: `echo 'eval "$(rbenv init -)"' >> ~/.bash_profile`.
 4. Install a specific version of rbenv using the command `rbenv install 2.6.5`.
 5. Enter the command `rbenv global 2.6.5`.
