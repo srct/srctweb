@@ -8,6 +8,62 @@
     }
   },
   {
+    "name": "Matthew Endries",
+    "email": "mendries@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": false
+    }
+  },
+  {
+    "name": "Dylan Jones",
+    "email": "djones66@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": false
+    }
+  },
+  {
+    "name": "Daler Khamidov",
+    "email": "dkhamido@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": false
+    }
+  },
+  {
+    "name": "Kevin Mankowski",
+    "email": "kmankows@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": false
+    }
+  },
+  {
+    "name": "Zach Perkins",
+    "email": "zperkin@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": false
+    }
+  },
+  {
+    "name": "Michael Lundquist",
+    "email": "mlundqu2@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": false
+    }
+  },
+  {
+    "name": "Ayham Hasan",
+    "email": "ahasan21@gmu.edu",
+    "alum": false,
+    "exec": {
+      "status": false
+    }
+  },
+  {
     "name": "Zac Wood",
     "email": "zwood2@gmu.edu",
     "alum": false,
@@ -30,7 +86,7 @@
   {
     "name": "Robert Hitt",
     "email": "rhitt@gmu.edu",
-    "alum": false,
+    "alum": true,
     "exec": {
       "status": false
     }
@@ -38,7 +94,7 @@
   {
     "name": "Michael Bailey",
     "email": "mbaile18@gmu.edu",
-    "alum": false,
+    "alum": true,
     "exec": {
       "status": false
     }
@@ -72,7 +128,7 @@
   {
     "name": "Zach Knox",
     "email": "zknox@gmu.edu",
-    "alum": false,
+    "alum": true,
     "exec": {
       "status": false
     }
@@ -80,9 +136,9 @@
   {
     "name": "Danny Kim",
     "email": "dkim74@gmu.edu",
-    "alum": false,
+    "alum": true,
     "exec": {
-      "status": false,
+      "status": false
     }
   },
   {
@@ -102,33 +158,9 @@
     }
   },
   {
-    "name": "David Stein",
-    "email": "dstein3@gmu.edu",
-    "alum": false,
-    "exec": {
-      "status": false
-    }
-  },
-  {
     "name": "Lilas Dinh",
     "email": "vdinh3@gmu.edu",
-    "alum": false,
-    "exec": {
-      "status": false
-    }
-  },
-  {
-    "name": "Mark Stenglein",
-    "email": "mstengle@gmu.edu",
-    "alum": false,
-    "exec": {
-      "status": false
-    }
-  },
-  {
-    "name": "Greg Aronson",
-    "email": "garonson@gmu.edu",
-    "alum": false,
+    "alum": true,
     "exec": {
       "status": false
     }
@@ -149,30 +181,6 @@
       "status": true,
       "position": "Systems Administrator",
       "link": "http://wiki.srct.gmu.edu/Systems_Administrator"
-    }
-  },
-  {
-    "name": "Grady Moran",
-    "email": "gmoran@gmu.edu",
-    "alum": false,
-    "exec": {
-      "status": false
-    }
-  },
-  {
-    "name": "Leo Grandinetti",
-    "email": "lgrandin@gmu.edu",
-    "alum": false,
-    "exec": {
-      "status": false
-    }
-  },
-  {
-    "name": "Tanner Grehawick",
-    "email": "ggrehawi@gmu.edu",
-    "alum": false,
-    "exec": {
-      "status": false
     }
   },
   {
@@ -216,17 +224,9 @@
     }
   },
   {
-    "name": "Matthew Rogers",
-    "email": "mroger4@gmu.edu",
-    "alum": false,
-    "exec": {
-      "status": false
-    }
-  },
-  {
     "name": "Thomas Kegel",
     "email": "tkegel@gmu.edu",
-    "alum": false,
+    "alum": true,
     "exec": {
       "status": false
     }
@@ -242,7 +242,7 @@
   {
     "name": "Jay Wilson",
     "email": "jwilso48@gmu.edu",
-    "alum": false,
+    "alum": true,
     "exec": {
       "status": false
     }
@@ -438,7 +438,7 @@
    {
     "name": "Molly Thomson",
     "email": "mthomso2@gmu.edu",
-    "alum": false,
+    "alum": true,
     "exec": {
       "status": false
     }
@@ -446,15 +446,7 @@
    {
     "name": "Ashlyn Gill",
     "email": "agill15@gmu.edu",
-    "alum": false,
-    "exec": {
-      "status": false
-    }
-  },
-   {
-    "name": "Christopher Gallarno",
-    "email": "cgallarn@gmu.edu",
-    "alum": false,
+    "alum": true,
     "exec": {
       "status": false
     }
