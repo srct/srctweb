@@ -28,7 +28,7 @@
     "issues_url": "https://github.com/srct/schedules/issues",
     "docs_url": "https://github.com/srct/schedules/blob/master/README.md",
     "blurb": "A website for searching the GMU course catalog and building your schedule. Easily export your class schedule to calendar applications like Outlook and Google Calendar.",
-		"latest": "Feburary 2020: Added dark mode!"
+    "latest": "Feburary 2020: Added dark mode!"
   },
   {
     "name": "What's Open API",
@@ -44,7 +44,7 @@
     "issues_url": "https://github.com/srct/whats-open/issues",
     "docs_url": "https://github.com/srct/whats-open/blob/master/README.md",
     "blurb": "API that provides a list of all currently open dining options in/around campus, kept updated with holidays, etc. Expanding to cover more than dining locations.",
-		"latest": "January 2020: Updated hours for Spring 2020 semester."
+    "latest": "January 2020: Updated hours for Spring 2020 semester."
   },
   {
     "name": "What's Open Web",
@@ -59,7 +59,7 @@
     "issues_url": "https://github.com/srct/whats-open-web/issues",
     "docs_url": "https://github.com/srct/whats-open-web/blob/master/README.md",
     "blurb": "Progressive Web App client for the What's Open API.",
-		"latest": "January 2020: Started work on version 2.3."
+    "latest": "January 2020: Started work on version 2.3."
   },
   {
     "name": "What's Open for iOS",
@@ -98,7 +98,7 @@
     "issues_url": "https://github.com/srct/srctweb/issues",
     "docs_url": "https://github.com/srct/srctweb/blob/master/README.md",
     "blurb": "SRCT's very own homepage! Help edit this site.",
-		"latest": "Feburary 2020: Added \"latest\" section to projects page."
+    "latest": "Feburary 2020: Added \"latest\" section to projects page."
   },
   {
     "name": "Masonstrap",
@@ -203,13 +203,13 @@
     "language": "Python",
     "status": "in_dev",
     "repo_url": "https://git.gmu.edu/srct/bookshare",
-		"fa_icon": "fas fa-book",
+    "fa_icon": "fas fa-book",
     "project_manager": "Kevin Mankowski",
     "deployed_url": "bookshare.gmu.edu",
     "issues_url": "https://git.gmu.edu/srct/bookshare/issues",
     "docs_url": "https://git.gmu.edu/srct/bookshare/blob/master/README.md",
     "blurb": "Bookshare is a platform for textbook transactions, with books searchable by Name, Author, ISBN, and Class.",
-		"latest": "Febuary 2020: Kevin Mankowski revived project and started development again!"
+    "latest": "Febuary 2020: Kevin Mankowski revived project and started development again!"
   },
   {
     "name": "sks-rs",
@@ -235,11 +235,11 @@
   },
   {
     "name": "Where",
-		"language": "Python (API), Angular (front-end)",
+    "language": "Python (API), Angular (front-end)",
     "repo_url": "https://git.gmu.edu/srct/where",
     "status": "in_dev",
     "fa_icon": "fas fa-map-marker",
     "blurb": "Mapping effort for various facilities and amenities on campus",
-		"latest": "January 2020: Started development!"
+    "latest": "January 2020: Started development!"
   }
 ]
