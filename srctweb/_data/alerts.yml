@@ -1,0 +1,8 @@
+# Write as
+# - title: [Text just gets copied into a boostrap alert (so HTML tags could be used)] What gets displayed
+#   start: [ISO 8601 Date/Time format] When it will start being displayed
+#   end: [ISO 8601 Date/Time format] When it will stop being displayed
+
+- title: If you're coming to our first meeting (Monday, February 3rd), please click <a href="https://go.gmu.edu/srctintro" target="_blank" class="alert-link stretched-link">here</a> to RSVP
+  start: 2020-01-29
+  end: 2020-02-03T18:30:00

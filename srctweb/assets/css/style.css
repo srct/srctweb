@@ -171,3 +171,7 @@ a[name] {
 .store-badge {
   padding: 2px;
 }
+
+.bottom-page-spacing {
+  padding-bottom: 40px; 
+}
