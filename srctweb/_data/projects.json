@@ -209,7 +209,7 @@
     "issues_url": "https://git.gmu.edu/srct/bookshare/issues",
     "docs_url": "https://git.gmu.edu/srct/bookshare/blob/master/README.md",
     "blurb": "Bookshare is a platform for textbook transactions, with books searchable by Name, Author, ISBN, and Class.",
-    "latest": "Febuary 2020: Kevin Mankowski revived project and started development again!"
+    "latest": "February 2020: Kevin Mankowski revived project and started development again!"
   },
   {
     "name": "sks-rs",
