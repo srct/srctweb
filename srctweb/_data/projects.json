@@ -28,7 +28,7 @@
     "issues_url": "https://github.com/srct/schedules/issues",
     "docs_url": "https://github.com/srct/schedules/blob/master/README.md",
     "blurb": "A website for searching the GMU course catalog and building your schedule. Easily export your class schedule to calendar applications like Outlook and Google Calendar.",
-    "latest": "Feburary 2020: Added dark mode!"
+    "latest": "February 2020: Added dark mode!"
   },
   {
     "name": "What's Open API",
@@ -98,7 +98,7 @@
     "issues_url": "https://github.com/srct/srctweb/issues",
     "docs_url": "https://github.com/srct/srctweb/blob/master/README.md",
     "blurb": "SRCT's very own homepage! Help edit this site.",
-    "latest": "Feburary 2020: Added \"latest\" section to projects page."
+    "latest": "February 2020: Added \"latest\" section to projects page."
   },
   {
     "name": "Masonstrap",
